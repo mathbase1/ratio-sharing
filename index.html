@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ratio Word‑Problems Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root{--accent:#1976d2;--light:#e3f2fd;--error:#d32f2f;--success:#388e3c;--red:#ffb3b3;--blue:#b3d8ff;}
+    body{margin:0;padding:2rem;background:var(--light);font-family:system-ui,-apple-system,Segoe UI,sans-serif;display:flex;justify-content:center;}
+    .card{background:#fff;width:min(620px,95%);box-shadow:0 6px 14px rgba(0,0,0,.15);border-radius:.9rem;padding:2rem 2.2rem;}
+    h1{margin:0 0 1rem;color:var(--accent);} #question{font-weight:600;margin-bottom:1rem;line-height:1.55;}
+    input{font-size:1rem;padding:.45rem .7rem;border:2px solid #999;border-radius:.35rem;}
+    input:focus{border-color:var(--accent);} .singleAns{width:100%;margin-bottom:1rem;} .dualAns{display:flex;gap:.5rem;margin-bottom:1rem;} .dualAns input{flex:1;text-align:center;}
+    button{font-weight:600;padding:.52rem 1.2rem;border:none;border-radius:.4rem;cursor:pointer;transition:background .2s;margin:.3rem;font-size:.95rem;}
+    #checkBtn{background:var(--accent);color:#fff;} #checkBtn:hover{background:#115caa;} #nextBtn{background:#555;color:#fff;} #nextBtn:hover{background:#333;}
+    #feedback{height:1.6rem;font-weight:600;margin:.5rem 0;} .ok{color:var(--success);} .no{color:var(--error);} 
+    #bars{display:flex;flex-direction:column;gap:.45rem;margin-top:1rem;} .barRow{display:flex;gap:.25rem;align-items:flex-start;flex-wrap:wrap;}
+    .nameTag{width:90px;text-align:right;font-weight:600;margin-right:.4rem;} .sq{width:34px;height:34px;border:1px solid #555;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;}
+    /* overlay */
+    #overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;justify-content:center;align-items:center;z-index:100}
+    .fade{animation:fade .25s ease-out forwards;opacity:0;transform:translateY(-8px);} @keyframes fade{to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+<!-- ===== Start Menu Overlay ===== -->
+<div id="overlay">
+  <div class="fade" style="background:#fff;border-radius:.9rem;box-shadow:0 6px 14px rgba(0,0,0,.2);padding:1.6rem;display:flex;flex-direction:column;gap:.85rem;width:90%;max-width:340px;">
+    <h2 style="font-size:1.25rem;font-weight:700;text-align:center;">Start Quiz</h2>
+    <label style="font-weight:600">Name</label>
+    <input id="nameInput" type="text" placeholder="Enter your name" style="border:1px solid #999;border-radius:.35rem;padding:.45rem .65rem;">
+    <label style="font-weight:600">Mode</label>
+    <label style="display:flex;align-items:center;gap:.4rem;"><input type="radio" name="mode" value="timer" checked> Timed</label>
+    <label style="display:flex;align-items:center;gap:.4rem;"><input type="radio" name="mode" value="target"> Target score</label>
 
+    <div id="timerGroup" style="display:flex;flex-direction:column;gap:.3rem;padding-left:.9rem;">
+      <label style="display:flex;align-items:center;gap:.4rem;"><input type="radio" name="timer" value="300"> 5 min</label>
+      <label style="display:flex;align-items:center;gap:.4rem;"><input type="radio" name="timer" value="600" checked> 10 min</label>
+      <label style="display:flex;align-items:center;gap:.4rem;"><input type="radio" name="timer" value="900"> 15 min</label>
+      <label style="display:flex;align-items:center;gap:.4rem;"><input type="radio" name="timer" value="none"> No limit</label>
+    </div>
+
+    <div id="scoreGroup" style="display:none;flex-direction:column;gap:.4rem;padding-left:.9rem;">
+      <label style="font-weight:600" for="scoreInput">Target score</label>
+      <input id="scoreInput" type="number" min="1" placeholder="e.g. 20" style="border:1px solid #999;border-radius:.35rem;padding:.45rem .65rem;">
+    </div>
+
+    <button id="startBtn" style="background:#159b57;color:#fff;border:none;border-radius:.4rem;padding:.55rem 1rem;font-weight:600;cursor:pointer;">Start</button>
+  </div>
+</div>
+
+<!-- ===== Main Card ===== -->
+<div class="card">
+  <h1>Ratio Quiz</h1>
+  <div style="font-weight:600;margin-bottom:.6rem">👤 <span id="playerName">—</span> | ⏱ <span id="timer">--:--</span> | 🏆 <span id="goal">—</span></div>
+  <div style="font-weight:600;margin-bottom:.8rem">Score: <span id="score">0</span></div>
+  <div id="question"></div>
+  <div id="answerArea"></div>
+  <div id="feedback"></div>
+  <button id="checkBtn">Check</button>
+  <button id="nextBtn" style="display:none;">Next</button>
+
+  <div style="border-top:1px dashed #ccc;padding-top:1rem;margin-top:1rem;">
+    <button id="buildBtn">Build bar model</button>
+    <label style="margin-left:.6rem">One square £ <input id="squareVal" type="number" style="width:90px"></label>
+    <div id="bars"></div>
+  </div>
+</div>
+
+<script>
+/* ---------- helpers ---------- */
+const names=["William","Sarah","Mohammed","Aisha","David","Fatima","Christian","Maryam","John","Ali","Emily","Jacob","Olivia","Yusuf","Hannah","Ahmed","Grace","Adam","Zainab","James","Noah","Layla"],
+      rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a,
+      pick=()=>{let i=rnd(0,names.length-1),j;while((j=rnd(0,names.length-1))===i);return[names[i],names[j]];},
+      genRatio=()=>{let x=rnd(1,12),y;while((y=rnd(1,12))===x);return[x,y];},
+      pad=n=>String(n).padStart(2,'0'),fmt=s=>s===null?'∞':`${Math.floor(s/60)}:${pad(s%60)}`;
+/* ---------- state ---------- */
+let cur={},score=0,player='—',mode='timer',timeLeft=null,target=null,timerID=null;
+/* ---------- elements ---------- */
+const q=document.getElementById('question'),ansArea=document.getElementById('answerArea'),fb=document.getElementById('feedback'),chk=document.getElementById('checkBtn'),nxt=document.getElementById('nextBtn'),scoreEl=document.getElementById('score'),playerEl=document.getElementById('playerName'),timerEl=document.getElementById('timer'),goalEl=document.getElementById('goal');
+const barsDiv=document.getElementById('bars'),buildBtn=document.getElementById('buildBtn'),sqVal=document.getElementById('squareVal');
+/* ---------- bar model ---------- */
+function clearBars(){barsDiv.innerHTML='';sqVal.value='';}
+function buildBars(a,b,nA,nB){clearBars();const row=(nm,len,col)=>{const r=document.createElement('div');r.className='barRow';r.innerHTML=`<span class='nameTag'>${nm}:</span>`;for(let i=0;i<len;i++){const s=document.createElement('div');s.className='sq';s.style.background=col;r.appendChild(s);}barsDiv.appendChild(r);} ;row(nA,a,'var(--red)');row(nB,b,'var(--blue)');}
+buildBtn.onclick=()=>cur.ratio&&buildBars(cur.ratio[0],cur.ratio[1],cur.names[0],cur.names[1]);sqVal.oninput=()=>{const v=Number(sqVal.value);document.querySelectorAll('.sq').forEach(el=>el.textContent=v>0?`£${v}`:'');};
+/* ---------- inputs ---------- */
+function renderInputs(t,n){ansArea.innerHTML=t===0?`<div class='dualAns'><input id='ans1' type='number' placeholder='${n[0]}'><input id='ans2' type='number' placeholder='${n[1]}'></div>`:`<input id='ansSingle' class='singleAns' type='number'>`;}
+/* ---------- questions ---------- */
+function newQ(){fb.textContent='';fb.className='';chk.disabled=false;nxt.style.display='none';clearBars();const t=rnd(0,2),[n1,n2]=pick(),rat=genRatio(),k=rnd(2,15),shares=[rat[0]*k,rat[1]*k],total=k*(rat[0]+rat[1]);let prompt,ans;
+  if(t===0){prompt=`${n1} and ${n2} share £${total} in the ratio ${rat[0]}:${rat[1]}.<br><br>How much does each person get?`;ans=shares;renderInputs(0,[n1,n2]);}
+  else if(t===1){const idx=rnd(0,1);prompt=`${n1} and ${n2} share some money in the ratio ${rat[0]}:${rat[1]}.<br><br>${idx?n2:n1} receives £${shares[idx]}.<br><br>How much did they share in total?`;ans=total;renderInputs(1);}
+  else {const diff=Math.abs(shares[0]-shares[1]),big=shares[0]>shares[1]?n1:n2,small=big===n1?n2:n1;prompt=`${n1} and ${n2} share some money in the ratio ${rat[0]}:${rat[1]}.<br><br>${big} receives £${diff} more than ${small}.<br><br>How much did they share in total?`;ans=total;renderInputs(1);}cur={t,ans,ratio:rat,names:[n1,n2],first:true};q.innerHTML=prompt;}
+/* ---------- check ---------- */
+chk.onclick=()=>{let ok=false;if(cur.t===0){const v1=parseFloat(document.getElementById('ans1').value),v2=parseFloat(document.getElementById('ans2').value);ok=!isNaN(v1)&&!isNaN(v2)&&v1===cur.ans[0]&&v2===cur.ans[1];}else{const v=parseFloat(document.getElementById('ansSingle').value);ok=!isNaN(v)&&v===cur.ans;}
+  fb.textContent=ok?'✓ Correct!':'✗ Try again';fb.className=ok?'ok':'no';if(ok){score+=cur.first?2:1;scoreEl.textContent=score;chk.disabled=true;nxt.style.display='inline-block';if(mode==='target'&&score>=target){alert('🎉 Target reached!');location.reload();}}else cur.first=false;};
+/* ---------- timer ---------- */
+function startTimer(){clearInterval(timerID);timerEl.textContent=fmt(timeLeft);if(timeLeft===null)return;timerID=setInterval(()=>{if(--timeLeft<0){clearInterval(timerID);alert("Time's up!");location.reload();}timerEl.textContent=fmt(timeLeft);},1000);}
+/* ---------- menu handlers ---------- */
+function toggleGroups(){const m=document.querySelector('input[name="mode"]:checked').value;document.getElementById('timerGroup').style.display=m==='timer'?'flex':'none';document.getElementById('scoreGroup').style.display=m==='target'?'flex':'none';}
+document.querySelectorAll('input[name="mode"]').forEach(r=>r.onchange=toggleGroups);
+
+document.getElementById('startBtn').onclick=()=>{player=document.getElementById('nameInput').value.trim()||'Player';playerEl.textContent=player;mode=document.querySelector('input[name="mode"]:checked').value;
+  if(mode==='timer'){const sel=document.querySelector('input[name="timer"]:checked').value;timeLeft=sel==='none'?null:parseInt(sel,10);goalEl.textContent='—';startTimer();}
+  else {target=parseInt(document.getElementById('scoreInput').value,10);if(isNaN(target)||target<1){alert('Enter positive target');return;}goalEl.textContent=target;timeLeft=null;timerEl.textContent='∞';}
+  document.getElementById('overlay').style.display='none';newQ();};
+
+nxt.onclick=newQ;window.onload=toggleGroups;
+</script>
+</body>
+</html>
