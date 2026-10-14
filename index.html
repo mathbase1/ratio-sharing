@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172d43">
+<meta name="description" content="Independent ratio practice for Eduqas Foundation GCSE Mathematics, with precise marking, worked methods and a classroom working space.">
+<title>Ratio Studio | Foundation GCSE Mathematics</title>
+<style>:root{--ink:#172d43;--muted:#586b7e;--paper:#fff;--bg:#f3f5f7;--soft:#edf3f5;--line:#d7e1e7;--accent:#006b65;--accent-soft:#e6f4f0;--error:#a82537;--warning:#805400;--shadow:0 9px 32px rgba(21,44,62,.06);--radius:18px;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg)}[hidden]{display:none!important}button,input,select,textarea{font:inherit}button{cursor:pointer}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}button{border:1px solid transparent;border-radius:10px;font-weight:700;padding:.65rem .9rem;line-height:1.3;min-height:44px;transition:background .14s,box-shadow .14s}button:disabled{opacity:.48;cursor:not-allowed}button:not(:disabled):active{transform:translateY(1px)}:focus-visible{outline:3px solid #cf8a00;outline-offset:3px}input:focus,select:focus,textarea:focus{outline:3px solid #cf8a00;outline-offset:2px}a{color:var(--accent);text-underline-offset:3px}h1,h2,h3,p{margin:0 0 1rem}h1{line-height:1.08;letter-spacing:-.045em;font-size:clamp(2rem,4vw,3.6rem)}h2{font-size:1.35rem;line-height:1.25;letter-spacing:-.02em}h3{font-size:1.05rem;margin-top:1.5rem}small,.help{font-size:.82rem;line-height:1.5}.help{color:var(--muted);margin:.35rem 0 .8rem}.muted{color:var(--muted)}.eyebrow{font-size:.7rem;letter-spacing:.12em;font-weight:800;line-height:1.6;color:var(--accent);margin:0 0 .5rem}.primary{background:var(--accent);color:#fff}.primary:hover:not(:disabled){background:#00534e}.secondary{background:var(--ink);color:var(--paper)}.secondary:hover:not(:disabled){filter:brightness(1.17)}.quiet{background:var(--paper);color:var(--ink);border-color:var(--line)}.quiet:hover:not(:disabled){background:var(--soft)}.text-button{background:transparent;color:var(--muted);font-size:.8rem;padding:.45rem .3rem;text-decoration:underline;text-underline-offset:3px}.button-row{display:flex;gap:.6rem;flex-wrap:wrap}.skip-link{position:fixed;top:5px;left:5px;transform:translateY(-160%);z-index:1000;background:var(--paper);padding:.7rem}.skip-link:focus{transform:none}
+.site-header{max-width:1360px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 2rem;border-bottom:1px solid var(--line)}.brand{display:flex;gap:.75rem;align-items:center}.brand-mark{width:44px;height:44px;border-radius:13px;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:1.8rem;font-weight:800;flex:none}.brand strong{font-size:1.12rem;display:block;letter-spacing:-.03em}.brand div>span{font-size:.73rem;color:var(--muted);display:block}.header-actions{display:flex;gap:.4rem}.header-actions button{font-size:.78rem;min-height:40px}.main-wrap{max-width:1220px;margin:0 auto;padding:1.65rem 2rem 3rem}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.setup-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}.hero{border-radius:22px;background:#172d43;color:#fff;padding:2.4rem 2rem;position:sticky;top:1.5rem;overflow:hidden}.hero .eyebrow{color:#acdacf}.hero h1{margin:1.15rem 0 1.4rem}.hero h1 span{color:#a9dfca}.hero-lead{font-size:1.03rem;line-height:1.75;max-width:370px;color:#d5e2ed}.hero-example{border:1px solid #486171;border-radius:14px;padding:1.1rem;margin:2.5rem 0 2rem;background:#203b51}.mini-heading{font-size:.64rem;letter-spacing:.14em;color:#b8d1df;font-weight:800}.hero-machine{display:grid;grid-template-columns:1fr 18px .7fr 18px 1fr;gap:.25rem;align-items:center;margin:.9rem 0;text-align:center}.hero-machine small{display:block;color:#b8d1df;font-size:.66rem}.hero-machine b{font-size:1.65rem}.hero-process{background:#a9dfca;color:#172d43;border-radius:10px;padding:.6rem .2rem;font-size:1.15rem;font-weight:800}.hero-example p{font-size:.76rem;color:#c8dae6;margin:1rem 0 .1rem}.hero-footer{display:flex;flex-wrap:wrap;gap:.5rem .85rem;font-size:.7rem;color:#c5d7e1}.hero-footer span:before{content:'✓';margin-right:.35rem;color:#a9dfca}.hero-disclaimer{font-size:.7rem;color:#bacdd9;line-height:1.7;margin:1.5rem 0 0}.setup-card{padding:1.65rem}.field{display:grid;gap:.3rem;margin-bottom:1rem;min-width:0}.field label,legend{font-size:.84rem;font-weight:700}.field .help{margin:0}input,select,textarea{width:100%;min-width:0;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:9px;padding:.65rem .75rem}select{padding-right:1.8rem}input::placeholder,textarea::placeholder{color:var(--muted);opacity:.85}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}.form-grid select{font-size:.83rem}.mode-field{padding:0;border:0;margin:0 0 1rem;min-width:0}.mode-field legend{margin-bottom:.4rem}.mode-options{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}.mode-options label{display:flex;gap:.3rem;align-items:center;border:1px solid var(--line);padding:.65rem .45rem;border-radius:9px;cursor:pointer;font-size:.76rem;font-weight:700;min-height:44px}.mode-options input{width:auto;accent-color:var(--accent);margin:0}.mode-options label:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}.tolerance-card{background:var(--accent-soft);border:1px solid var(--line);padding:.8rem;border-radius:12px;display:flex;gap:.9rem;align-items:center;margin:1rem 0 .4rem}.tolerance-symbol{font-size:1.45rem;font-weight:800;color:var(--accent);flex:none;font-variant-numeric:tabular-nums}.tolerance-card strong{font-size:.83rem}.tolerance-card p{font-size:.73rem;line-height:1.55;margin:.2rem 0 0;color:var(--muted)}.start-button{width:100%;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;margin-top:1rem}.resume-card{padding:1rem;background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;margin-bottom:1.4rem;font-size:.85rem}.resume-card p{font-size:.78rem;margin:.35rem 0 .8rem}.resume-card button{font-size:.8rem}.notice{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;font-size:.85rem;margin:1rem 0;line-height:1.6;overflow-wrap:anywhere}.notice.success{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}.notice.error,.error-message{color:var(--error)}.notice.error{background:var(--paper);border-color:var(--error)}.notice.warning{border-color:#c69442;color:var(--warning);background:#fff9e9}.error-message{font-size:.87rem;font-weight:650}
+.session-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem}.session-bar>div:first-child{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.student-name{font-weight:800;max-width:360px;overflow-wrap:anywhere}.session-bar .muted{font-size:.83rem}.session-actions{display:flex;gap:.4rem}.session-actions button{font-size:.78rem}.stats-strip{display:grid;grid-template-columns:repeat(5,1fr);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:.8rem .3rem}.stats-strip>div{padding:.2rem 1rem;border-right:1px solid var(--line)}.stats-strip>div:last-child{border:0}.stats-strip span{display:block;font-size:.66rem;letter-spacing:.035em;color:var(--muted)}.stats-strip strong{font-size:1.22rem;font-variant-numeric:tabular-nums;line-height:1.65}.stats-strip strong.urgent{color:var(--error)}.progress-wrap{display:flex;align-items:center;gap:1rem;margin:.85rem 0 1.2rem}.progress-wrap progress{width:100%;height:6px;appearance:none;border:0;background:var(--line);border-radius:8px;overflow:hidden}.progress-wrap progress::-webkit-progress-bar{background:var(--line)}.progress-wrap progress::-webkit-progress-value{background:var(--accent)}.progress-wrap progress::-moz-progress-bar{background:var(--accent)}.progress-wrap span{font-size:.69rem;color:var(--muted);white-space:nowrap}.question-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:1.2rem;align-items:start}.question-paper{padding:1.7rem 1.9rem;min-height:380px}.paper-top{display:flex;align-items:center;justify-content:space-between;gap:.7rem;margin-bottom:1.35rem}.paper-top .eyebrow{margin:0}.pill{display:inline-flex;align-items:center;border-radius:99px;background:var(--soft);border:1px solid var(--line);padding:.22rem .6rem;color:var(--muted);font-size:.68rem;font-weight:700;line-height:1.4;white-space:nowrap}.question-paper h2{font-size:1.55rem;margin:0 0 1.2rem}.question-text{font-size:1.17rem;line-height:1.75;letter-spacing:.002em}.question-text p{margin:0 0 .75rem}.question-text b{font-weight:780;font-variant-numeric:tabular-nums}.question-guidance{font-size:.78rem;color:var(--muted);border-left:3px solid var(--line);padding:.1rem 0 .1rem .65rem;margin:1.1rem 0}.paper-tools{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.45rem}.paper-tools button{font-size:.83rem}.paper-foot{display:flex;gap:.8rem;justify-content:space-between;font-size:.67rem;color:var(--muted);border-top:1px solid var(--line);padding-top:1rem;margin-top:1.5rem}.paper-foot span:last-child{text-align:right}.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:11px;margin:1rem 0}.data-table{border-collapse:collapse;width:100%;font-size:.89rem}.data-table th{background:var(--soft);text-align:left;font-size:.76rem;font-weight:750}.data-table th,.data-table td{padding:.7rem .85rem;border-bottom:1px solid var(--line)}.data-table tr:last-child td{border-bottom:0}.data-table td{font-variant-numeric:tabular-nums}.answer-panel{padding:1.4rem}.answer-top{display:flex;justify-content:space-between;align-items:center;gap:1rem}.answer-top h2{margin:0;font-size:1.18rem}.answer-top .pill{background:var(--accent-soft);color:var(--accent)}.answer-panel>.help{margin:.6rem 0 1.2rem}.answer-item{margin:0 0 1.15rem;padding:0;border:0;min-width:0}.answer-item>label,.answer-item>legend{font-size:.86rem;display:block;font-weight:750;margin-bottom:.5rem}.number-shell{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--paper)}.number-shell input{border:0;background:transparent;font-size:1.5rem;font-weight:700;letter-spacing:.03em;font-variant-numeric:tabular-nums;padding:.7rem .5rem}.number-shell input:focus{outline-offset:0}.answer-unit{font-size:.86rem;color:var(--muted);padding:0 .7rem;white-space:nowrap}.number-shell:has(input[disabled]){background:var(--soft)}.step-controls{display:flex;justify-content:flex-end;gap:.4rem;margin-top:.4rem}.step-controls button{font-size:.73rem;background:var(--soft);border-color:var(--line);padding:.4rem .7rem;color:var(--ink);min-height:34px}.part-feedback{font-size:.77rem;margin-top:.5rem;line-height:1.65}.part-feedback.good{color:var(--accent);font-weight:650}.part-feedback.bad{color:var(--error)}.part-feedback.invalid{color:var(--error)}.choice-options{display:grid;gap:.5rem}.choice-option{display:flex;align-items:center;gap:.6rem;border:1px solid var(--line);padding:.65rem .75rem;border-radius:10px;cursor:pointer;font-size:.88rem;min-height:44px;line-height:1.5}.choice-option:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}.choice-option input{width:auto;accent-color:var(--accent);flex:none}.choice-option span{overflow-wrap:anywhere}.check-button,.next-button{width:100%;margin:.2rem 0 .3rem;padding:.8rem}.answer-actions{display:flex;justify-content:space-between;gap:.5rem}.tolerance-help{border-top:1px solid var(--line);padding-top:.85rem;font-size:.72rem!important;margin-top:.8rem!important;margin-bottom:0!important}.solution-inline{border-top:1px solid var(--line);margin-top:.8rem;padding-top:.7rem}.solution-inline h3{margin:.1rem 0 .6rem}.solution-inline p{font-size:.83rem;line-height:1.6;margin-bottom:.7rem;overflow-wrap:anywhere}.session-note{font-size:.71rem;color:var(--muted);margin:.9rem 0 0;text-align:right}.site-footer{border-top:1px solid var(--line);max-width:1220px;margin:auto;padding:1.2rem 2rem;display:flex;justify-content:space-between;gap:1rem;font-size:.7rem;color:var(--muted)}
+.results-hero{padding:1.4rem 0 1rem}.results-hero h1{font-size:2.45rem}.results-hero>p:last-child{color:var(--muted)}.result-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.metric{border:1px solid var(--line);background:var(--paper);border-radius:14px;padding:1.15rem}.metric b{font-size:1.9rem;letter-spacing:-.035em;display:block;font-variant-numeric:tabular-nums}.metric span{font-size:.74rem;color:var(--muted);display:block;margin-top:.25rem}.results-toolbar{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.3rem 0}.results-toolbar button{font-size:.83rem}.topic-summary{padding:1.25rem;margin:1.2rem 0 1.8rem}.topic-summary h2{font-size:1.1rem}.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.5rem}.topic-row{display:flex;align-items:center;gap:.8rem;justify-content:space-between;border-bottom:1px solid var(--line);padding:.35rem 0;font-size:.78rem}.topic-row strong{white-space:nowrap}.review-heading{margin:1.4rem 0 1rem}.review-card{background:var(--paper);border:1px solid var(--line);border-radius:13px;margin:.75rem 0;overflow:hidden}.review-card summary{padding:1rem;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:.8rem;align-items:center;font-size:.86rem}.review-card summary>span:first-child:before{content:'+';display:inline-block;margin-right:.8rem;color:var(--accent)}.review-card[open] summary>span:first-child:before{content:'−'}.review-card summary::-webkit-details-marker{display:none}.review-card summary>span:last-child{font-size:.69rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em}.review-body{padding:.2rem 1.1rem 1rem}.review-body>p{font-size:.9rem;margin-bottom:.6rem}.review-part{border-top:1px solid var(--line);padding:.75rem 0;font-size:.84rem}.review-part p{margin:.2rem 0}.review-part strong{color:var(--accent)}.working-review{white-space:pre-wrap;background:var(--soft);padding:.8rem;border-radius:9px;font: .85rem/1.6 system-ui,sans-serif;overflow-wrap:anywhere}.review-body .quiet{font-size:.78rem}.review-method{margin-top:.7rem;border-top:1px solid var(--line);padding-top:.5rem}.review-method p{font-size:.8rem;line-height:1.6;margin:.5rem 0}.toast{position:fixed;bottom:1.4rem;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:.65rem 1rem;border-radius:9px;box-shadow:var(--shadow);font-size:.84rem;z-index:999;max-width:min(600px,90vw);text-align:center;pointer-events:none}.toast:empty{display:none}
+/* Dialogs use the browser's focus containment and Escape behaviour. */
+dialog{background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:17px;padding:0;box-shadow:0 24px 100px #0004;max-height:92dvh;overflow:auto;width:calc(100% - 2rem)}dialog::backdrop{background:#132738b8;backdrop-filter:blur(3px)}.small-dialog{max-width:480px}.source-dialog{max-width:760px}.method-dialog{max-width:740px}.work-dialog{max-width:1200px;width:calc(100% - 2rem);max-height:96dvh}.dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.4rem;border-bottom:1px solid var(--line)}.dialog-heading h2{margin:0;font-size:1.2rem}.dialog-heading .eyebrow{font-size:.62rem}.close-button{background:var(--soft);color:var(--ink);border:1px solid var(--line);width:40px;min-height:40px;padding:.3rem;flex:none}.dialog-body{padding:1.2rem 1.4rem}.dialog-body>h3:first-child{margin-top:0}.dialog-body p{font-size:.91rem;line-height:1.75}.tab-row{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;padding:.9rem 1.4rem 0}.tab-row button{background:var(--soft);color:var(--muted);font-size:.78rem;border-color:var(--line)}.tab-row button[aria-selected=true]{background:var(--accent);color:#fff;border-color:var(--accent)}.method-steps{list-style:none;counter-reset:steps;padding:0;margin:1.2rem 0}.method-steps li{counter-increment:steps;display:flex;align-items:flex-start;gap:.8rem;font-size:.93rem;line-height:1.75;margin:1rem 0}.method-steps li:before{content:counter(steps);width:27px;height:27px;background:var(--accent-soft);color:var(--accent);border-radius:50%;display:grid;place-items:center;flex:none;font-size:.78rem;font-weight:800;margin-top:.15rem}.method-note{background:var(--soft);border-left:3px solid var(--accent);padding:.75rem;font-size:.8rem;margin:1rem 0}.machine-block{border:1px solid var(--line);border-radius:13px;padding:.95rem;background:var(--soft);margin:1rem 0}.machine-caption{font-size:.75rem;font-weight:750;color:var(--accent);margin-bottom:.8rem}.number-machine{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1.05fr) 24px minmax(0,1fr);gap:.25rem;align-items:center;text-align:center}.machine-end{padding:.55rem .2rem;background:var(--paper);border-radius:8px;border:1px solid var(--line);min-height:65px;display:flex;flex-direction:column;justify-content:center}.machine-end small{font-size:.66rem;color:var(--muted);line-height:1.4}.machine-end strong{font-size:1rem;margin-top:.3rem;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.machine-operation{background:var(--accent);color:white;padding:.6rem .3rem;border-radius:8px;font-weight:750;font-size:.95rem;line-height:1.5;overflow-wrap:anywhere}.machine-arrow{font-size:1.5rem;color:var(--accent)}.number-machine.play .machine-arrow{animation:arrowRight 1.2s ease-in-out 3}.number-machine.reverse.play .machine-arrow{animation:arrowLeft 1.2s ease-in-out 3}.animate-button{margin-top:.6rem;font-size:.7rem;padding:.4rem .6rem;min-height:34px}.bar-model{border:1px solid var(--line);border-radius:13px;padding:1rem;margin:1rem 0}.bar-row{margin:.7rem 0}.bar-row>div:first-child{display:flex;justify-content:space-between;gap:.5rem;font-size:.76rem;margin-bottom:.35rem}.bar-track{width:100%;height:22px;position:relative}.bar-fill{height:100%;background:var(--accent);border-radius:4px;min-width:2px}.bar-fill.reference{background:#98aabd}.bar-model>p{font-size:.69rem!important;margin:.6rem 0 0!important;color:var(--muted)}.example-question{padding:1rem;background:var(--soft);border-radius:12px;margin:.6rem 0 1rem}.example-question p{font-size:.93rem;line-height:1.6;margin:.4rem 0}.solution-step{padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.94rem;line-height:1.7;overflow-wrap:anywhere}.source-list{border-top:1px solid var(--line);margin-top:.7rem}.source-list p{font-size:.82rem;line-height:1.6;padding:.65rem 0;margin:0;border-bottom:1px solid var(--line)}.source-list a{font-weight:700}.work-question{padding:.85rem 1.3rem;background:var(--soft);font-size:1rem;line-height:1.7;max-height:27dvh;overflow:auto}.work-question p{margin:.15rem 0}.work-question .data-table{font-size:.82rem}.work-question .table-scroll{margin:.5rem 0}.drawing-tools{padding:.65rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;border-bottom:1px solid var(--line)}.drawing-tools button{font-size:.76rem}.drawing-tools button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:white}.drawing-tools label{display:flex;align-items:center;gap:.3rem;font-size:.75rem;margin:0 .2rem}.drawing-tools select{width:auto;font-size:.75rem;padding:.5rem 1.6rem .5rem .5rem}.canvas-shell{width:100%;height:350px;background-color:#fff;background-image:radial-gradient(#d3dce3 1px,transparent 1px);background-size:24px 24px;overflow:hidden}.canvas-shell canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}.typed-working{padding:.9rem 1.2rem;border-top:1px solid var(--line)}.typed-working label{font-weight:750;font-size:.81rem}.typed-working textarea{height:85px;resize:vertical;margin-top:.35rem}.typed-working p{margin-bottom:0}
+@keyframes arrowRight{0%,100%{transform:translateX(-4px);opacity:.45}60%{transform:translateX(4px);opacity:1}}@keyframes arrowLeft{0%,100%{transform:translateX(4px);opacity:.45}60%{transform:translateX(-4px);opacity:1}}
+body[data-theme=dark]{--ink:#e4eef7;--muted:#b1c2d1;--paper:#1b2d3e;--bg:#12212f;--soft:#233c50;--line:#3c5265;--accent:#8edfc8;--accent-soft:#24483f;--error:#ff9ea8;--warning:#f1cd91;--shadow:0 9px 30px #0001;color-scheme:dark}body[data-theme=dark] .primary,body[data-theme=dark] .machine-operation,body[data-theme=dark] .tab-row button[aria-selected=true],body[data-theme=dark] .drawing-tools button[aria-pressed=true]{color:#112d28}body[data-theme=dark] .primary:hover{background:#b2efdd}body[data-theme=dark] .notice.warning{background:#413724}body[data-theme=dark] .hero{border:1px solid var(--line)}body[data-overlay=cream]:not([data-theme=dark]) .question-paper{background:#fff9e9}body[data-overlay=blue]:not([data-theme=dark]) .question-paper{background:#eef8ff}body[data-overlay=green]:not([data-theme=dark]) .question-paper{background:#eff9ee}body[data-overlay]:not([data-overlay=none])[data-theme=dark] .question-paper{background:#243849}body[data-size=large] .question-text{font-size:1.4rem}
+@media(min-width:1440px){.question-paper{min-height:440px}.canvas-shell{height:420px}}
+@media(max-width:1050px){.site-header{padding:1rem 1.3rem}.main-wrap{padding:1.2rem 1.3rem 2rem}.setup-grid{gap:1.2rem}.hero{padding:1.8rem 1.4rem}.setup-card{padding:1.3rem}.hero h1{font-size:2.65rem}.form-grid{grid-template-columns:1fr;gap:0}.question-grid{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:.85rem}.question-paper{padding:1.3rem}.paper-top{flex-wrap:wrap}.answer-panel{padding:1.1rem}.stats-strip>div{padding:.2rem .8rem}}
+@media(max-width:760px){.site-header{flex-wrap:wrap;gap:.8rem}.header-actions{width:100%;justify-content:flex-end}.brand div>span{font-size:.68rem}.main-wrap{padding:1rem .85rem 1.8rem}.setup-grid{grid-template-columns:1fr}.hero{position:static;padding:1.45rem}.hero h1{font-size:2.4rem;margin:.5rem 0 .9rem}.hero h1 br{display:none}.hero-lead{max-width:none;margin:0;font-size:.94rem;line-height:1.6}.hero-example{display:none}.hero-footer{margin-top:1.1rem}.hero-disclaimer{font-size:.64rem;margin:.85rem 0 0}.setup-card{padding:1.2rem}.form-grid{grid-template-columns:1fr 1fr;gap:.75rem}.question-grid{grid-template-columns:1fr}.question-paper{min-height:0;padding:1.25rem}.paper-top{margin-bottom:.8rem}.question-paper h2{font-size:1.32rem;margin-bottom:.8rem}.question-text{font-size:1.12rem;line-height:1.7}.paper-tools{margin-top:1rem}.paper-foot{margin-top:1rem;padding-top:.65rem}.answer-panel{padding:1.2rem}.answer-panel>.help{margin-bottom:.8rem}.session-bar{align-items:flex-start}.session-bar>div:first-child{gap:.25rem;display:flex;flex-direction:column;align-items:flex-start}.session-actions{flex-direction:column;align-items:stretch}.session-actions button{min-height:36px;padding:.45rem .55rem;font-size:.72rem}.stats-strip>div{padding:.15rem .4rem}.stats-strip span{font-size:.58rem}.stats-strip strong{font-size:1.06rem}.result-metrics{grid-template-columns:1fr 1fr;gap:.7rem}.topic-grid{grid-template-columns:1fr}.results-hero h1{font-size:2rem}.metric{padding:.85rem}.metric b{font-size:1.55rem}.site-footer{flex-direction:column;gap:.3rem;padding:1rem}.session-note{text-align:left}.dialog-heading{padding:1rem}.dialog-body{padding:1rem}.tab-row{padding:.7rem 1rem 0}.work-question{padding:.6rem 1rem;font-size:.88rem}.canvas-shell{height:330px}.drawing-tools{padding:.5rem;gap:.3rem}.drawing-tools button{padding:.45rem .6rem;min-height:36px}.drawing-tools label{font-size:.68rem}.work-dialog{width:calc(100% - .7rem)}.review-card summary{font-size:.8rem;align-items:flex-start}.review-card summary>span:last-child{font-size:.6rem}.machine-block{padding:.6rem}.number-machine{grid-template-columns:minmax(0,1fr) 17px minmax(0,1fr) 17px minmax(0,1fr);gap:.15rem}.machine-end strong{font-size:.84rem}.machine-operation{font-size:.82rem}.machine-arrow{font-size:1.25rem}.machine-end small{font-size:.61rem}}
+@media(max-width:400px){.form-grid{grid-template-columns:1fr;gap:0}.mode-options{gap:.25rem}.mode-options label{font-size:.69rem;padding:.6rem .3rem}.stats-strip strong{font-size:.97rem}.stats-strip>div{padding:.15rem .3rem}.paper-top .eyebrow{font-size:.6rem}.paper-tools button{font-size:.78rem}.hero h1{font-size:2.15rem}.brand strong{font-size:1.05rem}.tab-row button{font-size:.67rem;padding:.55rem .45rem}.machine-operation{font-size:.73rem}.machine-end strong{font-size:.77rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{body{background:white!important;color:#111!important}header,.site-footer,.results-toolbar,#toast,dialog,button,.notice,.skip-link{display:none!important}.main-wrap{max-width:none;padding:0}.panel,.review-card,.metric{box-shadow:none;border-color:#bbb;border-radius:0;background:white!important;color:#111!important}.results-hero{padding:0}.results-hero h1{font-size:22pt}.review-card summary{font-size:12pt}.review-body{display:block!important}.review-card{break-inside:avoid}.result-metrics{gap:.3rem}.metric b{font-size:18pt}.topic-summary{padding:.6rem}.review-heading{break-after:avoid}.question-grid{display:block}.question-paper{padding:1rem}.answer-panel{margin-top:1rem}.paper-tools,.answer-actions,.session-bar,.stats-strip,.progress-wrap,.session-note{display:none!important}.results-hero p,.metric span,.topic-row,.review-body,.review-part{color:#111!important}a{color:#111!important}}
+
+/* Ratio-specific components. All bar cells keep a common width; they never wrap. */
+.brand-mark{font-size:1rem;letter-spacing:-.06em}.hero-ratio{display:grid;gap:.8rem;margin:1.2rem 0}.hero-ratio>div{display:grid;grid-template-columns:65px 1fr;align-items:center;gap:.7rem}.hero-ratio b{font-size:.83rem}.hero-ratio span{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.hero-ratio i{height:34px;background:#7edbc2;border:1px solid #cbfff0;border-radius:4px}.hero-ratio i.extra{background:repeating-linear-gradient(135deg,#f2c376,#f2c376 6px,#db9a42 6px,#db9a42 9px);border-color:#ffdfab}.round-code{font:600 .66rem ui-monospace,monospace;letter-spacing:.04em;color:var(--muted);margin-bottom:1rem}.ratio-model{border:1px solid var(--line);border-radius:14px;padding:1rem;margin:1rem 0;background:var(--paper)}.bar-caption{font-size:1rem!important;font-weight:750;line-height:1.6!important;margin:0 0 1rem!important}.ratio-row{margin:1rem 0}.ratio-row-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.35rem;font-size:.83rem;margin-bottom:.4rem}.ratio-row-label>span{color:var(--muted)}.ratio-row-label b{display:inline-block;color:var(--ink);margin-left:.3rem}.ratio-grid{display:grid;gap:4px;min-width:0}.ratio-cell{height:38px;border:1.5px solid #23846c;background:#b3e8d9;border-radius:3px}.ratio-cell.colour-1{background:#c2ddee;border-color:#32769f}.ratio-cell.colour-2{background:#dfd4ee;border-color:#77609e}.ratio-cell.extra{background:repeating-linear-gradient(135deg,#ffe0a4,#ffe0a4 5px,#ecb55f 5px,#ecb55f 8px);border:2px solid #9b5b08}.ratio-cell.given{outline:1px solid var(--ink);outline-offset:1px}.bar-legend{font-size:.76rem!important;color:var(--muted);margin:.8rem 0 0!important}.bar-input label{font-weight:750;display:block;margin:.5rem 0}.bar-input input{max-width:280px}.paper-tools{flex-wrap:wrap}.hero-example strong{color:#ffe0a4}.bar-input{border-top:1px solid var(--line);padding-top:.7rem}body[data-theme=dark] .ratio-cell{filter:brightness(.88)}
+@media(max-width:420px){.ratio-model{padding:.75rem}.ratio-grid{gap:3px}.ratio-cell{height:30px;border-width:1px}.ratio-cell.extra{border-width:1.5px}.ratio-row-label{font-size:.75rem}.bar-caption{font-size:.86rem!important}.round-code{font-size:.62rem}.ratio-row-label>span{width:100%}}
+
+.fraction{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;min-width:1.5em;line-height:1.35;margin:0 .2em}.fraction>span:first-child{border-bottom:1.5px solid currentColor;padding:0 .2em .12em}.fraction>span:last-child{padding:.12em .2em 0}.choice-option .fraction{font-size:1.1rem;margin:.15rem .4rem}
+/* Adaptive overlay retains the original paper/answer layout. */
+.mode-options{grid-template-columns:repeat(2,1fr)}.mode-options label{padding:.65rem .7rem}.route-note{padding:.85rem 1rem;background:var(--soft);border-left:3px solid var(--accent);font-size:.8rem;line-height:1.7;margin:.5rem 0 1rem;border-radius:0 9px 9px 0}.adaptive-panel{border:1px solid var(--line);border-radius:15px;background:var(--paper);margin:0 0 1.1rem;padding:1rem 1.25rem;--signal:var(--muted)}.adaptive-panel[data-tone=green],.glance-card[data-tone=green]{--signal:var(--accent)}.adaptive-panel[data-tone=amber],.glance-card[data-tone=amber]{--signal:var(--warning)}.adaptive-panel[data-tone=red],.glance-card[data-tone=red]{--signal:var(--error)}.adaptive-top{display:flex;align-items:center;gap:1rem}.step-roundel{width:72px;height:72px;border-radius:13px;background:var(--soft);border:2px solid var(--signal);display:flex;align-items:center;justify-content:center;flex-direction:column;flex:none}.step-roundel>span{font-size:2rem;font-weight:850;line-height:1.1;color:var(--signal)}.step-roundel small{font-size:.55rem;font-weight:800;letter-spacing:.1em;margin-top:.3rem}.adaptive-status{flex:1;min-width:0}.adaptive-status .eyebrow{font-size:.58rem;margin:0 0 .1rem}.adaptive-status>strong{font-size:1.2rem;color:var(--signal)}.adaptive-status>p:last-child{font-size:.74rem;color:var(--muted);margin:.3rem 0 0}.adaptive-top button{font-size:.75rem;flex:none}.adaptive-top button[aria-pressed=true]{border-color:var(--error);color:var(--error);background:var(--paper)}.stage-rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.4rem;margin-top:1rem}.stage-cell{border-top:4px solid var(--line);padding-top:.4rem;font-size:.69rem;color:var(--muted);line-height:1.5}.stage-cell b{font-weight:650;display:block;overflow-wrap:anywhere}.stage-cell small{font-size:.62rem}.stage-cell.unlocked{border-top-color:var(--accent)}.stage-cell.current{color:var(--accent);border-top-width:6px;padding-top:calc(.4rem - 2px)}.stage-cell.current b{font-weight:850}.adaptive-message{margin:.65rem 0 0;font-size:.73rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.6rem}.teacher-dialog{max-width:1000px}.glance-card{padding:1rem;background:var(--soft);border:1px solid var(--line);border-left:5px solid var(--signal,var(--muted));border-radius:12px;margin:.8rem 0 1rem}.glance-card h3{margin:0 0 .5rem;font-size:1.35rem;color:var(--signal,var(--ink))}.glance-card p{margin:.4rem 0;font-size:.83rem}.glance-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.6rem;margin:.9rem 0}.glance-metrics div{padding:.7rem;background:var(--paper);border:1px solid var(--line);border-radius:10px}.glance-metrics strong{display:block;font-size:1.45rem;font-variant-numeric:tabular-nums}.glance-metrics small{display:block;color:var(--muted);font-size:.66rem;line-height:1.55}.teacher-table{border-collapse:collapse;width:100%;font-size:.78rem}.teacher-table th,.teacher-table td{padding:.6rem .65rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}.teacher-table th{background:var(--soft);font-weight:700;font-size:.68rem}.teacher-table td:not(:first-child){font-variant-numeric:tabular-nums}.teacher-table .section-row th{font-size:.79rem;color:var(--accent);padding-top:1rem}.evidence-tag{font-size:.65rem;display:inline-block;padding:.2rem .45rem;border-radius:5px;font-weight:750;white-space:nowrap;color:var(--muted);background:var(--soft);border:1px solid var(--line)}.evidence-tag.green{color:var(--accent);border-color:var(--accent)}.evidence-tag.amber{color:var(--warning);border-color:var(--warning)}.evidence-tag.red{color:var(--error);border-color:var(--error)}.teacher-rules{margin:1.2rem 0;border:1px solid var(--line);border-radius:8px;padding:.7rem}.teacher-rules summary{font-size:.82rem;cursor:pointer;font-weight:750}.teacher-rules p{font-size:.79rem;margin:.6rem 0}.adaptive-results{padding:1.25rem;margin:1rem 0}.adaptive-results h2{margin:0;font-size:1.2rem}.adaptive-results p{font-size:.84rem;margin:.5rem 0}.recent-trail{display:flex;gap:.4rem;flex-wrap:wrap;margin:.7rem 0}.recent-trail span{padding:.3rem .45rem;font-size:.68rem;border:1px solid var(--line);border-radius:5px}.recent-trail .green{color:var(--accent)}.recent-trail .red{color:var(--error)}.recent-trail .amber{color:var(--warning)}
+@media(max-width:760px){.adaptive-panel{padding:.9rem 1rem}.adaptive-status>strong{font-size:1.04rem}.adaptive-top{flex-wrap:wrap;gap:.7rem}.adaptive-top button{margin-left:auto;min-height:36px;padding:.45rem .7rem}.step-roundel{width:60px;height:60px}.step-roundel>span{font-size:1.7rem}.adaptive-status>p:last-child{font-size:.67rem}.stage-cell{font-size:.62rem}.stage-cell small{font-size:.57rem}.stage-rail{gap:.3rem}.glance-metrics{grid-template-columns:1fr 1fr}.teacher-table{font-size:.72rem}.teacher-table th,.teacher-table td{padding:.5rem .4rem}.teacher-table td:first-child{min-width:140px}.teacher-dialog{width:calc(100% - 1rem)}.header-actions{flex-wrap:wrap;justify-content:flex-start}.header-actions button{padding:.5rem .65rem}.glance-card h3{font-size:1.2rem}}
+@media print{.adaptive-panel,.teacher-dialog{display:none!important}.adaptive-results{border:1px solid #aaa;background:white!important;break-inside:avoid}.evidence-tag{color:#111!important}.stage-cell{color:#111!important}}
+
+/* Quiet learner screen: no topic path, level badges or route announcements. */
+.stats-strip{margin-bottom:1.15rem}.paper-top{margin-bottom:.7rem}.question-paper{min-height:340px}.paper-foot{justify-content:flex-start}.teacher-settings{border:1px solid var(--line);border-radius:10px;padding:.7rem .85rem;margin:.6rem 0 1rem}.teacher-settings summary{cursor:pointer;font-size:.82rem;font-weight:700;color:var(--muted)}.teacher-settings .form-grid{margin-top:.75rem}.hero{position:static;min-height:350px}.hero-footer{margin-top:2rem}.hero-lead{line-height:1.7}.paper-tools #helpSignalBtn[aria-pressed=true]{border-color:var(--error);color:var(--error)}
+@media(max-width:760px){.hero{min-height:0}.question-paper{min-height:0}.stats-strip{margin-bottom:.8rem}}
+
+.stats-strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+</style>
+<style>math{color:inherit;font-size:1.13em;vertical-align:middle} .question-text math,.choice-option math{margin:0 .1em} .teacher-table{width:100%}</style>
+</head>
+<body data-theme="light" data-overlay="none">
+<a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+ <div class="brand"><span class="brand-mark" aria-hidden="true">2:3</span><div><strong>Ratio Studio</strong><span>Foundation GCSE Mathematics · Eduqas-style practice</span></div></div>
+ <nav class="header-actions" aria-label="Display and information"><button id="teacherBtn" class="quiet" disabled>Teacher</button><button id="sourceBtn" class="quiet">About & sources</button><button id="displayBtn" class="quiet">Display</button><button id="fullBtn" class="quiet">Full screen</button></nav>
+</header>
+<main id="main" class="main-wrap">
+ <div id="storageNotice" class="notice warning" hidden></div>
+ <section id="setupView" aria-labelledby="setupTitle">
+  <div class="setup-grid">
+   <div class="hero">
+    <p class="eyebrow">EQUAL PARTS. CLEAR THINKING.</p>
+    <h1 id="setupTitle">Make sense<br>of <span>ratios.</span></h1>
+    <p class="hero-lead">One question at a time. Read carefully, show your working and check your answer.</p>
+    <div class="hero-footer"><span>Fresh questions</span><span>Work at your pace</span><span>Teacher view</span></div>
+    <p class="hero-disclaimer">Original questions informed by selected past-paper formats.<br>Independent resource, not an official Eduqas product.</p>
+   </div>
+   <div class="setup-card panel">
+    <p class="eyebrow">FOUNDATION GCSE MATHEMATICS</p><h2>Start your practice</h2>
+    <div id="resumeCard" class="resume-card" hidden><strong id="resumeTitle">A saved session is available</strong><p id="resumeInfo"></p><div class="button-row"><button id="resumeBtn" class="primary">Resume</button><button id="discardBtn" class="quiet">Discard saved session</button></div></div>
+    <form id="setupForm" novalidate>
+     <div class="field"><label for="nameInput">Name <span class="muted">(optional)</span></label><input id="nameInput" autocomplete="off" maxlength="60" placeholder="Student"></div>
+     <div class="field"><label for="componentSelect">Calculation style</label><select id="componentSelect"><option value="noncalc">Non-calculator practice</option><option value="calc">Calculator-allowed practice</option></select><p class="help">Non-calculator: whole-number answers. Calculator: exact 1 or 2 decimal places, not rounded recurring values.</p></div>
+     <details class="teacher-settings"><summary>Teacher settings</summary><div class="form-grid">
+      <div id="focusField" class="field"><label for="focusSelect">Question selection</label><select id="focusSelect"><option value="all">All ratio skills</option><option value="original">Original three sharing skills</option></select></div>
+      <div class="field"><label for="difficultySelect">Question route</label><select id="difficultySelect"><option value="adaptive" selected>Respond to answers</option><option value="build">Fixed practice · smaller numbers</option><option value="mixed">Fixed practice · Foundation mix</option><option value="stretch">Fixed practice · stretch</option></select></div>
+     </div></details>
+     <fieldset class="mode-field"><legend>Session mode</legend><div class="mode-options"><label><input type="radio" name="mode" value="journey" checked><span>Full practice</span></label><label><input type="radio" name="mode" value="practice"><span>Practice set</span></label><label><input type="radio" name="mode" value="timed"><span>Timed / free</span></label><label><input type="radio" name="mode" value="target"><span>Target score</span></label></div></fieldset>
+     <div id="adaptiveConfigNote" class="route-note">Correct answers lead to more demanding questions. A mistake gives you a fresh question on the same idea next. Take the time you need. Methods and working space are available.</div>
+     <div id="journeyField" class="help">A complete practice session, with extra support where needed. You can finish and review at any time.</div>
+     <div id="sizeField" class="field"><label for="sizeSelect">Number of questions</label><select id="sizeSelect"><option>10</option><option selected>12</option><option>20</option><option>30</option><option>60</option></select></div>
+     <div id="timeField" class="field" hidden><label for="timeSelect">Time limit</label><select id="timeSelect"><option value="300">5 minutes</option><option value="600" selected>10 minutes</option><option value="900">15 minutes</option><option value="1200">20 minutes</option><option value="1800">30 minutes</option><option value="0">No time limit</option></select><p class="help">The clock continues while you view methods or use another tab.</p></div>
+     <div id="targetField" class="field" hidden><label for="targetInput">Correct questions to finish</label><input id="targetInput" type="number" min="1" max="100" step="1" value="10"><p class="help">1 point for each complete question. Revealed and skipped questions do not earn a point.</p></div>
+     <div class="tolerance-card"><span class="tolerance-symbol">±1.00</span><div><strong>Inclusive answer tolerance</strong><p>Every numeric answer within ±1.00 is accepted.<br>Answer controls move in 0.01 steps.</p></div></div>
+     <p class="help">Tolerance is in the displayed unit: ±£1, ±1 cm, and so on. This is your practice rule, not an exam marking rule. Ratio/fraction selection questions require the correct option.</p>
+     <p id="setupError" class="error-message" role="alert" hidden></p>
+     <button type="submit" id="startBtn" class="primary start-button">Start practice <span aria-hidden="true">→</span></button>
+    </form>
+   </div>
+  </div>
+ </section>
+ <section id="sessionView" aria-labelledby="questionHeading" hidden>
+  <div class="session-bar"><div><span id="sessionName" class="student-name"></span><span id="sessionMode" class="muted"></span></div><div class="session-actions"><button id="finishBtn" class="quiet">Finish & review</button><button id="newBtn" class="quiet">New session</button></div></div>
+  <div class="stats-strip"><div><span>Question</span><strong id="questionCount">1 / 12</strong></div><div><span>Correct</span><strong id="pointsCount">0</strong></div><div><span id="clockLabel">Time used</span><strong id="clock">0:00</strong></div></div>
+  <div class="question-grid">
+   <article class="question-paper panel">
+    <div class="paper-top"><span class="eyebrow" id="paperStyle">NON-CALCULATOR PRACTICE</span></div>
+    <h2 id="questionHeading" tabindex="-1">Question 1</h2>
+    <div id="questionText" class="question-text"></div>
+    <div id="questionTable"></div>
+    <p class="question-guidance" id="questionGuidance"></p>
+    <div class="paper-tools"><button id="workBtn" class="secondary">Write / working space</button><button id="barBtn" class="quiet">Build bar model</button><button id="methodBtn" class="quiet">Method & example</button><button id="helpSignalBtn" class="quiet" aria-pressed="false">Ask for help</button></div>
+    <div class="paper-foot"><span>Show your method as you work.</span></div>
+   </article>
+   <aside class="answer-panel panel" aria-labelledby="answerHeading">
+    <div class="answer-top"><h2 id="answerHeading">Your answer</h2><span class="pill">±1.00</span></div>
+    <p class="help" id="answerInstructions">Enter up to 2 decimal places. Whole numbers are also accepted.</p>
+    <form id="answerForm" novalidate><div id="answerFields"></div><div id="checkMessage" class="notice" role="status" aria-live="polite" hidden></div><button id="checkBtn" class="primary check-button" type="submit">Check answer</button></form>
+    <button id="nextBtn" class="secondary next-button" hidden>Next question →</button>
+    <div class="answer-actions"><button id="revealBtn" class="text-button">Reveal solution</button><button id="skipBtn" class="text-button">Skip question</button></div>
+    <div id="solutionBox" class="solution-inline" hidden></div>
+    <p class="help tolerance-help">The limit includes exactly −1.00 and +1.00 from the model answer. Exact and tolerance-only answers are counted separately.</p>
+   </aside>
+  </div>
+  <p class="session-note" id="saveStatus">Progress is saved in this browser when storage is available.</p>
+ </section>
+ <section id="resultsView" hidden aria-labelledby="resultsHeading">
+  <div class="results-hero"><p class="eyebrow">PRACTICE REVIEW</p><h1 id="resultsHeading" tabindex="-1">Your session, reviewed.</h1><p id="resultsSubtitle"></p></div>
+  <div id="resultMetrics" class="result-metrics"></div>
+  <div class="results-toolbar"><button id="freshBtn" class="primary">New random round</button><button id="againBtn" class="quiet">Change settings</button><button id="csvBtn" class="quiet">Export CSV</button><button id="copyBtn" class="quiet">Copy summary</button><button id="printBtn" class="quiet">Print review</button></div>
+  <div class="notice">These are practice points, not GCSE marks or a predicted grade. Numeric answers use your ±1.00 rule; choices must be selected correctly. Written working is saved for review, but is not automatically marked.</div>
+  
+  <h2 class="review-heading">Question-by-question review</h2><div id="reviewList"></div>
+ </section>
+</main>
+<footer class="site-footer"><span>Ratio Studio · Version 4.0</span><span>One HTML file · No accounts · No external libraries</span></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="barDialog" class="method-dialog" aria-labelledby="barHeading"><div class="dialog-heading"><div><p class="eyebrow">MATCH THE KNOWN AMOUNT TO THE RIGHT PARTS</p><h2 id="barHeading">Build a bar model</h2></div><button class="close-button" data-close="barDialog" aria-label="Close bar model">✕</button></div><div class="dialog-body"><div id="barQuestion" class="example-question"></div><div id="barContent"></div><div class="bar-input"><label for="partValue">Your value for one part <span id="barUnit"></span></label><input id="partValue" type="text" inputmode="decimal" maxlength="48" placeholder="e.g. 12.50" aria-describedby="barNotice"><p id="barNotice" class="help" aria-live="polite"></p></div></div></dialog>
+<dialog id="methodDialog" class="method-dialog" aria-labelledby="methodHeading">
+ <div class="dialog-heading"><div><p class="eyebrow">UNDERSTAND THE PROCESS</p><h2 id="methodHeading">Method & worked example</h2></div><button class="close-button" data-close="methodDialog" aria-label="Close methods">✕</button></div>
+ <div class="tab-row" role="tablist" aria-label="Help content"><button id="methodTab" role="tab" aria-controls="methodContent" aria-selected="true">This question: method</button><button id="exampleTab" role="tab" aria-controls="exampleContent" aria-selected="false" tabindex="-1">Different worked example</button></div>
+ <div class="dialog-body"><section id="methodContent" role="tabpanel" aria-labelledby="methodTab"></section><section id="exampleContent" role="tabpanel" aria-labelledby="exampleTab" hidden></section></div>
+</dialog>
+<dialog id="workDialog" class="work-dialog" aria-labelledby="workHeading">
+ <div class="dialog-heading"><div><p class="eyebrow">MAKE YOUR WORKING VISIBLE</p><h2 id="workHeading">Working space</h2></div><button class="close-button" data-close="workDialog" aria-label="Close working space">✕</button></div>
+ <div class="work-question" id="workQuestion"></div>
+ <div class="drawing-tools" role="group" aria-label="Writing tools"><button id="penBtn" class="quiet" aria-pressed="true">Pen</button><button id="eraserBtn" class="quiet" aria-pressed="false">Eraser</button><label>Ink <select id="inkSelect"><option value="#152c42">Dark</option><option value="#14679b">Blue</option><option value="#a52836">Red</option></select></label><label>Width <select id="penWidth"><option value="2">Fine</option><option value="4" selected>Medium</option><option value="7">Broad</option></select></label><button id="undoBtn" class="quiet">Undo</button><button id="redoBtn" class="quiet">Redo</button><button id="clearBtn" class="quiet">Clear drawing</button></div>
+ <div id="canvasShell" class="canvas-shell"><canvas id="workCanvas" aria-label="Freehand working area. Use the typed working box below as a keyboard alternative."></canvas></div>
+ <div class="typed-working"><label for="workText">Typed working / explanation</label><textarea id="workText" maxlength="10000" placeholder="Type calculations or explain how you decided…"></textarea><p class="help">Your working stays with this question. It is not automatically marked.</p></div>
+</dialog>
+<dialog id="displayDialog" class="small-dialog" aria-labelledby="displayHeading"><div class="dialog-heading"><h2 id="displayHeading">Display settings</h2><button class="close-button" data-close="displayDialog" aria-label="Close display settings">✕</button></div><div class="dialog-body"><div class="field"><label for="themeSelect">Colour scheme</label><select id="themeSelect"><option value="light">Light</option><option value="dark">Dark</option></select></div><div class="field"><label for="sizeSelectDisplay">Text size</label><select id="sizeSelectDisplay"><option value="normal">Standard</option><option value="large">Large / classroom display</option></select></div><div class="field"><label for="overlaySelect">Reading background</label><select id="overlaySelect"><option value="none">White</option><option value="cream">Cream</option><option value="blue">Pale blue</option><option value="green">Pale green</option></select></div><p class="help">Keyboard access, visible focus and reduced-motion preferences are supported.</p></div></dialog>
+<dialog id="sourceDialog" class="source-dialog" aria-labelledby="sourceHeading"><div class="dialog-heading"><div><p class="eyebrow">TEACHER NOTES</p><h2 id="sourceHeading">About this question bank</h2></div><button class="close-button" data-close="sourceDialog" aria-label="Close about and sources">✕</button></div><div class="dialog-body">
+ <h3>Scope and scoring</h3><p>This is an independent ratio trainer for Foundation GCSE Mathematics, not a complete examination paper or an official Eduqas product. All questions are newly written. Internal demand estimates guide selection; they are not examination grades or a validated psychometric scale.</p>
+ <p>The original total-given, share-given and difference-given money questions remain. Added practice covers three-way sharing, mixtures, triangle sides, part:whole, maps, recipes, costs, an extra spending condition, and ratio reasoning. Reasoning includes simplifying ratios, common units, fractions of a whole and related quantities.</p>
+ <p><strong>Answer generation:</strong> every numeric model answer in non-calculator practice is a whole number. Every numeric model answer in calculator practice is an exact non-integer decimal terminating after 1 or 2 decimal places. These are your chosen practice restrictions; real examinations can use other answer forms. Reasoning questions use exact choices, which can include whole-number ratios or fractions.</p>
+ <p><strong>Numeric marking:</strong> every entered hundredth from model − 1.00 to model + 1.00 is accepted, including both boundaries. Input steps are 0.01. Entries with non-zero digits beyond two decimal places must be rounded before checking. Whole numbers, one decimal place and trailing zeros are accepted. Tolerance is applied independently to each requested amount, in its displayed unit.</p>
+ <p><strong>This is intentionally generous.</strong> Small answers can accept zero or a negative value within the band, and near answers need not reproduce the ratio or the total exactly. The true model answer is shown after acceptance. Exact and tolerance-only results are recorded separately. Choices require the correct option: numerical tolerance cannot turn a wrong ratio or fraction into the correct statement.</p>
+ <p>One practice point is awarded when all parts of a question have been accepted. In fixed practice, a retry is permitted and accepted parts stay locked. In responsive practice, an incorrect attempt closes and the next question uses the same structure with fresh numbers. Invalid input uses no attempt. Revealed and skipped questions earn no question point. Written working is saved for review but is not automatically marked.</p>
+ <h3>How questions are selected</h3><p>A new responsive session starts with simplifying. A correct answer selects an explicitly linked, more demanding variation: simplifying → sharing a total → one share given → a difference given → an extra condition. There is no requirement to repeat a mastered template with bigger numbers before moving on. Further branches add different reasoning demands. Topic names, route bars, levels and selection reasons stay off the learner screen.</p>
+ <p>In responsive practice, a valid wrong submission closes that attempt. Next gives the exact same variation with fresh values; no unrelated question interrupts it. Correct parts remain in the record. Success on the fresh question advances to a harder related task, whether or not help was used; support is labelled separately. Repeated mistakes may reduce arithmetic within that same structure, never reset the whole route. Blank or invalid submissions do not change the route. At the Foundation ceiling, untested applications and coverage checks replace unlimited escalation. A short check of an earlier variation is followed by a substantial application, rather than a long tail of easy work. Advanced templates may recur with fresh numbers, separated by other tasks; successful basic templates are not repeatedly recycled. These authored rules do not predict GCSE grades.</p>
+ <p>All 36 original named variations remain available, alongside 24 additional Foundation variations (60 in total). In full practice, each must have an accepted answer to finish automatically; this is coverage, not proof of mastery. Short, timed and target sessions may finish with gaps. Teacher shows the learner on this device only and records those gaps, independent answers, retries, help and tolerance use. It is not a networked class dashboard or password-protected area.</p>
+ <p>All numeric acceptances within ±1.00 count as correct, including for selection. Near and exact acceptances are reported separately. Methods or help used before acceptance are recorded as support; opening them afterwards does not change the evidence already earned. Working space is not counted as help.</p>
+ <h3>Fresh random rounds</h3><p>Each new round uses a fresh random seed. Adaptive routing chooses the next variation from answer evidence; fixed routing uses a shuffled skill cycle. Numerical duplicate checks exclude the questions already in the round and up to 120 recent questions from the previous saved session. A changed name alone does not count as new mathematics. This is not a promise that no question will ever recur. All open-ended sessions have a 500-question safety limit. In an unusually long consolidation run, a small-number variation may exhaust its fresh pool: it can then reuse older mathematics while still excluding the last 24 questions and 24 recent prior-round questions, rather than unexpectedly raising difficulty or crashing.</p>
+ <p><strong>Version 4 update · 14 October 2026:</strong> explicit correct-to-harder routes and incorrect-to-same-structure recovery. Added tasks cover combined shares, inferred ratios, percentage/remainder relationships, two price groups, coins, two-stage mixture changes and a paving-border cost. They are original questions applying Foundation skills, not a claim that all 60 forms appear on every examination.</p><h3>Source basis</h3><p>Selected primary examination questions informed the structure and wording, not copied questions. The question bank is a focused ratio practice resource, not a survey of every past paper.</p>
+ <div class="source-list">
+ <p><a href="https://www.eduqas.co.uk/media/cosjcbs1/eduqas-gcse-maths-spec-from-2015-e.pdf" target="_blank" rel="noopener noreferrer">Eduqas GCSE Mathematics specification</a><br>Printed page 10: FR3–FR9 (scales, fractions and ratios), FR11 (proportion).</p>
+ <p><a href="https://revisionmaths.com/sites/default/files/revisionmaths/documents/EMA24P1.pdf" target="_blank" rel="noopener noreferrer">Summer 2024 · Component 1 · Foundation</a><br>Q12: related quantities and common units. Q14(b): map scale. Q25: fractions and a three-way sharing problem with a spending condition.</p>
+ <p><a href="https://revisionmaths.com/sites/default/files/revisionmaths/documents/EQM31s23-c300u10-1.pdf" target="_blank" rel="noopener noreferrer">Summer 2023 · Component 1 · Foundation</a><br>Q16: ratio and unit costs. The app omits the original paving-geometry stage. Q18: side lengths from a perimeter and a fraction from a ratio.</p>
+ <p><a href="https://revisionmaths.com/sites/default/files/revisionmaths/documents/EMA24P3.pdf" target="_blank" rel="noopener noreferrer">Summer 2024 · Component 2 · Foundation</a><br>Q15: drink ingredients, ratio shares and simplification.</p>
+ <p><a href="https://revisionmaths.com/sites/default/files/revisionmaths/documents/EMA251.pdf" target="_blank" rel="noopener noreferrer">Summer 2025 · Component 1 · Foundation</a><br>Q17(b): percentage and remainder to a simplest ratio. Q19: tips shared by hours, including half/double relationships. New quantities and answer requests are used here.</p><p><a href="https://www.eduqas.co.uk/media/1cpmvxgf/gcse-mathematics-examiners-report-summer-2025.pdf" target="_blank" rel="noopener noreferrer">Official Summer 2025 examiner report</a><br>Foundation C1 Q19: interpreting a tips-sharing ratio. Foundation C2 Q19: coin values versus numbers of coins. The new coins questions practise these distinctions, not a verbatim paper question.</p></div><p class="help">Paper PDFs are authored by WJEC CBAC Ltd and hosted by Revision Maths. Some paper response formats are adapted to choice selection here. Source links require the internet; this app does not. Source notes retained from the earlier build; the sources were not re-audited for this interface and selection revision.</p>
+ <p><a href="https://www.eduqas.co.uk/media/uq2dcsqv/eduqas-gcse-mathematics-final-report-s24.pdf" target="_blank" rel="noopener noreferrer">Official Summer 2024 examiner report</a>: Foundation Component 1, Q12 addresses simplest form and common units; Q25(b) reports the mistake of treating the amount spent as the whole prize. The practice questions address such decisions through clear but less signposted wording. Extra variants beyond that paper are newly authored applications of the specification, not claims that each appeared in an examination.</p>
+ <h3>Saving and privacy</h3><p>Where permitted, progress and your optional name are stored only in this browser. This app sends no learner data and has no analytics. Shared computers may retain the previous learner’s saved session; discard it before starting. Version 4 uses a separate browser-storage key. Earlier saved rounds are left untouched; open the earlier app to review or resume them. Saving may be unavailable with local files, private browsing or restricted storage.</p>
+</div></dialog>
+<dialog id="teacherDialog" class="teacher-dialog" aria-labelledby="teacherHeading"><div class="dialog-heading"><div><p class="eyebrow">LOCAL PROGRESS · NO GRADE PREDICTION</p><h2 id="teacherHeading">Teacher glance</h2></div><button class="close-button" data-close="teacherDialog" aria-label="Close teacher glance">✕</button></div><div class="dialog-body"><p class="help">This learner on this device only. Screens on other computers are not linked.</p><div id="teacherSummary"></div><div class="button-row"><button id="teacherExportBtn" class="quiet">Export progress CSV</button></div><div id="teacherStages"></div><details class="teacher-rules"><summary>How to read this evidence</summary><p>Green: an independently accepted first check. Amber: accepted after retry or help. Red: a revisit is needed. Grey: not yet checked. The ±1.00 rule also applies to progression; the tolerance column lets you distinguish approximate acceptances from exact work.</p><p>A single independent success is evidence on one generated question, not proof of mastery. This is a rule-based teaching sequence, not a GCSE grade prediction. Unseen variations stay explicitly untested. Methods opened after acceptance do not change the evidence for that answer.</p></details><h3>Variation coverage</h3><div id="teacherCoverage"></div></div></dialog>
+<dialog id="confirmDialog" class="small-dialog" aria-labelledby="confirmTitle"><div class="dialog-heading"><h2 id="confirmTitle">Continue?</h2></div><div class="dialog-body"><p id="confirmText"></p><div class="button-row"><button id="confirmCancel" class="quiet">Cancel</button><button id="confirmOK" class="primary">Continue</button></div></div></dialog>
+<noscript><p class="notice warning">JavaScript must be enabled to use this trainer.</p></noscript>
+<script>/* Ratio Studio — independent Foundation practice. All quantity arithmetic uses integer hundredths. */
+(function(root){
+'use strict';
+const VERSION=4, TOLERANCE=100;
+const TYPES={
+ simplify:'Simplify ratios',
+ total:'Share a total between two people', known:'Find a total from one share', difference:'Find a total from a difference',
+ three:'Share between three people', mixture:'Mixtures and ingredients', triangle:'Triangle sides from a perimeter',
+ partwhole:'Part-to-whole ratios', scale:'Map scales and distances', recipe:'Scale a recipe',
+ cost:'Ratio and total cost', changed:'Sharing with an extra condition', reasoning:'Ratio notation and reasoning'
+};
+const ORIGINAL=['total','known','difference'];
+const NAMES=['Amira','Ben','Chloe','Daniel','Ellie','Faisal','Grace','Hassan','Isla','Jasmine','Kai','Liam','Maya','Noah','Olivia','Priya','Ruby','Sam','Tariq','Zara','William','Sarah','Mohammed','Aisha','David','Fatima','Christian','Maryam','John','Ali','Emily','Jacob','Yusuf','Hannah','Ahmed','Adam','Zainab','James','Layla'];
+function rng(seed){let s=seed>>>0;return ()=>{s=(s+0x6D2B79F5)>>>0;let t=s;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;};}
+function hash(a,b){let t=(a^Math.imul(b+1,0x9e3779b9))>>>0;t=Math.imul(t^t>>>16,0x85ebca6b);t=Math.imul(t^t>>>13,0xc2b2ae35);return (t^t>>>16)>>>0;}
+function roundRatio(n,d){n=BigInt(n);d=BigInt(d);if(d<=0n)throw new Error('Invalid denominator');const sign=n<0n?-1n:1n;n=n<0n?-n:n;const out=sign*((2n*n+d)/(2n*d));if(out>9007199254740991n||out< -9007199254740991n)throw new Error('Number too large');return Number(out);}
+function fmt(c){if(!Number.isSafeInteger(c))throw new Error('Expected integer hundredths');return (c<0?'−':'')+Math.floor(Math.abs(c)/100).toLocaleString('en-GB')+'.'+String(Math.abs(c)%100).padStart(2,'0');}
+function inputFmt(c){return (c<0?'-':'')+Math.floor(Math.abs(c)/100)+'.'+String(Math.abs(c)%100).padStart(2,'0');}
+function shortC(c){return fmt(c).replace(/\.00$/,'').replace(/(\.\d)0$/,'$1');}
+function dec(n){return String(Number(n.toFixed(6)));}
+const pct=p=>dec(p/10)+'%';
+const money=c=>'£'+fmt(c);
+function show(c,u){return u==='£'?money(c):shortC(c)+(u?' '+u:'');}
+function parse(raw,unit=''){
+ let s=String(raw??'').trim().replace(/−/g,'-').replace(/·/g,'.');
+ if(!s)return {ok:false,error:'Enter an answer first.'};
+ if(s.length>48)return {ok:false,error:'That entry is too long.'};
+ if(unit==='£')s=s.replace(/^£\s*/,'').replace(/\s*GBP$/i,'');
+ else if(unit==='%')s=s.replace(/\s*%$/,'');
+ else if(['g','kg','m','cm','km','ml','litres'].includes(unit))s=s.replace(new RegExp('\\s*'+unit+'$','i'),'');
+ if(!/^[+-]?(?:(?:\d{1,3}(?:,\d{3})+)|\d+|\d*\.\d+)(?:\.\d*)?$/.test(s))return {ok:false,error:'Use a number, for example 24.50. Do not enter a calculation or a different unit.'};
+ s=s.replace(/,/g,'');
+ if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(s))return {ok:false,error:'Check the decimal point.'};
+ let sign=1;if(s[0]==='-'){sign=-1;s=s.slice(1);}else if(s[0]==='+')s=s.slice(1);
+ const [whole='0',fraction='']=s.split('.');
+ if(fraction.length>2&&/[1-9]/.test(fraction.slice(2)))return {ok:false,error:'Round your final answer to 2 decimal places, then enter it again.'};
+ const c=sign*(Number(whole||0)*100+Number((fraction+'00').slice(0,2)));
+ if(!Number.isSafeInteger(c)||Math.abs(c)>1e12)return {ok:false,error:'That number is outside this trainer’s input range.'};
+ return {ok:true,cents:c===0?0:c};
+}
+function mark(raw,part){
+ if(part.kind==='choice')return {valid:part.options.some(x=>x.id===String(raw)),accepted:String(raw)===part.correct,exact:String(raw)===part.correct,raw:String(raw??'')};
+ const p=parse(raw,part.unit);if(!p.ok)return {valid:false,error:p.error};
+ const diff=p.cents-part.answer;
+ return {valid:true,accepted:Math.abs(diff)<=TOLERANCE,exact:diff===0,diff,cents:p.cents,raw:String(raw)};
+}
+function numeric(label,unit,answer){return {kind:'numeric',label,unit,answer};}
+function option(label,options,correct){return {kind:'choice',label,options:options.map((text,i)=>({id:String(i),text})),correct:String(correct)};}
+function shuffled(a,r){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function gcd(a,b){while(b)[a,b]=[b,a%b];return a;}
+function fraction(a,b){const g=gcd(a,b);return (a/g)+'/'+(b/g);}
+const PAIRS=[];
+for(let a=1;a<=9;a++)for(let b=1;b<=9;b++)if(a!==b&&gcd(a,b)===1)PAIRS.push([a,b]);
+const TRIANGLES=[];
+for(let a=2;a<=7;a++)for(let b=a+1;b<=9;b++)for(let c=b+1;c<=11;c++)if(a+b>c&&gcd(gcd(a,b),c)===1)TRIANGLES.push([a,b,c]);
+/** Construct a scale factor whose requested products are all integers or all non-integer hundredths.
+ *  Candidate pools are finite. No unbounded regeneration loops are used. */
+function unitValue(nc,coefficients,pick,int,level=2){
+ if(nc)return int(2,level===1?10:level===2?18:30)*100;
+ const precision=pick([1,2]),suffixes=[];
+ for(let c=precision===1?10:1;c<100;c+=precision===1?10:1){
+  if(precision===2&&c%10===0)continue;
+  if(coefficients.every(x=>(x*c)%100!==0))suffixes.push(c);
+ }
+ const suffix=pick(suffixes.length?suffixes:[1,3,7,9,11,13]);
+ return int(2,level===1?10:24)*100+suffix;
+}
+function generate(type,seed,component='noncalc',level=2,forcedVariant=null){
+ if(type==='simplify')return generateVariant(['s-basic','s-order','s-three'][((forcedVariant??0)%3)],seed,component,level);
+ if(!TYPES[type]||!['noncalc','calc'].includes(component)||![1,2,3].includes(level))throw new Error('Invalid question settings');
+ const r=rng(seed),pick=a=>{if(!a.length)throw new Error('Empty generator pool');return a[Math.floor(r()*a.length)];},int=(a,b)=>a+Math.floor(r()*(b-a+1));
+ const nc=component==='noncalc',names=shuffled(NAMES,r).slice(0,3),[n1,n2,n3]=names;
+ const drawnVariant=int(0,3),v=forcedVariant===null?drawnVariant:forcedVariant;
+ let rat=pick(PAIRS.filter(x=>level>1||Math.max(...x)<=5));
+ const q={type,seed:seed>>>0,component,level,variant:v,title:TYPES[type],lines:[],parts:[],method:[],solution:[],data:{},table:null,machine:null,bar:null,source:'Eduqas specification FR6 — ratio in context'};
+ const ratio=xs=>xs.join(' : '),sum=xs=>xs.reduce((a,b)=>a+b,0),num=c=>shortC(c),quantity=(c,u)=>u==='£'?money(c):num(c)+' '+u;
+ function bar(parts,labels,unit,relation,description,highlight=[]){q.bar={parts,labels,unit,relation,description,highlight};}
+ function standardSteps(parts,k,unit,knownKind='total',idx=0){
+  const count=knownKind==='total'?sum(parts):knownKind==='difference'?Math.abs(parts[0]-parts[1]):parts[idx];
+  const knownValue=count*k;
+  q.method=[knownKind==='difference'?'The difference between the shares matches the extra parts, not the total number of parts.':knownKind==='part'?'Match the given amount to that person’s number of ratio parts.':'Add the ratio parts to find how many parts make the whole.',
+   `Find one part: divide the given ${knownKind==='part'?'share':knownKind} by ${count}.`,
+   'Multiply one part by the number of parts in each requested quantity.'];
+  q.solution=[`${count} part${count===1?' represents':'s represent'} ${quantity(knownValue,unit)}.`,`One part = ${quantity(knownValue,unit)} ÷ ${count} = ${quantity(k,unit)}.`];
+ }
+ if(['total','known','difference','three'].includes(type)){
+  if(type==='three'){
+   const candidates=[];for(let c=1;c<=9;c++)if(!rat.includes(c))candidates.push(c);rat=[...rat,pick(candidates)];
+  }
+  const count=sum(rat),diff=Math.abs(rat[0]-rat[1]),k=unitValue(nc,[...rat,count,diff],pick,int,level),shares=rat.map(x=>x*k),total=count*k;
+  const people=type==='three'?names:names.slice(0,2),order=people.join(' : ');
+  const intro=type==='three'?`${n1}, ${n2} and ${n3} share a prize of ${money(total)}.`:type==='total'?`${n1} and ${n2} share ${money(total)}.`:`${n1} and ${n2} share some money.`;
+  q.lines=[intro,`The ratio ${order} is ${ratio(rat)}.`];
+  if(type==='total'||type==='three'){
+   q.lines.push('Work out how much money each person receives.');q.parts=people.map((name,i)=>numeric(name+' receives','£',shares[i]));standardSteps(rat,k,'£');
+   bar(rat,people,'£','total',`All ${count} parts together represent ${money(total)}.`);
+  }else if(type==='known'){
+   const idx=v%2;q.lines.push(`${people[idx]} receives ${money(shares[idx])}.`,'Work out the total amount of money they share.');
+   q.parts=[numeric('Total amount shared','£',total)];q.data.knownIndex=idx;standardSteps(rat,k,'£','part',idx);
+   bar(rat,people,'£','part',`${people[idx]}’s ${rat[idx]} parts represent ${money(shares[idx])}.`,[idx]);
+  }else{
+   const big=rat[0]>rat[1]?0:1,small=1-big;q.lines.push(`${people[big]} receives ${money(diff*k)} more than ${people[small]}.`,'Work out the total amount of money they share.');q.parts=[numeric('Total amount shared','£',total)];standardSteps(rat,k,'£','difference');
+   bar(rat,people,'£','difference',`Only the ${diff} extra part${diff===1?' represents':'s represent'} the difference of ${money(diff*k)}.`);
+  }
+  if(type==='total'||type==='three')shares.forEach((s,i)=>q.solution.push(`${people[i]}: ${rat[i]} × ${money(k)} = ${money(s)}.`));
+  else q.solution.push(`Total = (${rat.join(' + ')}) × ${money(k)} = ${money(total)}.`);
+  q.data={...q.data,ratio:rat,total,shares,difference:diff*k};
+  q.source=type==='three'?'Specification FR6; 2024 Foundation C1 Q25 — three-way money sharing':'Original uploaded quiz — '+TYPES[type];
+ }
+ else if(type==='mixture'){
+  const contexts=[{items:['orange juice','lemonade'],unit:'ml',what:'a fruit drink'},
+   {items:['blue paint','white paint'],unit:'ml',what:'a paint mixture'},
+   {items:['sand','cement'],unit:'kg',what:'a model batch'},
+   {items:['oats','raisins'],unit:'g',what:'a breakfast mixture'}],ct=contexts[v%4],parts=rat;
+  const k=unitValue(nc,[...parts,sum(parts)],pick,int,level),shares=parts.map(x=>x*k),total=sum(shares),fromPart=v%2===1,idx=v%2;
+  q.lines=[`${n1} makes ${ct.what}.`,`The ratio ${ct.items[0]} : ${ct.items[1]} is ${ratio(parts)}.`];
+  if(fromPart)q.lines.push(`${n1} uses ${quantity(shares[0],ct.unit)} of ${ct.items[0]}.`);
+  else q.lines.push(`The total amount of the mixture is ${quantity(total,ct.unit)}.`);
+  q.lines.push(`Work out the amount of ${ct.items[1]} needed.`);
+  if(v===2)q.lines.push('This is a maths model, not a construction mix specification.');
+  q.parts=[numeric('Amount of '+ct.items[1],ct.unit,shares[1])];standardSteps(parts,k,ct.unit,fromPart?'part':'total',0);
+  q.solution.push(`${ct.items[1]}: ${parts[1]} × ${quantity(k,ct.unit)} = ${quantity(shares[1],ct.unit)}.`);
+  bar(parts,ct.items,ct.unit,fromPart?'part':'total',fromPart?`${parts[0]} parts represent ${quantity(shares[0],ct.unit)}.`:`All ${sum(parts)} parts represent ${quantity(total,ct.unit)}.`,fromPart?[0]:[]);
+  q.data={ratio:parts,given:fromPart?shares[0]:total,fromPart,unit:ct.unit};q.source='2024 Foundation C2 Q15(a) — find an ingredient from a ratio and total; FR6 mixing';
+ }
+ else if(type==='triangle'){
+  rat=pick(TRIANGLES.filter(x=>level>1||sum(x)<=18));const k=unitValue(nc,rat,pick,int,level),perimeter=sum(rat)*k,shares=rat.map(x=>x*k);
+  q.lines=[`The lengths of the sides of a triangle are in the ratio ${ratio(rat)}.`,`The perimeter of the triangle is ${quantity(perimeter,'cm')}.`,'Work out the lengths of all three sides, in increasing order.'];
+  q.parts=['Shortest side','Middle side','Longest side'].map((s,i)=>numeric(s,'cm',shares[i]));standardSteps(rat,k,'cm');
+  shares.forEach((s,i)=>q.solution.push(`${q.parts[i].label}: ${rat[i]} × ${quantity(k,'cm')} = ${quantity(s,'cm')}.`));
+  bar(rat,['Shortest side','Middle side','Longest side'],'cm','total',`The ${sum(rat)} parts make the full perimeter of ${quantity(perimeter,'cm')}.`);
+  q.data={ratio:rat,perimeter};q.source='2023 Foundation C1 Q18(b) — share a perimeter between three sides';
+ }
+ else if(type==='partwhole'){
+  const a=Math.min(...rat),b=Math.max(...rat),other=b-a,k=unitValue(nc,[a,b,other],pick,int,level),total=b*k,part=a*k;
+  q.lines=[`${n1} cuts a piece of ribbon.`,`The ratio cut piece : original whole ribbon is ${a} : ${b}.`,`The original ribbon is ${quantity(total,'cm')} long.`,'Work out the length of ribbon left after cutting off the piece.'];
+  q.parts=[numeric('Ribbon left','cm',other*k)];
+  q.method=[`The ${b} parts represent the WHOLE ribbon; do not add ${a} and ${b}.`,`The ribbon left has ${b} − ${a} = ${other} parts.`,`Divide the original length by ${b}, then multiply by ${other}.`];
+  q.solution=[`Remaining parts = ${b} − ${a} = ${other}.`,`One part = ${quantity(total,'cm')} ÷ ${b} = ${quantity(k,'cm')}.`,`Ribbon left = ${other} × ${quantity(k,'cm')} = ${quantity(other*k,'cm')}.`];
+  bar([b,a],['Original whole','Cut piece'],'cm','difference',`The ${other} extra parts of the whole represent the ribbon left.`);
+  q.data={ratio:[a,b],total};q.source='Specification FR6 — distinguish part:whole from part:part';
+ }
+ else if(type==='scale'){
+  const scale=pick([10000,20000,25000,40000,50000,80000,100000,125000,150000,200000,250000,300000,400000,500000,750000,1000000]),reverse=v%2===1,cs=[];
+  for(let map=100;map<=4000;map++){
+   if(map*scale%100000)continue;const real=map*scale/100000;
+   if(nc?(map%100===0&&real%100===0):((reverse?map:real)%100!==0))cs.push(map);
+  }
+  const map=pick(cs),real=map*scale/100000,places=pick([['a library','a swimming pool'],['two road junctions',''],['a campsite','a lake'],['a railway station','a museum']]);
+  q.lines=[`A map has a scale of 1 : ${scale.toLocaleString('en-GB')}.`];
+  q.lines.push(reverse?`The actual distance along a route is ${quantity(real,'km')}.`:`The distance between ${places[0]}${places[1]?' and '+places[1]:''} measures ${quantity(map,'cm')} on the map.`);
+  q.lines.push(reverse?'Work out the length of this route on the map, in centimetres.':'Work out the actual distance, in kilometres.');
+  q.parts=[numeric(reverse?'Distance on the map':'Actual distance',reverse?'cm':'km',reverse?map:real)];
+  q.method=reverse?['Convert the actual kilometres to centimetres: 1 km = 100,000 cm.',`Divide this distance by ${scale.toLocaleString('en-GB')}.`,'The answer is the map distance in centimetres.']:[`Multiply the map distance by ${scale.toLocaleString('en-GB')} to get real centimetres.`,'There are 100,000 cm in 1 km.','Divide the real centimetres by 100,000.'];
+  q.solution=reverse?[`Real distance = ${num(real)} × 100,000 = ${num(real*100000)} cm.`,`Map distance = ${num(real*100000)} ÷ ${scale.toLocaleString('en-GB')} = ${quantity(map,'cm')}.`]:[`Real distance = ${num(map)} × ${scale.toLocaleString('en-GB')} = ${num(map*scale)} cm.`,`In kilometres: ${num(map*scale)} ÷ 100,000 = ${quantity(real,'km')}.`];
+  q.data={scale,map,real,reverse};q.source='2024 Foundation C1 Q14(b) — map scale and cm to km; FR3';
+ }
+ else if(type==='recipe'){
+  const oldServings=pick([4,6,8,10]),newServings=pick([3,5,7,9,12,15,18].filter(x=>x!==oldServings));
+  const unit=nc?'g':'kg',candidates=[];
+  for(let n=nc?20:1;n<=(nc?120:40);n++){
+   const per=nc?n*100:n,answer=per*newServings;
+   if(nc||answer%100!==0)candidates.push(per);
+  }
+  const per1=pick(candidates),per2=pick(candidates.filter(x=>x!==per1)),amounts=[per1*oldServings,per2*oldServings],answers=[per1*newServings,per2*newServings];
+  q.lines=[`A recipe makes ${oldServings} portions of a snack mixture.`,`The table shows the amounts of the two ingredients.`,`${n1} wants to make ${newServings} portions using the same recipe.`,'Work out the amount of each ingredient needed.'];
+  q.table={headers:['Ingredient',`Amount for ${oldServings} portions`],rows:[['Oats',quantity(amounts[0],unit)],['Dried fruit',quantity(amounts[1],unit)]]};
+  q.parts=['Oats','Dried fruit'].map((x,i)=>numeric(x,unit,answers[i]));
+  q.method=[`Find the amount for 1 portion by dividing each table amount by ${oldServings}.`,`Multiply each result by ${newServings}.`,'Keep the same scale factor for both ingredients.'];
+  q.solution=amounts.map((a,i)=>`${q.parts[i].label}: ${quantity(a,unit)} ÷ ${oldServings} × ${newServings} = ${quantity(answers[i],unit)}.`);
+  q.data={oldServings,newServings,amounts,unit};q.source='Specification FR6 and FR11 — scaling quantities in proportion (new recipe context)';
+ }
+ else if(type==='cost'){
+  const countUnit=int(2,level===1?7:15),counts=rat.map(x=>x*countUnit),total=sum(counts),price1=int(2,7)*100,pc=[];
+  for(let c=1;c<100;c++)if(counts[1]*c%100!==0)pc.push(c);
+  // A count divisible by 100 cannot occur: ratio entries <=9 and countUnit <=15.
+  const price2=int(8,13)*100+(nc?0:pick(pc)),answer=counts[0]*price1+counts[1]*price2;
+  const labels=v%2===0?['Grey slabs','White slabs']:['Standard tickets','Premium tickets'];
+  q.lines=v%2===0?[`${n1} buys ${total} paving slabs.`,`The ratio grey slabs : white slabs is ${ratio(rat)}.`]:[`A club sells ${total} tickets.`,`The ratio standard tickets : premium tickets is ${ratio(rat)}.`];
+  q.lines.push(v%2===0?'Work out the total cost of the slabs.':'Work out the total ticket income.','There are no other charges or discounts.');
+  q.table={headers:[v%2===0?'Slab colour':'Ticket type','Price each'],rows:labels.map((x,i)=>[x,money([price1,price2][i])])};
+  q.parts=[numeric(v%2===0?'Total cost':'Total income','£',answer)];
+  q.method=['Use the ratio to find how many of each type there are.','Multiply each number by its own price.','Add the two costs; do not average the prices.'];
+  q.solution=[`One part = ${total} ÷ ${sum(rat)} = ${countUnit}.`,`${labels[0]}: ${counts[0]} × ${money(price1)} = ${money(counts[0]*price1)}.`,`${labels[1]}: ${counts[1]} × ${money(price2)} = ${money(counts[1]*price2)}.`,`Total = ${money(answer)}.`];
+  bar(rat,labels,v%2===0?'slabs':'tickets','total',`All ${sum(rat)} parts represent ${total} ${v%2===0?'slabs':'tickets'}.`);
+  q.data={ratio:rat,total,prices:[price1,price2]};q.source='2023 Foundation C1 Q16 — combining a ratio with two unit costs; geometry stage omitted';
+ }
+ else if(type==='changed'){
+  const a=int(1,3),m=int(2,3),c=m*a+int(1,4),b=pick([2,3,4,5,6,7,8].filter(x=>x!==a&&x!==c));rat=[a,b,c];
+  const divisor=c-m*a,k=unitValue(nc,[a,b,c,divisor],pick,int,level),spent=divisor*k;
+  q.lines=[`${n1}, ${n2} and ${n3} share prize money.`,`The ratio ${n1} : ${n2} : ${n3} is ${ratio(rat)}.`,`${n3} spends ${money(spent)}.`,`${n3} now has exactly ${m===2?'twice':m+' times'} as much money as ${n1} originally received.`,`Work out how much money ${n2} originally received.`];
+  q.parts=[numeric(n2+' originally received','£',b*k)];
+  q.method=[`${n1}’s original share is ${a} parts, so ${m} times that share is ${m*a} parts.`,`${n3} started with ${c} parts. The money spent therefore represents ${c} − ${m*a} parts.`,'Find one part using the amount spent, then find the requested original share.'];
+  q.solution=[`Spent amount represents ${c} − (${m} × ${a}) = ${divisor} parts.`,`One part = ${money(spent)} ÷ ${divisor} = ${money(k)}.`,`${n2} originally received ${b} × ${money(k)} = ${money(b*k)}.`];
+  bar(rat,names,'£','changed',`${n3}’s original bar has ${c} parts. After spending, ${m*a} parts remain; the last ${divisor} parts were spent.`,[2]);q.bar.cutAt=m*a;
+  q.data={ratio:rat,multiplier:m,spent};q.source='2024 Foundation C1 Q25(b) — three-way sharing with a spending condition';
+ }
+ else if(type==='reasoning'){
+  const [a,b]=rat,k=int(2,12),swap=v%4;
+  let correct,options;
+  if(swap===0){
+   correct=ratio(rat);options=[correct,ratio([a*2,b*2]),ratio([b,a]),ratio([a,a+b])];
+   q.lines=[`A jar contains ${a*k} red counters and ${b*k} blue counters.`,'Select the ratio red counters : blue counters in its simplest form.'];
+   q.method=['Keep the colours in the order requested.','Divide both quantities by their highest common factor.','A correct simplest ratio uses whole numbers with no common factor greater than 1.'];
+   q.solution=[`The highest common factor of ${a*k} and ${b*k} is ${k}.`,`${a*k} : ${b*k} = ${correct}.`];q.data={counts:[a*k,b*k]};
+  }else if(swap===1){
+   const metres=int(1,6),cm=pick([15,25,30,35,40,45,60,75]),g=gcd(metres*100,cm),x=metres*100/g,y=cm/g;
+   correct=`${x} : ${y}`;const smallg=gcd(metres,cm);options=[correct,`${metres/smallg} : ${cm/smallg}`,`${y} : ${x}`,`${x*2} : ${y*2}`];
+   q.lines=[`A red ribbon is ${metres} m long.`,`A blue ribbon is ${cm} cm long.`,'Select the ratio red length : blue length in simplest form.'];
+   q.method=['Convert both lengths into the same unit before making the ratio.','1 m = 100 cm.','Then divide both numbers by their highest common factor.'];
+   q.solution=[`${metres} m = ${metres*100} cm.`,`${metres*100} : ${cm} = ${correct}.`];q.data={metres,cm};q.source='2024 Foundation C1 Q12(b) — common units before simplifying; converted to a selection';
+  }else if(swap===2){
+   correct=fraction(b,a+b);options=[correct,fraction(a,a+b),fraction(b,a),fraction(a,a+2*b)];
+   q.lines=[`A box contains ${a*k+b*k} buttons.`,`The ratio yellow buttons : green buttons is ${ratio(rat)}.`,'Select the fraction of all the buttons that are green.'];
+   q.method=['The denominator counts ALL the ratio parts.','The numerator counts only the requested colour.','Simplify the fraction when possible.'];
+   q.solution=[`Total parts = ${a} + ${b} = ${a+b}.`,`Green buttons are ${correct} of the total.`];q.data={ratio:rat,count:(a+b)*k};q.source='2023 Foundation C1 Q18(a) and 2024 C1 Q25(a) — ratio to a fraction';
+  }else{
+   const times=int(2,5),twice=int(2,4),base=int(2,15),rs=[1,times,times*twice];correct=ratio(rs);options=[correct,ratio([times*twice,times,1]),ratio([1,times,twice]),ratio(rs.map(x=>x*2))];
+   q.lines=[`${n1} has ${base} badges.`,`${n2} has ${times} times as many badges as ${n1}.`,`${n3} has ${twice} times as many badges as ${n2}.`,`Select the ratio ${n1} : ${n2} : ${n3} in simplest form.`];
+   q.method=['Write down the quantity for each person in the given order.','The last multiplication applies to the second person’s amount.','Divide all three amounts by their highest common factor.'];
+   q.solution=[`${n1}: ${base}; ${n2}: ${base*times}; ${n3}: ${base*times*twice}.`,`Divide all three by ${base}: ${correct}.`];q.data={base,times,twice};q.source='2024 Foundation C1 Q12(a) — derive a ratio from related quantities';
+  }
+  options=shuffled([...new Set(options)],r);q.parts=[option('Correct statement',options,options.indexOf(correct))];
+  if(swap===0)q.source='Specification FR5 — simplest ratios; 2024 Foundation C2 Q15(b)';
+ }
+ if(!q.parts.length)throw new Error('Missing answer');
+ for(const p of q.parts){if(p.kind==='numeric'&&(!Number.isSafeInteger(p.answer)||p.answer<=0||(nc?p.answer%100!==0:p.answer%100===0)))throw new Error('Answer precision invariant failed: '+type);}
+ // Numeric content, not a different name, defines a new mathematical question.
+ q.signature=type+':'+JSON.stringify(q.data);
+ return q;
+}
+// A finite, named coverage map. Stages describe this teaching route, never GCSE grades.
+const STAGES=['','Simplify & interpret','Share a total','Work from one share','Use differences & links','Extra conditions'];
+const VARIANTS=[
+ ['s-basic',1,'simplify','Simplify two numbers',1],['s-order',1,'simplify','Simplify in the requested order',1],['s-three',1,'simplify','Simplify three quantities',2],['s-units',1,'reasoning','Use common units before simplifying',3],
+ ['t-both',2,'total','Total given: find both shares',1],['t-one',2,'total','Total given: find just one share',1],['t-order',2,'total','Total given: reversed answer order',2],['t-length',2,'total','Share a length, not money',2],['t-three',2,'three','Share a total three ways',2],['t-triangle',2,'triangle','Share a triangle perimeter',3],['t-mixture',2,'mixture','Whole mixture given',2],['t-recipe',2,'recipe','Scale a recipe up',3],['t-fraction',2,'reasoning','Ratio to a fraction of the whole',2],
+ ['k-total',3,'known','One share given: find the total',1],['k-other',3,'known','One share given: find the other share',1],['k-small',3,'known','Identify the smaller share first',2],['k-three',3,'known','One of three shares given',2],['k-mixture',3,'mixture','One ingredient given',2],['k-recipe',3,'recipe','Scale a recipe down',3],['k-map',3,'scale','Map distance to actual distance',3],['k-related',3,'reasoning','Related quantities in words',2],
+ ['d-total',4,'difference','Difference given: find the total',1],['d-share',4,'difference','Difference given: find one share',1],['d-less',4,'difference','Less-than wording and answer order',2],['d-three',4,'difference','Difference between two of three shares',2],['d-whole',4,'partwhole','Part-to-whole: find what remains',2],['d-map',4,'scale','Actual distance back to map distance',3],['d-slabs',4,'cost','Share quantities then price both',3],['d-tickets',4,'cost','Ratio and ticket income',3],
+ ['x-spent',5,'changed','Spending condition: find an original share',1],['x-received',5,'changed','Added money: compare with an original share',1],['x-transfer',5,'changed','A transfer makes the shares equal',2],['x-remains',5,'changed','A fraction of one share is left',2],['x-deduct',5,'changed','A fixed amount is removed before sharing',2],['x-total',5,'changed','Spending condition: find the original total',3],['x-mixture',5,'changed','Add one ingredient to change a mixture ratio',3]
+].map(([id,stage,type,label,demand])=>({id,stage,type,label,demand}));
+/* Additional Foundation applications. The 36 supplied generators are retained. */
+const EXTRA_SPECS=[
+ ['s-decimal',1,'simplify','Simplify a ratio containing decimals',2],
+ ['s-fraction',1,'simplify','Simplify a ratio containing fractions',3],
+ ['s-percent',1,'reasoning','Percentage and remainder to a ratio',2],
+ ['s-leftover',1,'reasoning','Find the other amount before simplifying',2],
+ ['t-hours',2,'three','Use a table of hours as the sharing ratio',2],
+ ['t-difference',2,'total','Total given: find the difference, not a share',2],
+ ['t-percentage',2,'reasoning','Express a ratio share as a percentage',3],
+ ['k-pair',3,'known','Two of three shares combined are given',2],
+ ['k-hours',3,'known','Work from earnings and hours worked',2],
+ ['k-fraction-total',3,'partwhole','A fraction identifies one share; find the rest',2],
+ ['d-triangle-gap',4,'triangle','Side difference given: recover the perimeter',2],
+ ['d-coins-count',4,'cost','Ratio of coin counts: calculate total value',2],
+ ['d-coins-value',4,'cost','Ratio of coin values: recover coin counts',3],
+ ['d-mixture-gap',4,'mixture','Difference between two of three ingredients',2],
+ ['d-linked',4,'known','Link two ratios through a common quantity',3],
+ ['d-recipe-shortage',4,'recipe','Scale a recipe, then subtract existing stock',3],
+ ['d-cost-budget',4,'cost','Ratio and prices: calculate money remaining',3],
+ ['x-tips',5,'changed','Derive three shares from half/double relationships',2],
+ ['x-two-spend',5,'changed','Two withdrawals leave equal amounts',2],
+ ['x-ratio-after',5,'changed','Find the new ratio after a transfer',2],
+ ['x-retained',5,'changed','Different fractions of two shares remain',3],
+ ['x-mixture-poured',5,'changed','Pour out a mixture, then add one ingredient',3],
+ ['x-blend',5,'mixture','Combine two mixtures with different ratios',3],
+ ['x-paving',5,'cost','Find a border quantity, share it and calculate cost',3]
+];
+const EXTRA_IDS=new Set(EXTRA_SPECS.map(x=>x[0]));
+VARIANTS.push(...EXTRA_SPECS.map(([id,stage,type,label,demand])=>({id,stage,type,label,demand})));
+function generateExtension(id,seed,component='noncalc',level=1){
+ if(!EXTRA_IDS.has(id)||!['noncalc','calc'].includes(component)||![1,2,3].includes(level))throw Error('Invalid extension settings');
+ const r=rng(seed),pick=a=>{if(!a.length)throw Error('No valid values for '+id);return a[Math.floor(r()*a.length)];},int=(a,b)=>a+Math.floor(r()*(b-a+1)),nc=component==='noncalc',meta=VBYID[id];
+ const names=shuffled(NAMES,r).slice(0,3),[n1,n2,n3]=names,sum=a=>a.reduce((x,y)=>x+y,0),ratio=a=>a.join(' : '),simple=a=>{const g=a.reduce(gcd);return a.map(x=>x/g);};
+ let rat=pick(PAIRS.filter(a=>Math.max(...a)<=(level===1?5:9)&&(!(!nc&&['d-coins-count','d-coins-value'].includes(id))||(id==='d-coins-value'?20*sum(a):10*a[0]+20*a[1])%100!==0))),q={type:meta.type,seed:seed>>>0,component,level,variant:0,variantId:id,stage:meta.stage,title:meta.label,lines:[],parts:[],method:[],solution:[],data:{},table:null,machine:null,bar:null,source:'New Foundation application of Eduqas FR5–FR9; not a copied examination question'};
+ const scalar=coeff=>unitValue(nc,coeff,pick,int,level),moneyPart=(label,c)=>numeric(label,'£',c);
+ function choose(correct,wrong){const options=shuffled([...new Set([correct,...wrong])],r);q.parts=[option('Correct statement',options,options.indexOf(correct))];}
+ function bars(parts,labels,unit,relation,description){q.bar={parts,labels,unit,relation,description,highlight:[]};}
+ if(id==='s-decimal'){
+  const k=pick([2,3,4,6,7,8,9]),given=rat.map(x=>x*k),correct=ratio(rat);
+  q.lines=[`Write ${given.map(x=>dec(x/10)).join(' : ')} as a ratio in its simplest whole-number form.`,'Select one answer.'];
+  choose(correct,[ratio(rat.map(x=>2*x)),ratio([...rat].reverse()),ratio([rat[0],sum(rat)])]);
+  q.method=['Multiply BOTH decimal terms by 10 to make whole numbers.','Divide both terms by their highest common factor.'];q.solution=[`Multiplying both terms by 10 gives ${ratio(given)}.`,`Divide both by ${k}: ${correct}.`];q.data={model:id,givenTenths:given};
+ }else if(id==='s-fraction'){
+  const d1=pick([2,4,5,10]),d2=pick([2,4,5,10].filter(x=>x!==d1)),terms=[rat[0]*d2,rat[1]*d1],rs=simple(terms),correct=ratio(rs);
+  q.lines=[`Simplify the ratio ${fraction(rat[0],d1)} : ${fraction(rat[1],d2)}.`,'Give a simplest whole-number ratio.'];choose(correct,[ratio(rs.map(x=>2*x)),ratio([...rs].reverse()),ratio([rs[0]+rs[1],rs[1]])]);
+  q.method=['Multiply both fractions by a common multiple of their denominators.','Simplify the resulting whole-number ratio.'];q.solution=[`Multiplying BOTH terms by ${d1*d2} gives ${ratio(terms)}.`,`Simplest ratio: ${correct}.`];q.data={model:id,numerators:rat,denominators:[d1,d2]};
+ }else if(id==='s-percent'){
+  const p=pick([5,10,15,20,25,30,35,40,45,55,60,65,70,75,80,85,90,95]),rs=simple([p,100-p]),correct=ratio(rs);
+  q.lines=[`${p}% of the badges in a box are gold.`,`All the other badges are silver.`,'Select the ratio gold badges : silver badges in its simplest form.'];choose(correct,[ratio([...rs].reverse()),ratio(simple([p,100])),ratio(rs.map(x=>2*x))]);
+  q.method=['Find the percentage that is silver.','Compare gold with SILVER, not gold with the total.','Simplify both terms using their highest common factor.'];q.solution=[`Silver = 100% − ${p}% = ${100-p}%.`,`${p} : ${100-p} = ${correct}.`];q.data={model:id,percent:p};q.source='2025 Foundation C1 Q17(b): percentage and remainder expressed as a ratio; response adapted to selection';
+ }else if(id==='s-leftover'){
+  const k=int(5,30)*10,total=sum(rat)*k,first=rat[0]*k,correct=ratio(rat);
+  q.lines=[`${n1} pours ${first} ml of apple juice into a jug.`,`Lemonade is added until there is ${total} ml of drink.`,'Select the ratio apple juice : lemonade in its simplest form.'];choose(correct,[ratio(simple([first,total])),ratio([...rat].reverse()),ratio(rat.map(x=>2*x))]);
+  q.method=['Subtract the apple juice from the final volume to find the lemonade.','Form the ratio of the two INGREDIENTS and simplify.'];q.solution=[`Lemonade = ${total} − ${first} = ${total-first} ml.`,`${first} : ${total-first} = ${correct}.`];q.data={model:id,total,first};q.source='2024 Foundation C2 Q15(b): find lemonade by subtraction before simplifying the ingredient ratio';
+ }else if(id==='t-hours'){
+  const hours=shuffled([3,4,5,6,7,8,9],r).slice(0,3),k=scalar([...hours,sum(hours)]),total=sum(hours)*k,ask=int(0,2);
+  q.lines=[`${n1}, ${n2} and ${n3} share ${money(total)} in tips.`,`Tips are divided in the ratio of the hours worked.`,`Work out how much ${names[ask]} receives.`];q.table={headers:['Worker','Hours worked'],rows:names.map((n,i)=>[n,''+hours[i]])};q.parts=[moneyPart(names[ask]+' receives',hours[ask]*k)];
+  q.method=['Use the hours, not the number of workers, as the ratio.','Add the hours and find the money for one hour.','Multiply by the requested person’s hours.'];q.solution=[`Total hours = ${hours.join(' + ')} = ${sum(hours)}.`,`One hour represents ${money(total)} ÷ ${sum(hours)} = ${money(k)}.`,`${names[ask]} receives ${hours[ask]} × ${money(k)} = ${money(hours[ask]*k)}.`];q.data={model:id,hours,total,ask};bars(hours,names,'£','total','The tips are shared in proportion to hours worked.');q.source='2025 Foundation C1 Q19: tips shared in the ratio of hours worked; numeric sharing variation';
+ }else if(id==='t-difference'){
+  const gap=Math.abs(rat[0]-rat[1]),k=scalar([gap,sum(rat)]),total=sum(rat)*k;
+  q.lines=[`${n1} and ${n2} share ${money(total)} in the ratio ${ratio(rat)}, respectively.`,'Work out the difference between the amounts they receive.'];q.parts=[moneyPart('Difference between the shares',gap*k)];q.method=['The total represents the SUM of the parts.','After finding one part, multiply by the DIFFERENCE between the ratio parts.'];q.solution=[`One part = ${money(total)} ÷ ${sum(rat)} = ${money(k)}.`,`Difference = ${gap} × ${money(k)} = ${money(gap*k)}.`];q.data={model:id,ratio:rat,total};bars(rat,[n1,n2],'£','total','All parts represent the given total, not the difference.');
+ }else if(id==='t-percentage'){
+  const pool=[];for(const d of [4,5,8,10,16,20,25,32,40])for(let a=1;a<d;a++)if(a*2!==d&&10000*a%d===0&&(nc?(10000*a/d)%100===0:(10000*a/d)%100!==0))pool.push([a,d-a]);rat=simple(pick(pool));const answer=10000*rat[0]/sum(rat);
+  q.lines=[`The ratio copper beads : wooden beads in a box is ${ratio(rat)}.`,'What percentage of all the beads are copper?'];q.parts=[numeric('Percentage that are copper','%',answer)];q.method=['Add both ratio parts to represent all the beads.','Divide the copper parts by the total parts and multiply by 100.'];q.solution=[`Copper fraction = ${fraction(rat[0],sum(rat))}.`,`Percentage = ${rat[0]} ÷ ${sum(rat)} × 100 = ${shortC(answer)}%.`];q.data={model:id,ratio:rat};q.source='Foundation FR6, FR9 and FR10: connect a ratio share with a percentage';
+ }else if(id==='k-pair'){
+  rat=[...rat,pick([1,2,3,4,5,6,7,8,9].filter(x=>!rat.includes(x)))];const k=scalar([rat[2],rat[0]+rat[1],sum(rat)]),combined=(rat[0]+rat[1])*k;
+  q.lines=[`${n1}, ${n2} and ${n3} share prize money in the ratio ${ratio(rat)}, respectively.`,`${n1} and ${n2} receive ${money(combined)} ALTOGETHER.`,`Work out how much ${n3} receives.`];q.parts=[moneyPart(n3+' receives',rat[2]*k)];q.method=['Only the first TWO shares make the given combined amount.','Add their ratio parts to find one part.','Use the third person’s parts, not the sum of all three.'];q.solution=[`${rat[0]+rat[1]} parts = ${money(combined)}.`,`One part = ${money(combined)} ÷ ${rat[0]+rat[1]} = ${money(k)}.`,`${n3} receives ${money(rat[2]*k)}.`];q.data={model:id,ratio:rat,combined};bars(rat,names,'£','part','The given money covers the first two people only.');
+ }else if(id==='k-hours'){
+  const hours=rat.map(x=>x*2),k=scalar([sum(hours),hours[1]]),given=hours[0]*k;
+  q.lines=[`${n1} and ${n2} share tips in proportion to the hours they work.`,`${n1} works ${hours[0]} hours and receives ${money(given)}.`,`${n2} works ${hours[1]} hours.`,'Work out the total tips shared by these two workers.'];q.parts=[moneyPart('Total tips shared',sum(hours)*k)];q.method=['The stated payment belongs to the first worker, not to both workers.','Find the amount of tips for one hour.','Multiply by the combined hours.'];q.solution=[`Tips per hour = ${money(given)} ÷ ${hours[0]} = ${money(k)}.`,`Total = ${sum(hours)} × ${money(k)} = ${money(sum(hours)*k)}.`];q.data={model:id,hours,given};q.source='Original extension of 2025 Foundation C1 Q19: a known share rather than a known total';
+ }else if(id==='k-fraction-total'){
+  const k=scalar([...rat,sum(rat)]),given=rat[0]*k;
+  q.lines=[`${n1} receives ${fraction(rat[0],sum(rat))} of some prize money.`,`${n1}’s share is ${money(given)}.`,`${n2} receives all the remaining money.`,`Work out how much ${n2} receives.`];q.parts=[moneyPart(n2+' receives',rat[1]*k)];q.method=['Match the known share to the numerator of the fraction.','Find the whole amount, then subtract the known share.'];q.solution=[`One part = ${money(given)} ÷ ${rat[0]} = ${money(k)}.`,`Remaining parts = ${sum(rat)} − ${rat[0]} = ${rat[1]}.`,`${n2} receives ${money(rat[1]*k)}.`];q.data={model:id,ratio:rat,given};
+ }else if(id==='d-triangle-gap'){
+  rat=pick(TRIANGLES);const k=scalar([sum(rat),rat[2]-rat[0]]),gap=(rat[2]-rat[0])*k;
+  q.lines=[`The three side lengths of a triangle are in the ratio ${ratio(rat)}.`,`The longest side is ${show(gap,'cm')} longer than the shortest side.`,'Calculate the perimeter of the triangle.'];q.parts=[numeric('Perimeter','cm',sum(rat)*k)];q.method=['Match the difference to the longest ratio part minus the shortest.','Find one part, then multiply by the SUM of all three parts.'];q.solution=[`${rat[2]} − ${rat[0]} = ${rat[2]-rat[0]} parts represent ${show(gap,'cm')}.`,`One part = ${show(gap,'cm')} ÷ ${rat[2]-rat[0]} = ${show(k,'cm')}.`,`Perimeter = ${sum(rat)} × ${show(k,'cm')} = ${show(sum(rat)*k,'cm')}.`];q.data={model:id,ratio:rat,gap};q.source='Original extension of 2023 Foundation C1 Q18: a side difference is given rather than the perimeter';
+ }else if(['d-coins-count','d-coins-value'].includes(id)){
+  const valueRatio=id==='d-coins-value',factor=valueRatio?20*sum(rat):10*rat[0]+20*rat[1],pool=[];for(let k=1;k<=40;k++)if(nc?(factor*k)%100===0:(factor*k)%100!==0)pool.push(k);
+  // Some ratios give a whole-pound result for every scale. A different ratio is needed in calculator practice.
+  if(!pool.length)throw Error('Coin precision pool was empty');
+  const k=pick(pool),counts=valueRatio?[2*rat[0]*k,rat[1]*k]:rat.map(x=>x*k),total=sum(counts),answer=counts[0]*10+counts[1]*20;
+  q.lines=[`A jar contains ${total} coins, all either 10p or 20p.`,valueRatio?`The ratio TOTAL VALUE of the 10p coins : TOTAL VALUE of the 20p coins is ${ratio(rat)}.`:`The ratio NUMBER of 10p coins : NUMBER of 20p coins is ${ratio(rat)}.`,'Work out the total value of the coins, in pounds.'];q.parts=[moneyPart('Total value',answer)];
+  q.method=valueRatio?['The ratio compares values, NOT numbers of coins.','For equal amounts of money, twice as many 10p coins as 20p coins are needed.','Convert to a count ratio, share the coin count, then calculate the value of each group.']:['Use the count ratio to find the number of each coin.','Multiply each count by its own coin value.','Add the values and convert pence into pounds.'];
+  q.solution=[valueRatio?`Count ratio = ${2*rat[0]} : ${rat[1]}.`:`Count ratio = ${ratio(rat)}.`,`Number of 10p coins = ${counts[0]}; number of 20p coins = ${counts[1]}.`,`Total value = (${counts[0]} × 10p) + (${counts[1]} × 20p) = ${answer}p = ${money(answer)}.`];q.data={model:id,ratio:rat,total};q.source='2025 Foundation C2 Q19 and examiner report: distinguishing a ratio of coin values from a ratio of coin counts; related new formulations';
+ }else if(id==='d-mixture-gap'){
+  rat=shuffled([2,3,4,5,6,7],r).slice(0,3);const big=rat.indexOf(Math.max(...rat)),small=rat.indexOf(Math.min(...rat)),ask=[0,1,2].find(i=>i!==big&&i!==small),ingredients=['oats','raisins','seeds'],k=scalar([rat[ask],rat[big]-rat[small]]),gap=(rat[big]-rat[small])*k;
+  q.lines=[`A snack mixture contains oats, raisins and seeds in the ratio ${ratio(rat)}.`,`There are ${show(gap,'g')} more ${ingredients[big]} than ${ingredients[small]}.`,`Work out the mass of ${ingredients[ask]}.`];q.parts=[numeric('Mass of '+ingredients[ask],'g',rat[ask]*k)];q.method=['The given mass is a difference between two ingredients, not the total mixture.','Find the difference between the corresponding ratio parts.','Find one part, then the requested ingredient.'];q.solution=[`Difference = ${rat[big]} − ${rat[small]} = ${rat[big]-rat[small]} parts.`,`One part = ${show(gap,'g')} ÷ ${rat[big]-rat[small]} = ${show(k,'g')}.`,`Required mass = ${show(rat[ask]*k,'g')}.`];q.data={model:id,ratio:rat,big,small,ask,gap};bars(rat,ingredients,'g','difference','Only the difference between the specified ingredient masses is given.');
+ }else if(id==='d-linked'){
+  const candidates=[];for(const ab of PAIRS.filter(p=>Math.max(...p)<=5))for(const bc of PAIRS.filter(p=>Math.max(...p)<=5)){const rs=simple([ab[0]*bc[0],ab[1]*bc[0],ab[1]*bc[1]]);if(new Set(rs).size===3&&Math.max(...rs)<=20)candidates.push({ab,bc,rs});}
+  const {ab,bc,rs}=pick(candidates),k=scalar([rs[2],sum(rs)]),given=rs[0]*k;
+  q.lines=[`${n1} : ${n2} = ${ratio(ab)} for the amounts of money they have.`,`${n2} : ${n3} = ${ratio(bc)} for the same amounts.`,`${n1} has ${money(given)}.`,`Work out how much ${n3} has.`];q.parts=[moneyPart(n3+' has',rs[2]*k)];q.method=['Make the parts for the shared person agree before joining the ratios.','Use the given first share to find one combined-ratio part.','Find the third share.'];q.solution=[`A common three-way ratio is ${ratio(rs)}.`,`One part = ${money(given)} ÷ ${rs[0]} = ${money(k)}.`,`${n3} has ${rs[2]} × ${money(k)} = ${money(rs[2]*k)}.`];q.data={model:id,ab,bc,given};
+ }else if(id==='d-recipe-shortage'){
+  const old=int(4,8),needed=old+int(3,8),short=int(1,3),unit=nc?'g':'kg',pool=[];for(let v=1;v<=45;v++)if(nc||(v*short)%100!==0)pool.push(nc?v*100:v);const per=pick(pool),given=per*old,stock=per*(needed-short),answer=per*short;
+  q.lines=[`A recipe uses ${show(given,unit)} of oats for ${old} portions.`,`${n1} will make ${needed} portions using the same recipe.`,`${n1} already has ${show(stock,unit)} of oats.`,'Work out the EXTRA mass of oats to buy.'];q.parts=[numeric('Extra oats needed',unit,answer)];q.method=['Scale the recipe to the required number of portions first.','Subtract the oats already available.','Give the extra amount, not the entire recipe amount.'];q.solution=[`Needed = ${show(given,unit)} ÷ ${old} × ${needed} = ${show(per*needed,unit)}.`,`Extra to buy = ${show(per*needed,unit)} − ${show(stock,unit)} = ${show(answer,unit)}.`];q.data={model:id,old,needed,given,stock,unit};
+ }else if(id==='d-cost-budget'){
+  q=generate('cost',seed,component,level,0);const cost=q.parts[0].answer,extra=nc?int(5,40)*100:100-cost%100+int(5,40)*100,budget=cost+extra;
+  q.lines=q.lines.filter(t=>t!=='Work out the total cost of the slabs.');q.lines.push(`The budget is ${money(budget)}.`,'How much money remains after paying for all the slabs?');q.parts=[moneyPart('Money remaining',extra)];q.method.push('Subtract the total cost from the budget.');q.solution.push(`Remaining = ${money(budget)} − ${money(cost)} = ${money(extra)}.`);q.data={...q.data,model:id,budget};q.source='Original extension of 2023 Foundation C1 Q16: ratio, separate prices and a budget';
+ }else if(id==='x-tips'){
+  const m=pick([2,3,4]),rs=[2,2*m,1],k=scalar([sum(rs),rs[1]]),total=sum(rs)*k;
+  q.lines=[`${n1}, ${n2} and ${n3} share ${money(total)} in tips in the ratio of the hours they work.`,`${n3} works half as many hours as ${n1}.`,`${n2} works ${m} times as many hours as ${n1}.`,`Work out how much ${n2} receives.`];q.parts=[moneyPart(n2+' receives',rs[1]*k)];q.method=['Use 2 parts for the first worker, so the half-share worker has 1 part.','Write all three hour shares in the requested order.','Share the full jar in that ratio.'];q.solution=[`Hours ratio ${n1} : ${n2} : ${n3} = ${ratio(rs)}.`,`One part = ${money(total)} ÷ ${sum(rs)} = ${money(k)}.`,`${n2} receives ${money(rs[1]*k)}.`];q.data={model:id,m,total};q.source='2025 Foundation C1 Q19(b): derive the sharing ratio from half/double working-hour relationships';
+ }else if(id==='x-two-spend'){
+  rat=[...rat].sort((a,b)=>a-b);const k=scalar([sum(rat),rat[1]-rat[0]]),spend1=Math.max(100,Math.floor(rat[0]*k/300)*100),spend2=spend1+(rat[1]-rat[0])*k;
+  q.lines=[`${n1} and ${n2} share money in the ratio ${ratio(rat)}, respectively.`,`${n1} spends ${money(spend1)} and ${n2} spends ${money(spend2)}.`,`They now have equal amounts left.`,'Work out the original total amount shared.'];q.parts=[moneyPart('Original total',sum(rat)*k)];q.method=['Subtract the two amounts spent to find the original difference between the shares.','Use the ratio difference to find one part.','Find the ORIGINAL total, not the money left.'];q.solution=[`Original difference = ${money(spend2)} − ${money(spend1)} = ${money(spend2-spend1)}.`,`One part = ${money(spend2-spend1)} ÷ ${rat[1]-rat[0]} = ${money(k)}.`,`Original total = ${money(sum(rat)*k)}.`];q.data={model:id,ratio:rat,spent:[spend1,spend2]};
+ }else if(id==='x-ratio-after'){
+  const a=int(3,7),b=pick([2,3,4,5,6,7,8].filter(x=>x!==a)),transferParts=int(1,a-1),k=int(3,20)*100,rs=simple([a-transferParts,b+transferParts]),correct=ratio(rs),total=(a+b)*k;
+  q.lines=[`${n1} and ${n2} share ${money(total)} in the ratio ${a} : ${b}, respectively.`,`${n1} gives ${money(transferParts*k)} to ${n2}.`,`Select the new ratio ${n1} : ${n2} in simplest form.`];choose(correct,[ratio(simple([a-transferParts,b])),ratio(simple([a,b+transferParts])),ratio(rs.map(x=>2*x))]);q.method=['Find the original shares.','Subtract the transfer from one person and ADD it to the other.','Form and simplify the new ratio.'];q.solution=[`Original shares = ${money(a*k)} and ${money(b*k)}.`,`New shares = ${money((a-transferParts)*k)} and ${money((b+transferParts)*k)}.`,`New simplest ratio = ${correct}.`];q.data={model:id,ratio:[a,b],total,transfer:transferParts*k};
+ }else if(id==='x-retained'){
+  const pool=[];for(let a=1;a<=3;a++)for(let b=a+1;b<=a+3;b++)for(const d1 of [2,3,4])for(const d2 of [2,3,4])if(d1!==d2&&a*d1!==b*d2)pool.push({a,b,d1,d2});const {a,b,d1,d2}=pick(pool);rat=[a*d1,b*d2];
+  const k=scalar([sum(rat),b-a]),gap=(b-a)*k;
+  q.lines=[`${n1} and ${n2} share prize money in the ratio ${ratio(rat)}, respectively.`,`${n1} keeps ${fraction(1,d1)} of their own share.`,`${n2} keeps ${fraction(1,d2)} of their own share.`,`The rest is spent.`,`${n2} has ${money(gap)} more left than ${n1}.`,'Work out the ORIGINAL total prize.'];q.parts=[moneyPart('Original total prize',sum(rat)*k)];q.method=['Apply each fraction to that person’s OWN ratio parts.','Use the difference between the remaining parts to find one original part.','Multiply by the ORIGINAL total parts.'];q.solution=[`Parts kept: ${rat[0]} ÷ ${d1} = ${a}; ${rat[1]} ÷ ${d2} = ${b}.`,`Difference = ${b-a} parts, so one part = ${money(gap)} ÷ ${b-a} = ${money(k)}.`,`Original total = ${sum(rat)} × ${money(k)} = ${money(sum(rat)*k)}.`];q.data={model:id,ratio:rat,denominators:[d1,d2],gap};
+ }else if(id==='x-mixture-poured'){
+  const a=int(1,3),b=int(4,7),c=a+int(1,3),den=pick([2,3,4]),coeff=(c-a)*(den-1),k=scalar([coeff,(a+b)*den]),total=(a+b)*den*k,target=simple([c,b]);
+  q.lines=[`A jug contains ${show(total,'ml')} of well-mixed orange juice and lemonade in the ratio ${a} : ${b}.`,`${n1} pours out ${fraction(1,den)} of the drink.`,`Only orange juice is then added until the ratio orange juice : lemonade is ${ratio(target)}.`,'Work out the volume of orange juice added.'];q.parts=[numeric('Orange juice added','ml',coeff*k)];q.method=['Pouring out well-mixed drink removes the same fraction of EACH ingredient.','Find the lemonade left; it does not change during the addition.','Find the orange juice needed for the new ratio and subtract the orange juice already left.'];q.solution=[`Lemonade left = ${show(b*(den-1)*k,'ml')}; orange juice left = ${show(a*(den-1)*k,'ml')}.`,`New orange juice required = ${show(b*(den-1)*k,'ml')} ÷ ${target[1]} × ${target[0]} = ${show(c*(den-1)*k,'ml')}.`,`Orange juice ADDED = ${show(coeff*k,'ml')}.`];q.data={model:id,ratio:[a,b],total,denominator:den,target};
+ }else if(id==='x-blend'){
+  const r1=rat,r2=pick(PAIRS.filter(p=>p[0]*sum(r1)!==r1[0]*sum(p)&&Math.max(...p)<=6)),k1=scalar([r1[0]]);const pool=[];for(let v=nc?200:201;v<=2400;v+=nc?100:1)if((nc||((r2[0]*v)%100!==0&&(r1[0]*k1+r2[0]*v)%100!==0))&&sum(r1)*k1!==sum(r2)*v)pool.push(v);const k2=pick(pool);
+  const v1=sum(r1)*k1,v2=sum(r2)*k2,answer=r1[0]*k1+r2[0]*k2;
+  q.lines=[`Two fruit drinks are mixed together.`,`The table gives their volumes and their ratios of orange juice to lemonade.`,'Work out the total volume of orange juice in the combined drink.'];q.table={headers:['Drink','Volume','Orange juice : lemonade'],rows:[['First drink',show(v1,'ml'),ratio(r1)],['Second drink',show(v2,'ml'),ratio(r2)]]};q.parts=[numeric('Total orange juice','ml',answer)];q.method=['Calculate the orange juice in EACH drink using its own ratio and volume.','Add the two orange-juice amounts.','Do not add or average the ratio terms.'];q.solution=[`First orange juice = ${show(v1,'ml')} ÷ ${sum(r1)} × ${r1[0]} = ${show(r1[0]*k1,'ml')}.`,`Second orange juice = ${show(v2,'ml')} ÷ ${sum(r2)} × ${r2[0]} = ${show(r2[0]*k2,'ml')}.`,`Combined orange juice = ${show(answer,'ml')}.`];q.data={model:id,ratios:[r1,r2],volumes:[v1,v2]};
+ }else if(id==='x-paving'){
+  const pool=[];for(let m=3;m<=9;m++)for(let n=m+1;n<=12;n++)for(const rs of [[3,1],[2,3],[3,2],[5,3]])if((2*m+2*n+4)%sum(rs)===0)pool.push({m,n,rs});const {m,n,rs}=pick(pool),side=pick([40,50]),count=2*m+2*n+4,k=count/sum(rs),counts=rs.map(x=>x*k),price1=int(3,6)*100,prices=[];for(let v=601;v<=950;v++)if(nc?v%100===0:(counts[1]*v)%100!==0)prices.push(v);const price2=pick(prices),answer=counts[0]*price1+counts[1]*price2;
+  q.lines=[`A rectangular pond measures ${dec(m*side/100)} m by ${dec(n*side/100)} m.`,`A path of square slabs is laid one slab wide around ALL FOUR sides, including the corners.`,`Each slab has side length ${side} cm.`,`There are no gaps or cut slabs.`,`The ratio grey slabs : white slabs is ${ratio(rs)}.`,`Grey slabs cost ${money(price1)} each and white slabs cost ${money(price2)} each.`,'Work out the total cost of the slabs.'];q.parts=[moneyPart('Total cost',answer)];q.method=['Convert the pond measurements to the same unit as the slabs.','Count the rectangular border, including each corner once.','Use the ratio to split the slab count, then apply the two different prices.'];q.solution=[`Pond dimensions in slab widths: ${m} by ${n}.`,`Slabs = (${m}+2) × (${n}+2) − ${m} × ${n} = ${count}.`,`Grey = ${counts[0]}; white = ${counts[1]}.`,`Total cost = ${counts[0]} × ${money(price1)} + ${counts[1]} × ${money(price2)} = ${money(answer)}.`];q.data={model:id,pondCm:[m*side,n*side],slabCm:side,ratio:rs,prices:[price1,price2]};q.source='2023 Foundation C1 Q16: rectangular pond border, slab dimensions, ratio and two unit prices';
+ }
+ if(!q.parts.length||q.parts.some(p=>p.kind==='numeric'&&(!Number.isSafeInteger(p.answer)||p.answer<=0||(nc?p.answer%100!==0:p.answer%100===0))))throw Error('Extension precision failed: '+id);
+ q.variantId=id;q.stage=meta.stage;q.type=meta.type;q.title=meta.label;q.level=level;q.signature=id+':'+JSON.stringify(q.data);return q;
+}
+
+const VBYID=Object.fromEntries(VARIANTS.map(v=>[v.id,v]));
+function generateVariant(id,seed,component='noncalc',level=1){
+ if(EXTRA_IDS.has(id))return generateExtension(id,seed,component,level);
+ const meta=VBYID[id];if(!meta)throw new Error('Unknown ratio variation');
+ const r=rng(seed),pick=a=>{if(!a.length)throw new Error('Empty variation pool');return a[Math.floor(r()*a.length)];},int=(a,b)=>a+Math.floor(r()*(b-a+1)),nc=component==='noncalc';
+ if(!['noncalc','calc'].includes(component)||![1,2,3].includes(level))throw new Error('Invalid variation settings');
+ const names=shuffled(NAMES,r).slice(0,3),[n1,n2,n3]=names,ratio=x=>x.join(' : '),sum=x=>x.reduce((a,b)=>a+b,0);
+ let rat=pick(PAIRS.filter(x=>level>1||Math.max(...x)<=5));
+ let q={type:meta.type,seed:seed>>>0,component,level,title:meta.label,lines:[],parts:[],method:[],solution:[],data:{},table:null,machine:null,bar:null,source:'New practice variation based on specification FR5–FR9; not a copied examination item'};
+ const delegate={ 's-units':['reasoning',1], 't-triangle':['triangle',0], 't-mixture':['mixture',0], 't-fraction':['reasoning',2], 'k-mixture':['mixture',1], 'k-map':['scale',0], 'k-related':['reasoning',3], 'd-whole':['partwhole',0], 'd-map':['scale',1], 'd-slabs':['cost',0], 'd-tickets':['cost',1], 'x-spent':['changed',0] };
+ function bars(parts,labels,unit,relation,description,highlight=[]){q.bar={parts,labels,unit,relation,description,highlight};}
+ if(delegate[id]){const [type,v]=delegate[id];q=generate(type,seed,component,level,v);}
+ else if(id.startsWith('s-')){
+  const three=id==='s-three';if(three)rat=[...rat,pick([1,2,3,4,5,6,7].filter(x=>!rat.includes(x)))];
+  const k=int(2,level===1?5:12),given=rat.map(x=>x*k),ordered=id==='s-order'?[rat[1],rat[0]]:rat;
+  const correct=ratio(ordered),rawOptions=[correct,ratio(ordered.map(x=>2*x)),ratio([...ordered].reverse()),ratio(ordered.map((x,i)=>i===ordered.length-1?x+ordered[0]:x))];
+  // Every distractor is distinct from the unique simplest, requested-order answer.
+  const options=shuffled([...new Set(rawOptions)],r);
+  q.lines=id==='s-order'?[`A box contains ${given[0]} red counters and ${given[1]} blue counters.`,'Select the ratio blue counters : red counters in its simplest form.']:
+   three?[`There are ${given[0]} red, ${given[1]} blue and ${given[2]} green counters.`,'Select the ratio red : blue : green in its simplest form.']:[`Write ${ratio(given)} in its simplest form.`,'Select one answer.'];
+  q.parts=[option('Simplest ratio',options,options.indexOf(correct))];
+  q.method=['Read the order requested, which may differ from the order in the sentence.','Find the highest common factor of all the quantities.','Divide every quantity by that same factor.'];
+  q.solution=[`The highest common factor is ${k}.`,`Divide every term of ${ratio(ordered.map(x=>x*k))} by ${k}: ${correct}.`];q.data={model:'simplify',given,reverse:id==='s-order',divisor:k};
+ }
+ else if(['t-recipe','k-recipe'].includes(id)){
+  const oldServings=id==='t-recipe'?pick([2,4,5,6]):pick([8,10,12,16]),newServings=id==='t-recipe'?oldServings+pick([2,3,4,6]):pick([2,3,4,5].filter(x=>x<oldServings)),unit=nc?'g':'kg';
+  const candidates=[];for(let c=nc?1000:1;c<=(nc?6000:99);c+=nc?100:1)if(nc||(c*newServings)%100!==0)candidates.push(c);
+  const per=[pick(candidates),pick(candidates)],amounts=per.map(x=>x*oldServings),ans=per.map(x=>x*newServings);
+  q.lines=[`The table gives a recipe for ${oldServings} portions of a snack mixture.`,`${n1} needs ${newServings} portions of the same mixture.`,'Work out the amount of each ingredient needed.'];
+  q.table={headers:['Ingredient',`Amount for ${oldServings} portions`],rows:[['Oats',show(amounts[0],unit)],['Dried fruit',show(amounts[1],unit)]]};
+  q.parts=['Oats','Dried fruit'].map((x,i)=>numeric(x,unit,ans[i]));q.method=[`Find 1 portion by dividing each table amount by ${oldServings}.`,`Multiply by ${newServings}; use the same factor for both ingredients.`];q.solution=amounts.map((x,i)=>`${q.parts[i].label}: ${show(x,unit)} ÷ ${oldServings} × ${newServings} = ${show(ans[i],unit)}.`);q.data={model:'recipe',oldServings,newServings,amounts,unit};
+ }
+ else if(id.startsWith('t-')||id.startsWith('k-')||id.startsWith('d-')){
+  const three=['t-three','k-three','d-three'].includes(id);if(three)rat=[...rat,pick([1,2,3,4,5,6,7,8,9].filter(x=>!rat.includes(x)))];
+  const labels=three?names:names.slice(0,2),unit=id==='t-length'?'cm':'£',all=sum(rat),small=rat.indexOf(Math.min(...rat)),big=rat.indexOf(Math.max(...rat)),diff=rat[big]-rat[small];
+  const k=unitValue(nc,[...rat,all,diff],pick,int,level),shares=rat.map(x=>x*k),total=all*k;
+  let relation='total',knownIndex=0,targets=[];
+  q.lines=unit==='cm'?[`A ribbon ${show(total,unit)} long is cut into two pieces.`]:[`${labels.join(three?', ':' and ')} share ${id.startsWith('t-')?money(total):'some prize money'}.`];
+  q.lines.push(unit==='cm'?`The ratio first piece : second piece is ${ratio(rat)}.`:`The shares ${labels.join(' : ')} are in the ratio ${ratio(rat)}.`);
+  if(id.startsWith('t-')){
+   if(id==='t-one'){const ask=int(0,1);targets=[ask];q.lines.push(`Work out how much ${labels[ask]} receives.`);}
+   else if(id==='t-order'){targets=[1,0];q.lines.push(`Give ${n2}’s share first, then ${n1}’s share.`);}
+   else{targets=rat.map((_,i)=>i);q.lines.push(unit==='cm'?'Work out the length of each piece.':'Work out how much each person receives.');}
+  }else if(id.startsWith('k-')){
+   relation='part';knownIndex=id==='k-small'?small:id==='k-other'?1:id==='k-three'?int(0,2):0;
+   q.lines.push(id==='k-small'?`The person with the smaller share receives ${money(shares[small])}.`:`${labels[knownIndex]} receives ${money(shares[knownIndex])}.`);
+   if(id==='k-other'||id==='k-small'){targets=[1-knownIndex];q.lines.push(`Work out how much ${labels[targets[0]]} receives.`);}
+   else if(id==='k-three'){targets=rat.map((_,i)=>i).filter(i=>i!==knownIndex);q.lines.push('Work out the amounts received by the other two people.');}
+   else{targets=[-1];q.lines.push('Work out the total prize money.');}
+  }else{
+   relation='difference';q.lines.push(id==='d-less'?`${labels[small]} receives ${money(diff*k)} less than ${labels[big]}.`:`${labels[big]} receives ${money(diff*k)} more than ${labels[small]}.`);
+   targets=id==='d-share'?[small]:id==='d-less'?[big,small]:[-1];
+   q.lines.push(id==='d-share'?`Work out how much ${labels[small]} receives.`:id==='d-less'?`Give ${labels[big]}’s share first, then ${labels[small]}’s share.`:'Work out the total amount shared.');
+  }
+  q.parts=targets.map(i=>numeric(i===-1?'Total amount shared':unit==='cm'?(i===0?'First piece':'Second piece'):labels[i]+' receives',unit,i===-1?total:shares[i]));
+  const partsKnown=relation==='total'?all:relation==='part'?rat[knownIndex]:diff,known=partsKnown*k;
+  q.method=[relation==='difference'?'The extra parts represent the difference, not the whole amount.':relation==='part'?'The given amount is just one share, not the whole prize.':'Add all the ratio parts.',`Match the given amount to ${partsKnown} parts, then divide to find one part.`,'Multiply by the parts in the quantity actually requested.'];
+  q.solution=[`${partsKnown} parts represent ${show(known,unit)}.`,`One part = ${show(known,unit)} ÷ ${partsKnown} = ${show(k,unit)}.`,...targets.map(i=>`${i===-1?'Total':unit==='cm'?(i===0?'First piece':'Second piece'):labels[i]} = ${i===-1?all:rat[i]} × ${show(k,unit)} = ${show(i===-1?total:shares[i],unit)}.`)];
+  const barLabels=unit==='cm'?['First piece','Second piece']:labels;
+  bars(rat,barLabels,unit,relation,`${relation==='difference'?'Only the extra':relation==='part'?labels[knownIndex]+'’s':'All'} ${partsKnown} parts represent ${show(known,unit)}.`,relation==='part'?[knownIndex]:[]);
+  q.data={model:'sharing',ratio:rat,relation,knownIndex,known,targets,unit};
+ }
+ else if(['x-received','x-transfer','x-remains','x-deduct','x-total','x-mixture'].includes(id)){
+  if(id==='x-total'){
+   // Total is included in the finite precision constraints, unlike the original share-only task.
+   const a=int(1,3),m=int(2,3),c=m*a+int(1,4),b=pick([2,3,4,5,6,7,8].filter(x=>x!==a&&x!==c));rat=[a,b,c];
+   const divisor=c-m*a,k=unitValue(nc,[...rat,sum(rat),divisor],pick,int,level),spent=divisor*k,total=sum(rat)*k;
+   q.lines=[`${n1}, ${n2} and ${n3} share prize money in the ratio ${ratio(rat)}, respectively.`,`${n3} spends ${money(spent)}.`,`${n3} now has ${m} times as much as ${n1} originally received.`,'Work out the total prize money before anything was spent.'];
+   q.parts=[numeric('Original total prize','£',total)];q.method=[`The money left with ${n3} represents ${m} × ${a} parts.`,'Subtract those parts from the original third share to find the parts spent.','Find one part, then multiply by all the original ratio parts.'];q.solution=[`Spent parts = ${c} − ${m} × ${a} = ${divisor}.`,`One part = ${money(spent)} ÷ ${divisor} = ${money(k)}.`,`Original total = ${sum(rat)} × ${money(k)} = ${money(total)}.`];
+   bars(rat,names,'£','changed',`${n3}’s hatched parts represent money spent.`,[2]);q.bar.cutAt=m*a;q.data={model:'spent-total',ratio:rat,multiplier:m,spent};q.source='Adaptation of 2024 Foundation Component 1 Q25(b): original total requested instead of one share';
+  }else if(id==='x-received'){
+   const a=int(2,4),m=int(2,3),b=int(a+1,m*a-1);rat=[a,b];const delta=m*a-b,k=unitValue(nc,[...rat,sum(rat),delta],pick,int,level),added=delta*k;
+   q.lines=[`${n1} and ${n2} share money in the ratio ${ratio(rat)}, respectively.`,`${n2} then receives an extra ${money(added)} from a relative.`,`${n2} now has ${m} times as much as ${n1} originally received.`,`Work out how much ${n1} originally received.`];q.parts=[numeric(n1+' originally received','£',a*k)];
+   q.method=[`The new amount for ${n2} is ${m} × ${a} original parts.`,'The extra money represents new parts minus the original second share.','Find one part and then the requested original share.'];q.solution=[`Extra money represents (${m} × ${a}) − ${b} = ${delta} parts.`,`One part = ${money(added)} ÷ ${delta} = ${money(k)}.`,`${n1} originally received ${a} × ${money(k)} = ${money(a*k)}.`];q.data={model:'added',ratio:rat,multiplier:m,added};
+  }else if(id==='x-transfer'){
+   const a=int(1,4),d=int(1,3),b=a+2*d;rat=[a,b];const k=unitValue(nc,[a,b,a+b,d],pick,int,level),transfer=d*k;
+   q.lines=[`${n1} and ${n2} share a prize in the ratio ${ratio(rat)}, respectively.`,`${n2} gives ${money(transfer)} of their share to ${n1}.`,'They now have equal amounts.','Work out the original total prize money.'];q.parts=[numeric('Original total prize','£',(a+b)*k)];
+   q.method=['A transfer makes one share smaller AND the other share larger.','The original difference is twice the amount transferred.','Use that difference to find one part, then the original total.'];q.solution=[`Original difference = 2 × ${money(transfer)} = ${money(transfer*2)}.`,`The ratio difference is ${b} − ${a} = ${b-a} parts.`,`One part = ${money(transfer*2)} ÷ ${b-a} = ${money(k)}.`,`Original total = ${a+b} × ${money(k)} = ${money((a+b)*k)}.`];bars(rat,[n1,n2],'£','difference',`Before the transfer the difference is twice ${money(transfer)}.`);q.data={model:'transfer',ratio:rat,transfer};
+  }else if(id==='x-remains'){
+   const denominator=pick([2,3,4]),a=denominator*int(1,2),b=pick([1,2,3,4,5,6,7,8,9].filter(x=>x!==a)),kept=a/denominator;rat=[a,b];const k=unitValue(nc,[...rat,a+b,kept],pick,int,level),left=kept*k;
+   q.lines=[`${n1} and ${n2} share a prize in the ratio ${ratio(rat)}, respectively.`,`${n1} spends ${fraction(denominator-1,denominator)} of their own share and has ${money(left)} left.`,`Work out how much ${n2} originally received.`];q.parts=[numeric(n2+' originally received','£',b*k)];q.method=[`The money left is 1/${denominator} of the first person’s share, not of the whole prize.`,`Multiply the money left by ${denominator} to recover that share.`,'Use the original ratio to find the other share.'];q.solution=[`${n1}’s original share = ${money(left)} × ${denominator} = ${money(a*k)}.`,`One part = ${money(a*k)} ÷ ${a} = ${money(k)}.`,`${n2} originally received ${b} × ${money(k)} = ${money(b*k)}.`];q.data={model:'fraction-left',ratio:rat,denominator,left};
+  }else if(id==='x-deduct'){
+   const k=unitValue(nc,[...rat,sum(rat)],pick,int,level),fee=int(5,35)*100,total=sum(rat)*k+fee,ask=int(0,1);
+   q.lines=[`A club raises ${money(total)}.`,`It first pays ${money(fee)} for printing.`,`It shares ALL the money left between a food bank and an animal shelter in the ratio ${ratio(rat)}, respectively.`,`Work out the amount received by the ${ask===0?'food bank':'animal shelter'}.`];q.parts=[numeric(ask===0?'Food bank receives':'Animal shelter receives','£',rat[ask]*k)];q.method=['Subtract the fixed cost before using the ratio.','Share the remaining amount, not the original amount raised.','Find the requested organisation’s share.'];q.solution=[`Amount shared = ${money(total)} − ${money(fee)} = ${money(total-fee)}.`,`One part = ${money(total-fee)} ÷ ${sum(rat)} = ${money(k)}.`,`Required share = ${rat[ask]} × ${money(k)} = ${money(rat[ask]*k)}.`];bars(rat,['Food bank','Animal shelter'],'£','total',`The bars represent only the ${money(total-fee)} left after printing.`);q.data={model:'deduct',ratio:rat,total,fee,ask};
+  }else{
+   // New target ratio has the same second-part count; only the first ingredient is added.
+   const a=int(1,3),b=int(4,8),extra=int(1,3),c=a+extra,k=unitValue(nc,[a,b,a+b,extra],pick,int,level),total=(a+b)*k;rat=[a,b];
+   const g=gcd(c,b),target=[c/g,b/g];
+   q.lines=[`${n1} has ${show(total,'ml')} of a fruit drink.`,`The ratio orange juice : lemonade is ${ratio(rat)}.`,`${n1} adds only orange juice until the ratio orange juice : lemonade is ${ratio(target)}.`,'Work out how much orange juice is added.'];q.parts=[numeric('Orange juice added','ml',extra*k)];q.method=['Find the original amounts of both ingredients.','The amount of lemonade stays unchanged.','Use the new ratio to find the required orange juice, then subtract the original orange juice.'];q.solution=[`One original part = ${show(total,'ml')} ÷ ${a+b} = ${show(k,'ml')}.`,`Lemonade stays at ${show(b*k,'ml')}.`,`Required orange juice = ${show(b*k,'ml')} ÷ ${target[1]} × ${target[0]} = ${show(c*k,'ml')}.`,`Added orange juice = ${show(c*k,'ml')} − ${show(a*k,'ml')} = ${show(extra*k,'ml')}.`];bars(rat,['Orange juice','Lemonade'],'ml','total',`Original mixture: ${show(total,'ml')}. Only orange juice is then added.`);q.data={model:'mixture-add',ratio:rat,total,target};
+  }
+ }
+ if(!q.parts.length)throw new Error('Variation has no answer: '+id);
+ for(const p of q.parts){if(p.kind==='numeric'&&(!Number.isSafeInteger(p.answer)||p.answer<=0||(nc?p.answer%100!==0:p.answer%100===0)))throw new Error('Exact answer invariant: '+id);}
+ q.variantId=id;q.stage=meta.stage;q.variant=0;q.title=meta.label;q.signature=id+':'+JSON.stringify(q.data);return q;
+}
+
+/** Response-led routes: successful work opens a harder RELATED structure.
+ * A wrong answer closes that attempt; the next task keeps its exact variation.
+ * These are authored Foundation teaching demands, NOT predicted GCSE grades. */
+const DEMAND={
+ 's-basic':1,'s-order':1.4,'s-three':1.8,'s-units':2.4,'s-decimal':2.8,'s-fraction':3.4,'s-percent':2.8,'s-leftover':2.3,
+ 't-both':2,'t-one':2.2,'t-order':2.6,'t-length':2.5,'t-three':2.9,'t-triangle':3.3,'t-mixture':2.7,'t-recipe':3.2,'t-fraction':2.6,'t-hours':3.5,'t-difference':3.1,'t-percentage':3.7,
+ 'k-total':3.4,'k-other':3.6,'k-small':3.9,'k-three':4.1,'k-mixture':3.8,'k-recipe':3.9,'k-map':4.4,'k-related':4.0,'k-pair':4.6,'k-hours':4.3,'k-fraction-total':4.2,
+ 'd-total':4.8,'d-share':5,'d-less':5.2,'d-three':5.5,'d-whole':4.5,'d-map':5.3,'d-slabs':5.6,'d-tickets':5.8,'d-triangle-gap':5.9,'d-coins-count':6,'d-coins-value':7.1,'d-mixture-gap':5.7,'d-linked':6.5,'d-recipe-shortage':5.4,'d-cost-budget':6.3,
+ 'x-spent':6,'x-received':6.3,'x-transfer':6.5,'x-remains':6.2,'x-deduct':5.3,'x-total':6.8,'x-mixture':7,'x-tips':6.7,'x-two-spend':7.2,'x-ratio-after':7.4,'x-retained':8,'x-mixture-poured':8.2,'x-blend':7.8,'x-paving':8.4
+};
+const SUCCESSORS={
+ 's-basic':['t-both','s-order'], 's-order':['s-three','t-order'], 's-three':['s-units','t-three'], 's-units':['s-decimal','k-map'], 's-decimal':['s-fraction','k-map'], 's-fraction':['k-fraction-total','d-linked'],
+ 's-leftover':['t-mixture','s-percent'], 's-percent':['t-percentage','k-fraction-total'],
+ 't-both':['k-total','t-difference'], 't-one':['k-other','t-three'], 't-order':['k-small','t-hours'], 't-length':['t-triangle','k-map'], 't-three':['k-three','t-hours'], 't-triangle':['d-triangle-gap'], 't-mixture':['k-mixture','s-leftover'], 't-recipe':['k-recipe','d-recipe-shortage'], 't-fraction':['t-percentage','d-whole'], 't-hours':['k-hours','x-tips'], 't-difference':['d-share','d-total'], 't-percentage':['k-fraction-total','x-remains'],
+ 'k-total':['d-total','k-pair'], 'k-other':['k-small','d-share'], 'k-small':['d-less','x-received'], 'k-three':['k-pair','d-three'], 'k-mixture':['d-mixture-gap','x-mixture'], 'k-recipe':['d-recipe-shortage'], 'k-map':['d-map'], 'k-related':['x-tips','d-linked'], 'k-pair':['d-three','x-spent'], 'k-hours':['x-tips'], 'k-fraction-total':['x-remains','x-retained'],
+ 'd-total':['x-spent','d-three'], 'd-share':['x-transfer','x-received'], 'd-less':['x-transfer','x-two-spend'], 'd-three':['x-spent','d-linked'], 'd-whole':['x-remains','x-deduct'], 'd-map':['d-linked','x-paving'], 'd-slabs':['d-cost-budget','x-paving'], 'd-tickets':['d-coins-count','d-cost-budget'], 'd-triangle-gap':['d-linked','x-paving'], 'd-coins-count':['d-coins-value'], 'd-coins-value':['x-paving'], 'd-mixture-gap':['x-mixture','x-blend'], 'd-linked':['x-tips','x-retained'], 'd-recipe-shortage':['x-mixture','x-blend'], 'd-cost-budget':['x-paving'],
+ 'x-spent':['x-total','x-two-spend'], 'x-received':['x-two-spend','x-retained'], 'x-transfer':['x-ratio-after','x-two-spend'], 'x-remains':['x-retained'], 'x-deduct':['d-cost-budget','x-two-spend'], 'x-total':['x-retained','x-two-spend'], 'x-mixture':['x-mixture-poured','x-blend'], 'x-tips':['x-retained'], 'x-two-spend':['x-retained'], 'x-ratio-after':['x-retained','x-mixture-poured'], 'x-retained':['x-paving'], 'x-blend':['x-mixture-poured'], 'x-mixture-poured':['x-paving'], 'x-paving':[]
+};
+const PREREQUISITE=Object.fromEntries(VARIANTS.map(v=>[v.id,'s-basic']));
+Object.entries(SUCCESSORS).forEach(([parent,children])=>children.forEach(id=>{if(PREREQUISITE[id]==='s-basic')PREREQUISITE[id]=parent;}));
+const clamp=(n,lo,hi)=>Math.max(lo,Math.min(hi,n));
+function taskDemand(id,level=1){return DEMAND[id]+(level-1)*.12;}
+function learning(s){
+ if(s.config.difficulty!=='adaptive')return null;
+ const variants=Object.fromEntries(VARIANTS.map(v=>[v.id,{...v,seen:0,tested:0,accepted:0,independent:0,near:0,wrong:0,last:'unseen',lastIndex:-1,failures:0,recheckAt:null,needsDelayed:false}]));
+ const byStage=Array.from({length:6},()=>({seen:0,accepted:0,independent:0})),history=[];
+ let ability=1,stage=1,peak=1,streak=0,repair=null,lastChange='Begin with a straightforward simplifying question.',lastChangeAt=-1;
+ s.records.forEach((rec,index)=>{
+  const meta=VBYID[rec.q.variantId];if(!meta)return;const row=variants[meta.id];row.seen++;byStage[meta.stage].seen++;
+  if(rec.status==='open'){if(!row.tested)row.last='open';return;}
+  const accepted=rec.status==='accepted',assisted=!!rec.supportAtClose,independent=accepted&&!assisted&&rec.wrongChecks===0,demand=taskDemand(meta.id,rec.q.level);
+  row.tested++;row.lastIndex=index;row.wrong+=rec.wrongChecks;row.near+=rec.parts.filter(p=>p.status==='near').length;
+  row.last=!accepted?'revisit':independent?'independent':assisted?'supported':'retried';
+  if(accepted){row.accepted++;byStage[meta.stage].accepted++;row.failures=0;row.needsDelayed=false;repair=null;ability=Math.max(ability,demand);stage=Math.max(stage,meta.stage);peak=Math.max(peak,meta.stage);streak++;
+   if(independent){row.independent++;byStage[meta.stage].independent++;}
+   lastChange='Correct: the next selection moves to a harder related variation where available. Previously successful basics are not repeated. Short coverage checks are followed by substantial applications, which may revisit an earlier advanced variant.';
+  }else{
+   streak=0;row.failures++;row.needsDelayed=true;
+   // Keep the exact kind of task. After repeated failures only its arithmetic eases.
+   let level=rec.q.level;if(row.failures>=2)level=Math.max(1,level-1);
+   repair={id:meta.id,level,source:meta.id};
+   lastChange='Next: the SAME question structure with fresh numbers. Success on that new question releases a more demanding related task. Previous achievements stay recorded.';
+  }
+  history.push({index,stage:meta.stage,id:meta.id,level:rec.q.level,demand,accepted,independent,assisted,near:rec.parts.some(p=>p.status==='near'),wrong:rec.wrongChecks});lastChangeAt=index;
+ });
+ const rows=Object.values(variants),tested=rows.filter(v=>v.tested).length,accepted=rows.filter(v=>v.accepted).length,demonstrated=rows.filter(v=>v.independent).length;
+ return {ability,stage,peak,streak,repair,variants,byStage,history,tested,accepted,demonstrated,total:VARIANTS.length,lastChange,lastChangeAt,complete:accepted===VARIANTS.length};
+}
+function adaptivePlan(s){
+ const i=s.records.length,a=learning(s);
+ if(!i)return {id:'s-basic',level:1,kind:'start',reason:'A straightforward simplifying question starts the route.'};
+ if(a.repair)return {...a.repair,kind:'support',reason:'Fresh numbers on exactly the variation that was not yet correct. No unrelated task intervenes.'};
+ const last=s.records[i-1],id=last.q.variantId,lastDemand=DEMAND[id],row=a.variants;
+ const unseen=VARIANTS.filter(v=>!row[v.id].accepted);
+ // A short earlier-variation check must not start a long run of easy questions
+ // for a learner who has already succeeded with substantial applications.
+ if(last.plan?.kind==='coverage'&&lastDemand<a.ability-1.5&&a.ability>=6){
+  const descendants=new Set(),walk=(x,depth)=>{if(depth>5)return;for(const child of SUCCESSORS[x]||[]){if(!descendants.has(child)){descendants.add(child);walk(child,depth+1);}}};walk(id,0);
+  const recent=new Set(s.records.slice(-8).map(r=>r.q.variantId));
+  let pool=VARIANTS.filter(v=>DEMAND[v.id]>=Math.max(6,a.ability-1.5)&&DEMAND[v.id]<=a.ability+1.5&&!recent.has(v.id));
+  const related=pool.filter(v=>descendants.has(v.id));if(related.length)pool=related;
+  const untested=pool.filter(v=>!row[v.id].accepted);if(untested.length)pool=untested;
+  if(pool.length){pool.sort((x,y)=>row[x.id].lastIndex-row[y.id].lastIndex);return {id:pool[0].id,level:3,kind:'stretch',reason:'A brief earlier-skill check is followed by a substantial application, not a run of easy questions. High-demand variants rotate; basic successes are not repeated.'};}
+ }
+ // A direct conceptual successor takes priority over random mixing or a numeric-only level change.
+ const nextId=(SUCCESSORS[id]||[]).find(x=>row[x]&&!row[x].accepted&&DEMAND[x]>lastDemand);
+ if(nextId)return {id:nextId,level:last.q.level,kind:'advance',reason:`Success with “${VBYID[id].label}” unlocks “${VBYID[nextId].label}”: a different, more demanding decision.`};
+ if(unseen.length){
+  const ceiling=Math.max(a.ability,lastDemand)+1.6;
+  let pool=unseen.filter(v=>DEMAND[v.id]>lastDemand&&DEMAND[v.id]<=ceiling);
+  let kind='advance';
+  if(!pool.length){
+   // At the Foundation ceiling, extend coverage, not number size indefinitely.
+   pool=unseen.filter(v=>DEMAND[v.id]<=ceiling);if(!pool.length)pool=unseen;
+   kind='coverage';
+  }
+  const sameFamily=pool.filter(v=>v.type===last.q.type);if(sameFamily.length)pool=sameFamily;
+  // New lower-demand gaps are one-off checks. Already successful basic work never blocks harder applications.
+  pool.sort((x,y)=>kind==='advance'?DEMAND[x.id]-DEMAND[y.id]:DEMAND[y.id]-DEMAND[x.id]);
+  const best=DEMAND[pool[0].id],ties=pool.filter(v=>DEMAND[v.id]===best),random=rng(hash(s.seed,i+7141)),v=ties[Math.floor(random()*ties.length)];
+  const level=kind==='coverage'&&DEMAND[v.id]<a.ability-1?3:last.q.level;
+  return {id:v.id,level,kind,reason:kind==='advance'?'The previous answer was correct. A new, more demanding Foundation application follows.':'The current branch is complete. Check an untested related application; do not repeat a completed easy template.'};
+ }
+ // Timed/target practice can continue after full coverage, but cannot exceed Foundation scope.
+ let pool=VARIANTS.filter(v=>DEMAND[v.id]>=6&&!s.records.slice(-8).some(x=>x.q.variantId===v.id));
+ if(!pool.length)pool=VARIANTS.filter(v=>DEMAND[v.id]>=6&&v.id!==id);
+ pool.sort((x,y)=>row[x.id].lastIndex-row[y.id].lastIndex);
+ return {id:pool[0].id,level:3,kind:'stretch',reason:'All variations have been accepted. Rotate substantial Foundation applications with new values, without returning to repetitive basic sharing.'};
+}
+
+function newRecord(q,now=Date.now(),plan=null){return {q,plan,status:'open',parts:q.parts.map(()=>({status:'open',raw:'',attempts:0})),draft:q.parts.map(()=>''),working:'',strokes:[],barDraft:'',openedAt:now,wrongChecks:0,hint:false,example:false,helpRequested:false,helpUsed:false,supportAtClose:null};}
+function closeEvidence(r){if(r.supportAtClose===null||r.supportAtClose===undefined)r.supportAtClose=!!(r.hint||r.example||r.helpRequested||r.helpUsed);}
+function glance(s){
+ const a=learning(s);if(!a)return null;
+ const r=current(s),recent=a.history.slice(-5),open=r.status==='open';
+ let tone='neutral',status='Ready to begin';
+ if((open&&(r.helpRequested||r.wrongChecks>=2))||a.repair){tone='red';status=r.helpRequested&&open?'Help requested':'Needs support';}
+ else if((open&&(r.hint||r.example||r.helpUsed||r.wrongChecks>0))||(recent.length&&recent[recent.length-1].accepted&&!recent[recent.length-1].independent)){tone='amber';status='Building confidence';}
+ else if(recent.length){tone='green';status=a.stage===5?'Applying & stretching':'Working independently';}
+ if(s.phase==='finished')status=a.complete?'All variations practised':status==='Ready to begin'?'No answers checked':status;
+ return {tone,status,stage:r.q.stage||a.stage,nextStage:a.stage,peak:a.peak,tested:a.tested,accepted:a.accepted,demonstrated:a.demonstrated,total:a.total,independent:a.history.filter(x=>x.independent).length,finished:a.history.length,reason:r.plan?.reason||'',next:a.lastChange,complete:a.complete};
+}
+
+function normalize(c){
+ const o={name:String(c.name??'Student').trim().slice(0,60)||'Student',mode:c.mode??'practice',size:Number(c.size??12),seconds:Number(c.seconds??600),target:Number(c.target??10),component:c.component??'noncalc',focus:c.focus??'all',difficulty:c.difficulty??'adaptive'};
+ if(!['practice','timed','target','journey'].includes(o.mode)||![10,12,20,30,60].includes(o.size)||![0,300,600,900,1200,1800].includes(o.seconds)||!Number.isInteger(o.target)||o.target<1||o.target>100||!['noncalc','calc'].includes(o.component)||!['all','original',...Object.keys(TYPES)].includes(o.focus)||!['adaptive','build','mixed','stretch'].includes(o.difficulty))throw new Error('Check the settings. The target must be a whole number from 1 to 100.');if(o.difficulty==='adaptive')o.focus='all';if(o.mode==='journey')o.difficulty='adaptive',o.focus='all';return o;
+}
+function available(c,index){return c.focus==='all'?Object.keys(TYPES):c.focus==='original'?ORIGINAL:[c.focus];}
+function nextRecord(s){
+ if(s.config.difficulty==='adaptive'){
+  const i=s.records.length,plan=adaptivePlan(s),old=new Set([...s.avoid,...s.records.map(x=>x.q.signature)]);
+  for(let j=0;j<2048;j++){
+   const q=generateVariant(plan.id,hash(s.seed,i*2053+j),s.config.component,plan.level);
+   if(!old.has(q.signature))return newRecord(q,Date.now(),plan);
+   if(j>=128&&!new Set([...s.avoid.slice(-24),...s.records.slice(-24).map(x=>x.q.signature)]).has(q.signature))return newRecord(q,Date.now(),{...plan,reason:plan.reason+' Small-number pool: older questions may recur.'});
+  }
+  throw new Error('This variation needs a fresh question pool. Start a new round.');
+ }
+ const i=s.records.length,types=available(s.config,i),r=rng(hash(s.seed,i+731));
+ // Shuffle each full cycle once, so a mixed round does not neglect a skill.
+ const cycle=Math.floor(i/types.length),order=shuffled(types,rng(hash(s.seed,cycle+901))),type=order[i%types.length];
+ const span=s.config.mode==='practice'?Math.max(3,Math.ceil(s.config.size/3)):6;
+ const level=s.config.difficulty==='stretch'?3:s.config.difficulty==='build'?Math.min(3,1+Math.floor(i/span)):(r()<.25?1:2);
+ const old=new Set([...s.avoid,...s.records.map(x=>x.q.signature)]);let q;
+ for(let j=0;j<2048;j++){
+  q=generate(type,hash(s.seed,i*2053+j),s.config.component,j>=128?3:level);
+  if(!old.has(q.signature))break;
+  if(j===2047)throw new Error('The fresh-question pool is temporarily exhausted. Try a broader selection.');
+ }
+ return newRecord(q);
+}
+function create(config,seed=1,now=Date.now(),avoid=[]){
+ config=normalize(config);const s={version:VERSION,config,seed:seed>>>0,avoid:Array.isArray(avoid)?avoid.slice(-120).filter(x=>typeof x==='string').map(x=>x.slice(0,1000)):[],startedAt:now,endedAt:null,deadline:config.mode==='timed'&&config.seconds?now+config.seconds*1000:null,phase:'active',reason:'',records:[]};s.records.push(nextRecord(s));return s;
+}
+function current(s){return s.records[s.records.length-1];}
+function stats(s){let score=0,exactQ=0,numericExact=0,numericNear=0,choiceCorrect=0,attempts=0,first=0,completed=0,streak=0,best=0;for(const r of s.records){if(r.status!=='open')completed++;if(r.status==='accepted'){score++;if(r.parts.every(p=>p.status==='exact'))exactQ++;if(r.parts.every(p=>p.attempts===1))first++;streak++;best=Math.max(best,streak);}else if(r.status!=='open'||r.wrongChecks)streak=0;for(let i=0;i<r.parts.length;i++){const p=r.parts[i];attempts+=p.attempts;if(p.status==='exact'){if(r.q.parts[i].kind==='choice')choiceCorrect++;else numericExact++;}if(p.status==='near')numericNear++;}}return {score,exactQ,nearQ:score-exactQ,numericExact,numericNear,choiceCorrect,attempts,first,completed,seen:s.records.length,streak,best};}
+function finish(s,reason,now=Date.now()){if(s.phase==='finished')return;s.phase='finished';s.reason=reason;s.endedAt=Math.min(now,s.deadline??now);}
+function expired(s,now=Date.now()){if(s.phase==='active'&&s.deadline!==null&&now>=s.deadline){finish(s,'Time is up',now);return true;}return s.phase==='finished';}
+function submit(s,raws,now=Date.now()){
+ if(expired(s,now))return {status:'finished'};const r=current(s);if(r.status!=='open')return {status:'locked'};
+ if(!Array.isArray(raws)||raws.length!==r.parts.length)return {status:'invalid',errors:[{index:0,message:'Complete the answer fields.'}]};
+ const errors=[],marks=[];r.parts.forEach((p,i)=>{if(['exact','near'].includes(p.status))return;const m=mark(raws[i],r.q.parts[i]);marks[i]=m;if(!m.valid)errors.push({index:i,message:m.error||'Choose one option.'});});
+ if(errors.length)return {status:'invalid',errors};
+ let wrong=false;marks.forEach((m,i)=>{if(!m)return;const p=r.parts[i];p.raw=String(raws[i]);p.attempts++;p.status=m.accepted?(m.exact?'exact':'near'):'wrong';if(m.cents!==undefined)p.cents=m.cents;if(!m.accepted)wrong=true;});
+ if(wrong){r.wrongChecks++;if(s.config.difficulty==='adaptive'){r.status='retry';closeEvidence(r);}}
+ if(r.parts.every(p=>['exact','near'].includes(p.status))){r.status='accepted';closeEvidence(r);if(s.config.mode==='journey'&&learning(s).complete)finish(s,'Practice complete',now);if(s.config.mode==='target'&&stats(s).score>=s.config.target)finish(s,'Target reached',now);}
+ return {status:r.status==='accepted'?'accepted':r.status==='retry'?'similar':'retry',marks};
+}
+function reveal(s,now=Date.now()){if(expired(s,now))return false;const r=current(s);if(r.status!=='open')return false;r.status='revealed';closeEvidence(r);r.parts.forEach(p=>{if(!['exact','near'].includes(p.status))p.status='revealed';});return true;}
+function skip(s,now=Date.now()){if(expired(s,now))return false;const r=current(s);if(r.status!=='open')return false;r.status='skipped';closeEvidence(r);return true;}
+function next(s,now=Date.now()){if(expired(s,now))return false;if(current(s).status==='open')return false;if(s.config.mode==='practice'&&s.records.length>=s.config.size){finish(s,'Practice set complete',now);return false;}if(s.records.length>=500){finish(s,'500-question session complete',now);return false;}s.records.push(nextRecord(s));return true;}
+function serialise(s){return JSON.stringify({...s,records:s.records.map(r=>({...r,q:{type:r.q.type,seed:r.q.seed,component:r.q.component,level:r.q.level,variant:r.q.variant,variantId:r.q.variantId||null}}))});}
+function restore(text){
+ if(typeof text!=='string'||text.length>6000000)throw new Error('Saved session is too large');const s=JSON.parse(text);const legacy=s?.version===3;
+ if(!s||![3,VERSION].includes(s.version)||!['active','finished'].includes(s.phase)||!Number.isInteger(s.seed)||!Number.isFinite(s.startedAt)||!Array.isArray(s.records)||!s.records.length||s.records.length>500)throw new Error('Saved session is not compatible');s.config=normalize(s.config);
+ if(s.deadline!==null&&(!Number.isFinite(s.deadline)||s.deadline!==s.startedAt+s.config.seconds*1000))throw new Error('Saved timer is invalid');
+ if(s.endedAt!==null&&!Number.isFinite(s.endedAt))throw new Error('Saved end time is invalid');
+ s.avoid=Array.isArray(s.avoid)?s.avoid.slice(-120).filter(x=>typeof x==='string').map(x=>x.slice(0,1000)):[];
+ s.reason=String(s.reason||'').slice(0,100);
+ s.records=s.records.map((r,index)=>{
+  const key=r.q;if(!key||!Number.isInteger(key.seed))throw new Error('Saved question is invalid');const q=key.variantId?generateVariant(key.variantId,key.seed,key.component,key.level):generate(key.type,key.seed,key.component,key.level,key.variant??null);if(q.component!==s.config.component)throw new Error('Saved component mismatch');
+  if(!['open','accepted','revealed','skipped','retry'].includes(r.status)||!Array.isArray(r.parts)||r.parts.length!==q.parts.length||!Number.isInteger(r.wrongChecks)||r.wrongChecks<0)throw new Error('Saved answers are invalid');
+  const parts=r.parts.map((p,i)=>{if(!['open','wrong','exact','near','revealed'].includes(p.status)||!Number.isInteger(p.attempts)||p.attempts<0||p.attempts>100000)throw new Error('Saved marking is invalid');const raw=String(p.raw??'').slice(0,48);if(['exact','near'].includes(p.status)){const m=mark(raw,q.parts[i]);if(!m.valid||!m.accepted||(p.status==='exact')!==m.exact)throw new Error('Saved accepted answer failed validation');}return {status:p.status,raw,attempts:p.attempts};});
+  if(r.status==='retry'&&(!r.wrongChecks||parts.every(p=>['exact','near'].includes(p.status))))throw Error('Saved retry is invalid');
+   if(r.status==='accepted'&&!parts.every(p=>['exact','near'].includes(p.status)))throw new Error('Saved score failed validation');
+  if(index<s.records.length-1&&r.status==='open')throw new Error('Saved sequence failed validation');
+  const strokes=Array.isArray(r.strokes)?r.strokes.slice(0,500).map(st=>({tool:st.tool==='eraser'?'eraser':'pen',colour:['#152c42','#14679b','#a52836'].includes(st.colour)?st.colour:'#152c42',width:[2,4,7,24].includes(st.width)?st.width:4,points:Array.isArray(st.points)?st.points.slice(0,2500).filter(pt=>Array.isArray(pt)&&pt.length===2&&pt.every(n=>Number.isFinite(n)&&n>=0&&n<=1)):[]})):[];
+  return {q,plan:r.plan&&typeof r.plan==='object'?{id:q.variantId,level:q.level,kind:['start','support','coverage','advance','revisit','stretch','consolidate'].includes(r.plan.kind)?r.plan.kind:'advance',reason:String(r.plan.reason||'').slice(0,180)}:null,helpRequested:!!r.helpRequested,helpUsed:!!r.helpUsed,supportAtClose:r.status==='open'?null:!!r.supportAtClose,status:r.status,parts,draft:q.parts.map((_,i)=>String(r.draft?.[i]??'').slice(0,48)),working:String(r.working??'').slice(0,10000),strokes,barDraft:String(r.barDraft??'').slice(0,48),wrongChecks:r.wrongChecks,hint:!!r.hint,example:!!r.example,openedAt:Number.isFinite(r.openedAt)?r.openedAt:s.startedAt};
+ });
+ if(legacy){s.routeEpoch=s.records.length;s.version=VERSION;}
+ if(!Number.isInteger(s.routeEpoch??0)||(s.routeEpoch??0)<0||(s.routeEpoch??0)>s.records.length)throw Error('Saved route boundary is invalid');
+ if(s.config.difficulty==='adaptive'){
+  // Recompute the expected seed/variation/level from the preceding validated answers.
+  // This prevents a stored level or a tampered question order from skipping the easy start.
+  const prefix={...s,records:[]};
+  for(const [index,rec] of s.records.entries()){if(index<(s.routeEpoch||0)){prefix.records.push(rec);continue;}const expected=nextRecord(prefix);if(expected.q.variantId!==rec.q.variantId||expected.q.seed!==rec.q.seed||expected.q.level!==rec.q.level)throw new Error('Saved adaptive sequence failed validation');rec.plan=expected.plan;prefix.records.push(rec);}
+ }
+ return s;
+}
+
+function example(q){let e;for(let i=1;i<33;i++){e=q.variantId?generateVariant(q.variantId,hash(q.seed,333+i),q.component,q.level):generate(q.type,hash(q.seed,333+i),q.component,q.level,q.variant);if(JSON.stringify(e.data)!==JSON.stringify(q.data))return e;}throw new Error('No different example generated');}
+const api={EXTRA_IDS,SUCCESSORS,DEMAND,PREREQUISITE,taskDemand,STAGES,VARIANTS,VBYID,generateVariant,learning,adaptivePlan,glance,VERSION,TOLERANCE,TYPES,ORIGINAL,rng,hash,roundRatio,fmt,inputFmt,shortC,show,parse,mark,generate,normalize,create,current,stats,finish,expired,submit,reveal,skip,next,serialise,restore,example,available};
+if(typeof module!=='undefined'&&module.exports)module.exports=api;root.RatioStudio=api;
+})(typeof globalThis!=='undefined'?globalThis:this);
+</script>
+<script>(function(){
+'use strict';
+const E=window.RatioStudio,$=id=>document.getElementById(id),KEY='ratio-studio-v3-session',PREF='ratio-studio-v1-display';
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function power(x){return esc(x).replace(/\b(\d+)\/(\d+)\b/g,(_,a,b)=>`<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>${a}</mn><mn>${b}</mn></mfrac></math>`).replace(/\b([a-zA-Z]|\d+)\^(\d+)/g,(_,a,b)=>`<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><${/^[0-9]+$/.test(a)?'mn':'mi'}>${a}</${/^[0-9]+$/.test(a)?'mn':'mi'}><mn>${b}</mn></msup></math>`);}
+
+function rich(x){return power(x).replace(/(£[\d,]+(?:\.\d+)?|\b\d+(?:\s:\s[\d,]+)+|\b[\d,]+(?:\.\d+)?\s(?:cm|km|mm|kg|ml|litres|m|g)\b)/g,'<b>$1</b>');}
+let session=null,saved=null,timer=null,saveTimer=null,toastTimer=null,storageOK=true,view='setupView';
+let drawRecord=null,drawReadOnly=false,currentStroke=null,redoStack=[],penTool='pen',cw=1,ch=1;
+const canvas=$('workCanvas'),ctx=canvas.getContext('2d');
+function toast(text){clearTimeout(toastTimer);$('toast').textContent=text;toastTimer=setTimeout(()=>$('toast').textContent='',4600);}
+function notice(text){$('storageNotice').hidden=false;$('storageNotice').textContent=text;}
+function save(){clearTimeout(saveTimer);if(!session||!storageOK)return;try{localStorage.setItem(KEY,E.serialise(session));$('saveStatus').textContent='Saved in this browser. No learner data is sent anywhere.';}catch{storageOK=false;notice('Browser saving is unavailable or full. Continue in this tab, and export your results before closing it.');$('saveStatus').textContent='Not saved: keep this tab open.';}}
+function soon(){clearTimeout(saveTimer);saveTimer=setTimeout(save,350);}
+let roundCounter=0,lastSeed=null;
+function seed(){let value;try{value=crypto.getRandomValues(new Uint32Array(1))[0];}catch{value=(Date.now()^Math.floor(Math.random()*4294967296))>>>0;}value=E.hash(value,++roundCounter);if(value===lastSeed)value=(value+1)>>>0;lastSeed=value;return value;}
+function previousQuestions(){const old=session||saved;return old?[...old.avoid,...old.records.map(r=>r.q.signature)].slice(-120):[];}
+function startRound(c){const next=E.create(c,seed(),Date.now(),previousQuestions());session=next;saved=null;$('resumeCard').hidden=true;renderQuestion();save();runTimer();}
+
+function time(s){s=Math.max(0,Math.floor(s));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}
+function elapsed(s){return Math.max(0,Math.floor(((s.endedAt??Date.now())-s.startedAt)/1000));}
+function changeView(v){view=v;for(const name of ['setupView','sessionView','resultsView'])$(name).hidden=name!==v;window.scrollTo({top:0,behavior:'instant'});}
+function closeDialogs(){finishStroke();for(const d of document.querySelectorAll('dialog[open]'))d.close('cancel');}
+function openDialog(id){if(!$(id).open)$(id).showModal();}
+function ask(title,text,button='Continue'){
+ const d=$('confirmDialog');if(d.open)return Promise.resolve(false);
+ $('confirmTitle').textContent=title;$('confirmText').textContent=text;$('confirmOK').textContent=button;
+ return new Promise(resolve=>{d.addEventListener('close',()=>resolve(d.returnValue==='ok'),{once:true});d.returnValue='cancel';d.showModal();$('confirmCancel').focus();});
+}
+$('confirmOK').onclick=()=>$('confirmDialog').close('ok');$('confirmCancel').onclick=()=>$('confirmDialog').close('cancel');
+for(const b of document.querySelectorAll('[data-close]'))b.onclick=()=>$(b.dataset.close).close();
+function config(){return {name:$('nameInput').value,mode:document.querySelector('input[name=mode]:checked').value,size:$('sizeSelect').value,seconds:$('timeSelect').value,target:$('targetInput').value,component:$('componentSelect').value,focus:$('focusSelect').value,difficulty:$('difficultySelect').value};}
+function modeFields(){if(document.querySelector('input[name=mode]:checked').value==='journey')$('difficultySelect').value='adaptive';routeFields();}
+function fillConfig(c){$('nameInput').value=c.name==='Student'?'':c.name;document.querySelector(`input[name=mode][value=${c.mode}]`).checked=true;$('sizeSelect').value=c.size;$('timeSelect').value=c.seconds;$('targetInput').value=c.target;$('componentSelect').value=c.component;$('focusSelect').value=c.focus;$('difficultySelect').value=c.difficulty;modeFields();}
+Object.entries(E.TYPES).forEach(([id,label])=>{const o=document.createElement('option');o.value=id;o.textContent=label;$('focusSelect').appendChild(o);});
+document.querySelectorAll('input[name=mode]').forEach(el=>el.onchange=modeFields);$('difficultySelect').onchange=routeFields;
+function routeFields(){
+ const adaptive=$('difficultySelect').value==='adaptive';
+ if(!adaptive&&document.querySelector('input[name=mode]:checked').value==='journey')document.querySelector('input[name=mode][value=practice]').checked=true;
+ $('focusSelect').disabled=adaptive;$('focusField').hidden=adaptive;if(adaptive)$('focusSelect').value='all';
+ $('adaptiveConfigNote').hidden=!adaptive;
+ const mode=document.querySelector('input[name=mode]:checked').value;
+ $('journeyField').hidden=mode!=='journey';
+ $('sizeField').hidden=mode!=='practice';$('timeField').hidden=mode!=='timed';$('targetField').hidden=mode!=='target';
+ $('startBtn').innerHTML='Start practice'+' <span aria-hidden="true">→</span>';
+}
+function renderAdaptive(){
+ if(!session)return;$('teacherBtn').disabled=false;
+ const r=E.current(session),closed=r.status!=='open'||session.phase!=='active';
+ $('helpSignalBtn').disabled=closed;
+ $('helpSignalBtn').setAttribute('aria-pressed',String(!!r.helpRequested));
+ $('helpSignalBtn').textContent=r.helpRequested?'Help requested · clear':'Ask for help';
+ if($('teacherDialog').open)renderTeacher();
+}
+function evidenceLabel(row){
+ return {unseen:['neutral','Not seen'],open:['neutral','In progress'],independent:['green','Independent'],supported:['amber','With support'],retried:['amber','After retry'],revisit:['red','Needs revisit']}[row.last]||['neutral','Not seen'];
+}
+function progressSummaryHTML(){
+ const a=E.learning(session),g=E.glance(session);if(!a)return '<p>Fixed practice route. Adaptive readiness is not being recorded for this round.</p>';
+ const recent=a.history.slice(-5);
+ return `<div class="glance-card" data-tone="${g.tone}"><h3>${esc(session.config.name)} · ${esc(g.status)}</h3><p><strong>Current question:</strong> ${esc(E.VBYID[E.current(session).q.variantId]?.label||'')}.<br>Independent successes: ${g.independent} of ${g.finished} completed questions. Highest successful task demand: ${a.ability.toFixed(1)} (internal teaching scale, not a grade).</p><p>${esc(g.next)}</p><p><strong>Next selection:</strong> ${E.current(session).status==='open'?'Check this question first; no next task is fixed until the answer is submitted.':esc(E.VBYID[E.adaptivePlan(session).id]?.label||'')+'.<br>'+esc(E.adaptivePlan(session).reason)}</p><div class="glance-metrics"><div><strong>${a.tested}/${a.total}</strong><small>Variations checked</small></div><div><strong>${a.accepted}/${a.total}</strong><small>Variations with an accepted answer</small></div><div><strong>${g.independent}/${g.finished}</strong><small>Questions accepted independently, first check</small></div><div><strong>${E.stats(session).numericNear}</strong><small>Numeric parts accepted within tolerance</small></div></div><p class="help">Recent completed questions — newest on the right:</p><div class="recent-trail">${recent.length?recent.map(x=>`<span class="${!x.accepted?'red':x.independent?'green':'amber'}">Q${x.index+1} · ${!x.accepted?'revisit':x.independent?'independent':x.assisted?'help used':'retry'}${x.near?' · ±1':''}</span>`).join(''):'<span>No completed questions yet.</span>'}</div></div>`;
+}
+function renderTeacher(){
+ if(!session)return;const a=E.learning(session);$('teacherHeading').textContent='Teacher glance — '+session.config.name;$('teacherSummary').innerHTML=progressSummaryHTML();
+ $('teacherStages').innerHTML='';$('teacherCoverage').innerHTML='';if(!a)return;
+ let rows='';E.STAGES.slice(1).forEach((name,i)=>{const stage=i+1,vs=E.VARIANTS.filter(v=>v.stage===stage);rows+=`<tr class="section-row"><th colspan="5" scope="colgroup">${stage}. ${esc(name)}</th></tr>`;for(const v of vs){const row=a.variants[v.id],[tone,label]=evidenceLabel(row);rows+=`<tr><td>${esc(v.label)}</td><td>${row.accepted}/${row.tested}</td><td>${row.independent}</td><td>${row.near}</td><td><span class="evidence-tag ${tone}">${label}</span></td></tr>`;}});
+ $('teacherCoverage').innerHTML=`<div class="table-scroll"><table class="teacher-table"><thead><tr><th scope="col">Variation</th><th scope="col">Accepted / checked</th><th scope="col">Independent</th><th scope="col">±1 parts</th><th scope="col">Latest evidence</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+$('teacherBtn').onclick=()=>{renderTeacher();openDialog('teacherDialog');};
+$('helpSignalBtn').onclick=()=>{if(!session||session.phase!=='active')return;const r=E.current(session);if(r.status!=='open')return;r.helpRequested=!r.helpRequested;if(r.helpRequested)r.helpUsed=true;renderAdaptive();save();toast(r.helpRequested?'Help signal is visible on this screen. Raise your hand so your teacher sees it.':'Help signal cleared. Earlier help use remains recorded for this question.');};
+function progressCSV(){
+ const a=E.learning(session);if(!a)return csv();
+ const rows=[['Learner','Round','Teaching step','Peak step','Stage','Variation','Times checked','Accepted','Independent first checks','Tolerance-only numeric parts','Latest evidence']];
+ for(const v of E.VARIANTS){const t=a.variants[v.id];rows.push([session.config.name,session.seed.toString(16),a.stage,a.peak,v.stage,v.label,t.tested,t.accepted,t.independent,t.near,evidenceLabel(t)[1]]);}
+ return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');
+}
+$('teacherExportBtn').onclick=()=>{if(session)download('ratio-adaptive-progress.csv',progressCSV(),'text/csv;charset=utf-8');};
+
+function clock(){if(!session)return;const finite=session.deadline!==null;$('clockLabel').textContent=finite?'Time left':'Time used';const seconds=finite?Math.max(0,Math.ceil((session.deadline-Date.now())/1000)):elapsed(session);$('clock').textContent=time(seconds);$('clock').classList.toggle('urgent',finite&&seconds<=60);}
+function runTimer(){clearInterval(timer);timer=setInterval(()=>{if(!session||session.phase!=='active')return;if(E.expired(session)){finishStroke();save();renderResults();}else clock();},250);}
+function top(){if(!session)return;const st=E.stats(session),c=session.config;
+ $('sessionName').textContent=c.name;
+ $('sessionMode').textContent=c.mode==='practice'?'Practice set':c.mode==='target'?'Target: '+c.target+' points':c.mode==='timed'&&c.seconds?'Timed practice':'Practice';
+ $('questionCount').textContent=session.records.length+(c.mode==='practice'?' / '+c.size:'');
+ $('pointsCount').textContent=st.score+(c.mode==='target'?' / '+c.target:'');
+ clock();renderAdaptive();}
+function tableHTML(table){return table?`<div class="table-scroll"><table class="data-table"><thead><tr>${table.headers.map(x=>`<th scope="col">${esc(x)}</th>`).join('')}</tr></thead><tbody>${table.rows.map(row=>`<tr>${row.map(x=>`<td>${rich(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`:'';}
+function linesHTML(q){return q.lines.map(line=>'<p>'+rich(line)+'</p>').join('');}
+function model(part){return part.kind==='choice'?part.options.find(x=>x.id===part.correct)?.text??'':E.show(part.answer,part.unit);}
+function answerFields(r){return r.q.parts.map((p,i)=>{
+ const state=r.parts[i],value=['exact','near'].includes(state.status)?state.raw:(r.draft[i]??state.raw??'');
+ if(p.kind==='choice')return `<fieldset class="answer-item" id="part-${i}"><legend>${r.q.parts.length>1?String.fromCharCode(97+i)+') ':''}${esc(p.label)}</legend><div class="choice-options">${p.options.map(o=>`<label class="choice-option"><input type="radio" name="part-${i}" value="${o.id}" ${o.id===value?'checked':''} aria-describedby="feedback-${i}"><span>${power(o.text)}</span></label>`).join('')}</div><div id="feedback-${i}" class="part-feedback"></div></fieldset>`;
+ return `<div class="answer-item" id="part-${i}"><label for="ans-${i}">${r.q.parts.length>1?String.fromCharCode(97+i)+') ':''}${esc(p.label)}</label><div class="number-shell">${p.unit==='£'?'<span class="answer-unit">£</span>':''}<input id="ans-${i}" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" maxlength="48" placeholder="0.00" value="${esc(value)}" aria-describedby="feedback-${i} answerInstructions" data-part="${i}" data-step="0.01">${p.unit&&p.unit!=='£'?`<span class="answer-unit">${esc(p.unit)}</span>`:''}</div><div class="step-controls"><button type="button" data-step-part="${i}" data-delta="-1" aria-label="Decrease ${esc(p.label)} by 0.01">−0.01</button><button type="button" data-step-part="${i}" data-delta="1" aria-label="Increase ${esc(p.label)} by 0.01">+0.01</button></div><div id="feedback-${i}" class="part-feedback"></div></div>`;
+ }).join('');}
+function pull(){if(!session||view!=='sessionView')return;const r=E.current(session);r.draft=r.q.parts.map((p,i)=>p.kind==='numeric'?$('ans-'+i)?.value??r.draft[i]:document.querySelector(`input[name="part-${i}"]:checked`)?.value??r.draft[i]??'');}
+function message(text,kind=''){const el=$('checkMessage');el.hidden=!text;el.className='notice'+(kind?' '+kind:'');el.textContent=text;}
+function updateFeedback(){
+ const r=E.current(session),locked=r.status!=='open'||session.phase!=='active';
+ r.parts.forEach((s,i)=>{const p=r.q.parts[i],accepted=['exact','near'].includes(s.status),el=$('feedback-'+i);document.querySelectorAll(`#part-${i} input,#part-${i} button`).forEach(x=>x.disabled=locked||accepted);el.className='part-feedback';
+  if(accepted){el.classList.add('good');el.textContent=p.kind==='choice'?'✓ Correct selection.':s.status==='exact'?`✓ Correct — exact. Model: ${model(p)}.`:`✓ Correct — accepted within ±1.00. Model: ${model(p)}.`;}
+  else if(s.status==='wrong'){el.classList.add('bad');el.textContent=r.status==='retry'?'Not yet correct. The next question checks this same skill with new values.':p.kind==='choice'?'Not quite. Re-read the question and try another option.':'Not quite. Check your calculation and what the question asks for, then try again.';}
+  else if(r.status==='revealed'){el.textContent='Model answer: '+model(p)+'.';}
+  else el.textContent='';
+ });
+ $('checkBtn').disabled=locked;$('checkBtn').hidden=locked;$('nextBtn').hidden=!locked;$('nextBtn').textContent=session.config.mode==='practice'&&session.records.length>=session.config.size?'View results →':r.status==='retry'?'Try a similar question →':'Next question →';$('skipBtn').disabled=locked;$('revealBtn').disabled=locked;
+ $('solutionBox').hidden=!['accepted','revealed'].includes(r.status);$('solutionBox').innerHTML=$('solutionBox').hidden?'':`<h3>${r.status==='accepted'?'Worked solution':'Solution — no question point'}</h3>${r.q.solution.map(x=>'<p>'+rich(x)+'</p>').join('')}`;
+ top();
+}
+function renderQuestion(focus=true){
+ if(session.phase==='finished'){renderResults();return;}changeView('sessionView');const r=E.current(session),q=r.q;
+ $('paperStyle').textContent=q.component==='noncalc'?'NON-CALCULATOR PRACTICE':'CALCULATOR-ALLOWED PRACTICE';$('questionHeading').textContent='Question '+session.records.length;$('questionText').innerHTML=linesHTML(q);$('questionTable').innerHTML=tableHTML(q.table);$('barBtn').hidden=!q.bar;
+ $('questionGuidance').textContent=q.parts.every(p=>p.kind==='choice')?'Choose one statement. Ratio and fraction choices are marked exactly.':q.component==='noncalc'?'The exact answers are whole numbers. Your ±1.00 practice tolerance still applies.':'The exact answers terminate after 1 or 2 decimal places. No rounding is needed.';
+ $('answerHeading').textContent=q.parts.length>1?'Your answers':'Your answer';$('checkBtn').textContent=q.parts.length>1?'Check answers':'Check answer';$('answerInstructions').textContent=q.parts.every(p=>p.kind==='choice')?'Choose the correct option. The ±1.00 tolerance applies to numeric entry fields, not choices.':'Enter up to 2 decimal places. Whole numbers are also accepted.';
+ document.querySelector('.answer-top .pill').textContent=q.parts.every(p=>p.kind==='choice')?'Exact choice':'±1.00';
+ document.querySelector('.tolerance-help').textContent=q.parts.every(p=>p.kind==='choice')?'Ratio and fraction selections require the exact correct statement. Keep the requested order and simplify where asked.':'The limit includes exactly −1.00 and +1.00 from the model answer. Exact and tolerance-only answers are counted separately.';
+ $('answerFields').innerHTML=answerFields(r);message('');updateFeedback();
+ if(r.status==='accepted')message('Correct. One practice point earned.','success');
+ if(r.status==='revealed')message('Solution revealed. This question earns no point.');
+ if(r.status==='skipped')message('Question skipped. No point awarded.');
+ if(r.status==='retry')message('Not quite. Your next question will use fresh numbers on the same idea. A correct answer then unlocks a more demanding question.','error');
+ for(const el of $('answerFields').querySelectorAll('input')){el.addEventListener('input',()=>{pull();soon();});el.addEventListener('change',()=>{pull();soon();});if(el.type==='text')el.addEventListener('keydown',e=>{if(e.key==='ArrowUp'||e.key==='ArrowDown'){e.preventDefault();step(Number(el.dataset.part),e.key==='ArrowUp'?1:-1);}});}
+ for(const b of $('answerFields').querySelectorAll('[data-step-part]'))b.onclick=()=>step(Number(b.dataset.stepPart),Number(b.dataset.delta));
+ if(focus)$('questionHeading').focus({preventScroll:true});
+}
+function step(i,delta){if(!session||session.phase!=='active')return;const r=E.current(session),p=r.q.parts[i],el=$('ans-'+i);if(!el||el.disabled)return;const parsed=el.value.trim()?E.parse(el.value,p.unit):{ok:true,cents:0};if(!parsed.ok){$('feedback-'+i).textContent=parsed.error;$('feedback-'+i).className='part-feedback invalid';el.focus();return;}if(Math.abs(parsed.cents+delta)>1e12)return;el.value=E.inputFmt(parsed.cents+delta);pull();soon();el.focus();}
+function submit(event){event?.preventDefault();if(!session||view!=='sessionView')return;pull();const r=E.current(session),out=E.submit(session,r.draft);if(out.status==='finished'){save();renderResults();return;}if(out.status==='locked')return;
+ if(out.status==='invalid'){message('Complete the highlighted answer before checking. No attempt has been used.','error');out.errors.forEach(e=>{const f=$('feedback-'+e.index);f.textContent=e.message;f.className='part-feedback invalid';});$('part-'+out.errors[0].index).querySelector('input')?.focus();return;}
+ updateFeedback();if(out.status==='accepted'){message('Correct. One practice point earned.','success');$('nextBtn').focus();}else if(out.status==='similar'){message('Not quite. Take a fresh question on the same idea. Once it is correct, you will move on.','error');$('nextBtn').focus();}else message('Some answers need another try. Any accepted part stays locked.','error');save();if(session.phase==='finished')renderResults();
+}
+$('answerForm').addEventListener('submit',submit);
+$('nextBtn').onclick=()=>{if(!session)return;closeDialogs();try{if(E.next(session)){renderQuestion();save();}else if(session.phase==='finished'){save();renderResults();}}catch(err){save();toast('The next question could not be generated: '+err.message);}};
+$('revealBtn').onclick=async()=>{if(!session||E.current(session).status!=='open')return;if(!await ask('Reveal this solution?','This ends the question without a practice point. Any parts you already answered correctly remain recorded.','Reveal solution'))return;pull();if(E.reveal(session)){updateFeedback();message('Solution revealed. This question earns no point.');save();$('nextBtn').focus();}else if(session.phase==='finished')renderResults();};
+$('skipBtn').onclick=async()=>{if(!session||E.current(session).status!=='open')return;if(!await ask('Skip this question?','It will be recorded as skipped and earn no question point. You can see the solution in the final review.','Skip question'))return;pull();if(E.skip(session)){updateFeedback();message('Question skipped. Select Next question to continue.');save();$('nextBtn').focus();}else if(session.phase==='finished')renderResults();};
+$('finishBtn').onclick=async()=>{if(!session)return;if(!await ask('Finish this session?','Your results and all the questions seen so far will be available for review.','Finish & review'))return;pull();E.finish(session,'Finished by learner');save();renderResults();};
+async function toSetup(){if(session?.phase==='active'&&!await ask('Start a new session?','This ends the current session. Its saved copy remains available until you start the next session. Export a review first if you need a separate record.','Set up new session'))return;if(session?.phase==='active'){pull();E.finish(session,'Finished for a new session');save();}clearInterval(timer);closeDialogs();if(session){saved=session;fillConfig(session.config);}updateResume();changeView('setupView');$('setupTitle').scrollIntoView({block:'start'});}
+$('newBtn').onclick=toSetup;$('againBtn').onclick=toSetup;$('freshBtn').onclick=async()=>{if(!session)return;if(!await ask('Start a fresh random round?','New numbers and questions will replace this review. Export it first to keep a separate copy.','Start fresh round'))return;try{startRound(session.config);}catch(e){toast('Could not start: '+e.message);}};
+$('setupForm').onsubmit=async e=>{e.preventDefault();$('setupError').hidden=true;let c;try{c=E.normalize(config());}catch(err){$('setupError').textContent=err.message;$('setupError').hidden=false;return;}
+ if(saved&&!await ask('Replace the saved session?','Starting this session replaces the locally saved one. Its results will no longer be available here.','Start new session'))return;
+ try{startRound(c);}catch(err){$('setupError').textContent='The session could not start: '+err.message;$('setupError').hidden=false;}
+};
+function updateResume(){if(!saved){$('resumeCard').hidden=true;return;}$('resumeCard').hidden=false;const st=E.stats(saved);$('resumeTitle').textContent=saved.phase==='finished'?'Your last review is saved':'Continue your saved session';$('resumeInfo').textContent=`${saved.config.name} · ${st.score} points · ${saved.records.length} question${saved.records.length===1?'':'s'} seen`;$('resumeBtn').textContent=saved.phase==='finished'?'View saved review':'Resume session';}
+$('resumeBtn').onclick=()=>{if(!saved)return;session=saved;saved=null;E.expired(session);if(session.phase==='finished')renderResults();else{renderQuestion();runTimer();}save();};
+$('discardBtn').onclick=async()=>{if(!await ask('Discard saved session?','This deletes only this trainer’s locally saved session.','Discard'))return;try{localStorage.removeItem(KEY);}catch{}saved=null;session=null;updateResume();toast('Saved session discarded.');};
+function machineHTML(q){const m=q.machine;if(!m)return '';return `<div class="machine-block"><div class="machine-caption">${m.reverse?'Work backwards: start on the right, then divide.':'Work forwards: start on the left.'}</div><div class="number-machine${m.reverse?' reverse':''}"><div class="machine-end"><small>${esc(m.leftLabel)}</small><strong>${esc(m.left)}</strong></div><span class="machine-arrow" aria-hidden="true">${m.reverse?'←':'→'}</span><div class="machine-operation">${power(m.op)}</div><span class="machine-arrow" aria-hidden="true">${m.reverse?'←':'→'}</span><div class="machine-end"><small>${esc(m.rightLabel)}</small><strong>${esc(m.right)}</strong></div></div><button class="quiet animate-button" type="button" data-animate>Animate ${m.reverse?'backwards':'forwards'}</button></div>`;}
+function barHTML(q){
+ if(!q.bar)return '';const b=q.bar,max=Math.max(...b.parts),min=Math.min(...b.parts);
+ return `<div class="ratio-model"><p class="bar-caption">${esc(b.description)}</p>${b.parts.map((count,i)=>{
+  const cut=b.relation==='changed'&&i===2?b.cutAt:b.relation==='difference'&&count===max?min:null;
+  const highlighted=b.highlight.includes(i);
+  return `<div class="ratio-row"><div class="ratio-row-label"><strong>${esc(b.labels[i])}</strong><span>${count} equal part${count===1?'':'s'} <b data-bar-total="${i}"></b></span></div><div class="ratio-grid" role="img" style="grid-template-columns:repeat(${max},minmax(0,1fr))" aria-label="${esc(b.labels[i])}: ${count} equal parts${cut!==null?', including '+(count-cut)+' extra parts':''}">${Array.from({length:count},(_,j)=>`<span class="ratio-cell colour-${i}${cut!==null&&j>=cut?' extra':''}${highlighted?' given':''}" aria-hidden="true"></span>`).join('')}</div></div>`;
+ }).join('')}<p class="bar-legend">Each box represents the same amount.${['difference','changed'].includes(b.relation)?' Hatched boxes show the extra parts.':''}</p></div>`;
+}
+function updateBar(){if(!session)return;const r=E.current(session),b=r.q.bar;if(!b)return;const raw=$('partValue').value;r.barDraft=raw;soon();
+ const p=raw.trim()?E.parse(raw,b.unit):null;
+ $('barNotice').textContent=!p?'Enter your estimate for one part to see the row totals.':!p.ok?p.error:p.cents<0?'Use a non-negative amount for this bar model.':'Your model totals are shown beside the bars. This is working, not an answer check.';
+ document.querySelectorAll('#barContent [data-bar-total]').forEach(el=>el.textContent=p?.ok&&p.cents>=0?'= '+E.show(p.cents*b.parts[Number(el.dataset.barTotal)],b.unit):'');
+}
+function openBar(){if(!session||!E.current(session).q.bar)return;const r=E.current(session);r.hint=true;$('barContent').innerHTML=barHTML(r.q);$('partValue').value=r.barDraft||'';$('barUnit').textContent=r.q.bar.unit;$('barQuestion').innerHTML=linesHTML(r.q);updateBar();openDialog('barDialog');renderAdaptive();}
+$('barBtn').onclick=openBar;$('partValue').oninput=updateBar;
+function tab(which){const method=which==='method';$('methodTab').setAttribute('aria-selected',String(method));$('exampleTab').setAttribute('aria-selected',String(!method));$('methodTab').tabIndex=method?0:-1;$('exampleTab').tabIndex=method?-1:0;$('methodContent').hidden=!method;$('exampleContent').hidden=method;if(!method&&session&&view==='sessionView'){E.current(session).example=true;soon();}}
+function openMethod(){if(!session)return;const r=E.current(session),q=r.q;r.hint=true;soon();const ex=E.example(q);$('methodContent').innerHTML=`<h3>${esc(E.TYPES[q.type])}</h3>${machineHTML(q)}<ol class="method-steps">${q.method.map(x=>`<li><span>${rich(x)}</span></li>`).join('')}</ol><div class="method-note">This gives the method, not the final answer. Find equal parts, use a fraction of the whole, or work with an equivalent ratio. Any valid method is welcome.</div>`;
+ $('exampleContent').innerHTML=`<p class="method-note">A different question of the same type. These are not your current question’s numbers.</p><div class="example-question">${linesHTML(ex)}${tableHTML(ex.table)}</div>${machineHTML(ex)}<h3>Worked solution</h3>${ex.solution.map(x=>`<div class="solution-step">${rich(x)}</div>`).join('')}<p class="help">All displayed amounts are exact. Check the requested order and units before entering your answer.</p>`;
+ tab('method');openDialog('methodDialog');renderAdaptive();}
+$('methodBtn').onclick=openMethod;$('methodTab').onclick=()=>tab('method');$('exampleTab').onclick=()=>tab('example');
+for(const id of ['methodTab','exampleTab'])$(id).onkeydown=e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const isMethod=e.key==='Home'||(e.key!=='End'&&id==='exampleTab');tab(isMethod?'method':'example');$(isMethod?'methodTab':'exampleTab').focus();}};
+$('methodDialog').onclick=e=>{const button=e.target.closest('[data-animate]');if(!button)return;const m=button.previousElementSibling;m.classList.remove('play');void m.offsetWidth;m.classList.add('play');};
+function statusLabel(r){if(r.status==='accepted')return r.parts.every(p=>p.status==='exact')?'Correct · exact':'Correct · tolerance used';return r.status==='retry'?'Needs practice':r.status==='revealed'?'Revealed':r.status==='skipped'?'Skipped':'Unfinished';}
+function reviewHTML(r,i){return `<details class="review-card"><summary><span>Question ${i+1}</span><span>${esc(statusLabel(r))}</span></summary><div class="review-body">${linesHTML(r.q)}${tableHTML(r.q.table)}${r.q.parts.map((p,j)=>{const s=r.parts[j],typed=s.raw||r.draft[j];const user=p.kind==='choice'?p.options.find(x=>x.id===typed)?.text||'No selection':typed||'No answer';return `<div class="review-part"><b>${esc(p.label)}</b><p>Your answer: ${power(user)}</p><p><strong>Model: ${power(model(p))}</strong></p><p>${esc(['exact','near'].includes(s.status)?(s.status==='near'?'Accepted within ±1.00.':'Accepted exactly.'):'Not accepted as a correct part.')} Attempts: ${s.attempts}.</p></div>`;}).join('')}<div class="review-method"><b>Worked solution</b>${r.q.solution.map(x=>`<p>${rich(x)}</p>`).join('')}</div>${r.working?`<h3>Your typed working</h3><div class="working-review">${esc(r.working)}</div>`:''}${r.strokes.length?`<p><button type="button" class="quiet" data-review-drawing="${i}">View saved drawing</button></p>`:''}<p class="help">Support used: ${r.hint?'method viewed':'no method viewed'}${r.example?', example viewed':''}.</p></div></details>`;}
+function renderResults(){if(!session)return;$('teacherBtn').disabled=false;clearInterval(timer);closeDialogs();changeView('resultsView');const st=E.stats(session);$('resultsSubtitle').textContent=`${session.config.name} · ${session.reason} · ${time(elapsed(session))} used · Round ${session.seed.toString(16).toUpperCase().padStart(8,'0')}`;
+ $('resultMetrics').innerHTML=[[''+st.score+' / '+st.seen,'Complete questions accepted'],[st.numericExact,'Exact numeric answers'],[st.numericNear,'Numeric answers within tolerance'],[st.first,'Questions correct on first check']].map(([v,label])=>`<div class="metric"><b>${v}</b><span>${label}</span></div>`).join('');
+ $('reviewList').innerHTML=session.records.map(reviewHTML).join('');$('resultsHeading').focus({preventScroll:true});save();}
+$('reviewList').onclick=e=>{const b=e.target.closest('[data-review-drawing]');if(b)openWork(session.records[Number(b.dataset.reviewDrawing)],true);};
+function csvCell(v){let s=String(v??'');if(/^[\s]*[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';}
+function csv(){const rows=[['Resource','Learner','Question','Step','Variation','Path purpose','Support before acceptance','Independent first check','Skill','Calculation style','Question status','Part','Unit','Entered answer','Model answer','Part status','Attempts','Tolerance','Question text','Typed working']];session.records.forEach((r,i)=>r.q.parts.forEach((p,j)=>{const a=r.parts[j],raw=a.raw||r.draft[j];rows.push(['Ratio Studio',session.config.name,i+1,r.q.stage||'',r.q.variantId?E.VBYID[r.q.variantId].label:'',r.plan?.kind||'fixed',r.supportAtClose===null?'not closed':r.supportAtClose?'yes':'no',r.status==='accepted'&&!r.supportAtClose&&!r.wrongChecks?'yes':'no',E.TYPES[r.q.type],r.q.component,r.status,p.label,p.unit||'choice',p.kind==='choice'?(p.options.find(x=>x.id===raw)?.text||''):raw,model(p),a.status,a.attempts,p.kind==='numeric'?'±1.00':'exact selection',[...r.q.lines,...(r.q.table?[r.q.table.headers.join(' | '),...r.q.table.rows.map(x=>x.join(' | '))]:[])].join('\n'),r.working]);}));return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');}
+function download(name,text,type){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+$('csvBtn').onclick=()=>{if(session)download('ratio-practice-results.csv',csv(),'text/csv;charset=utf-8');};
+function summary(){const st=E.stats(session),a=E.learning(session);const route=a?`Adaptive route: teaching step ${a.stage}/5; highest reached ${a.peak}/5\nVariations checked: ${a.tested}/${a.total}; accepted: ${a.accepted}/${a.total}\nVariations with independent evidence: ${a.demonstrated}/${a.total}\n`:'';return `Ratio Studio — Foundation GCSE Mathematics\nLearner: ${session.config.name}\n${route}${session.reason}\nComplete questions accepted: ${st.score} / ${st.seen} seen\nExact numeric answers: ${st.numericExact}\nNumeric answers accepted within tolerance: ${st.numericNear}\nCorrect choice selections: ${st.choiceCorrect}\nQuestions correct on first check: ${st.first}\nTime used: ${time(elapsed(session))}\nNumeric tolerance: ±1.00 inclusive; input increments 0.01.\nPractice points only. No GCSE grade or method-mark judgement.\n`;}
+$('copyBtn').onclick=async()=>{if(!session)return;try{await navigator.clipboard.writeText(summary());toast('Summary copied.');}catch{download('ratio-practice-summary.txt',summary(),'text/plain;charset=utf-8');toast('Clipboard unavailable. A text summary was prepared instead.');}};
+let printStates=[];window.addEventListener('beforeprint',()=>{printStates=[...document.querySelectorAll('.review-card')].map(d=>d.open);document.querySelectorAll('.review-card').forEach(d=>d.open=true);});window.addEventListener('afterprint',()=>document.querySelectorAll('.review-card').forEach((d,i)=>d.open=!!printStates[i]));$('printBtn').onclick=()=>window.print();
+function openWork(record=null,readOnly=false){if(!session)return;pull();drawRecord=record||E.current(session);drawReadOnly=readOnly;redoStack=[];currentStroke=null;$('workHeading').textContent=readOnly?'Saved working':'Working space';$('workQuestion').innerHTML=linesHTML(drawRecord.q)+tableHTML(drawRecord.q.table);$('workText').value=drawRecord.working;$('workText').readOnly=readOnly;document.querySelectorAll('.drawing-tools button,.drawing-tools select').forEach(x=>x.disabled=readOnly);openDialog('workDialog');requestAnimationFrame(resizeCanvas);}
+$('workBtn').onclick=()=>openWork();
+function draw(){if(!ctx||!drawRecord)return;ctx.clearRect(0,0,cw,ch);for(const s of [...drawRecord.strokes,...(currentStroke?[currentStroke]:[])]){if(!s.points.length)continue;ctx.save();ctx.globalCompositeOperation=s.tool==='eraser'?'destination-out':'source-over';ctx.strokeStyle=s.colour;ctx.fillStyle=s.colour;ctx.lineWidth=s.width;ctx.lineCap='round';ctx.lineJoin='round';if(s.points.length===1){const pt=s.points[0];ctx.beginPath();ctx.arc(pt[0]*cw,pt[1]*ch,s.width/2,0,2*Math.PI);ctx.fill();}else{ctx.beginPath();s.points.forEach((pt,i)=>i?ctx.lineTo(pt[0]*cw,pt[1]*ch):ctx.moveTo(pt[0]*cw,pt[1]*ch));ctx.stroke();}ctx.restore();}$('undoBtn').disabled=drawReadOnly||!drawRecord.strokes.length;$('redoBtn').disabled=drawReadOnly||!redoStack.length;}
+function resizeCanvas(){if(!$('workDialog').open||!ctx)return;const rect=$('canvasShell').getBoundingClientRect(),dpr=Math.min(3,window.devicePixelRatio||1);cw=rect.width;ch=rect.height;canvas.width=Math.round(cw*dpr);canvas.height=Math.round(ch*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);draw();}
+function point(e){const box=canvas.getBoundingClientRect();return [Math.max(0,Math.min(1,(e.clientX-box.left)/box.width)),Math.max(0,Math.min(1,(e.clientY-box.top)/box.height))];}
+function finishStroke(){if(!currentStroke||!drawRecord)return;drawRecord.strokes.push(currentStroke);currentStroke=null;redoStack=[];draw();soon();}
+canvas.addEventListener('pointerdown',e=>{if(drawReadOnly||!drawRecord||!ctx||currentStroke||e.button>0)return;if(drawRecord.strokes.length>=500){toast('This question has reached 500 strokes. Clear some drawing or use typed working.');return;}e.preventDefault();canvas.setPointerCapture(e.pointerId);currentStroke={tool:penTool,colour:$('inkSelect').value,width:penTool==='eraser'?24:Number($('penWidth').value),points:[point(e)]};draw();});
+canvas.addEventListener('pointermove',e=>{if(!currentStroke)return;e.preventDefault();if(currentStroke.points.length<2500)currentStroke.points.push(point(e));draw();});
+for(const event of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(event,finishStroke);
+$('penBtn').onclick=()=>{penTool='pen';$('penBtn').setAttribute('aria-pressed','true');$('eraserBtn').setAttribute('aria-pressed','false');};$('eraserBtn').onclick=()=>{penTool='eraser';$('penBtn').setAttribute('aria-pressed','false');$('eraserBtn').setAttribute('aria-pressed','true');};
+$('undoBtn').onclick=()=>{if(drawReadOnly||!drawRecord?.strokes.length)return;finishStroke();redoStack.push(drawRecord.strokes.pop());draw();soon();};$('redoBtn').onclick=()=>{if(drawReadOnly||!redoStack.length)return;drawRecord.strokes.push(redoStack.pop());draw();soon();};
+$('clearBtn').onclick=async()=>{if(drawReadOnly||!drawRecord?.strokes.length)return;if(!await ask('Clear this drawing?','Typed working will be kept. The drawing will be removed from this question.','Clear drawing'))return;drawRecord.strokes=[];currentStroke=null;redoStack=[];draw();soon();};
+$('workText').oninput=()=>{if(drawRecord&&!drawReadOnly){drawRecord.working=$('workText').value;soon();}};$('workDialog').addEventListener('close',()=>{finishStroke();save();});
+window.addEventListener('resize',()=>requestAnimationFrame(resizeCanvas));if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>{if($('workDialog').open)resizeCanvas();}).observe($('canvasShell'));
+function preferences(){const size=$('sizeSelectDisplay').value;document.documentElement.style.fontSize=size==='large'?'18px':'16px';document.body.dataset.size=size;document.body.dataset.theme=$('themeSelect').value;document.body.dataset.overlay=$('overlaySelect').value;try{localStorage.setItem(PREF,JSON.stringify({size,theme:$('themeSelect').value,overlay:$('overlaySelect').value}));}catch{}requestAnimationFrame(resizeCanvas);}
+for(const id of ['themeSelect','sizeSelectDisplay','overlaySelect'])$(id).onchange=preferences;
+$('displayBtn').onclick=()=>openDialog('displayDialog');$('sourceBtn').onclick=()=>openDialog('sourceDialog');
+$('fullBtn').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else toast('Full screen is unavailable here. Use your browser’s full-screen control.');}catch{toast('The browser did not allow full screen. Try its own full-screen control.');}};document.addEventListener('fullscreenchange',()=>$('fullBtn').textContent=document.fullscreenElement?'Exit full screen':'Full screen');
+window.addEventListener('pagehide',()=>{pull();finishStroke();save();});document.addEventListener('visibilitychange',()=>{if(document.hidden){pull();save();}else if(session?.phase==='active'&&E.expired(session)){save();renderResults();}});
+try{const pref=JSON.parse(localStorage.getItem(PREF)||'null');if(pref){if(['normal','large'].includes(pref.size))$('sizeSelectDisplay').value=pref.size;if(['light','dark'].includes(pref.theme))$('themeSelect').value=pref.theme;if(['none','cream','blue','green'].includes(pref.overlay))$('overlaySelect').value=pref.overlay;}preferences();const raw=localStorage.getItem(KEY);if(raw){try{saved=E.restore(raw);updateResume();}catch{notice('The saved session could not be validated. You can start a fresh session; no saved answers were loaded.');try{localStorage.removeItem(KEY);}catch{}}}}catch{storageOK=false;notice('Saving is unavailable in this browser context. The trainer still works; keep this tab open until you finish.');}
+if(!ctx){$('workBtn').disabled=true;notice('This browser cannot draw on the working canvas. You can still answer questions and view methods.');}
+modeFields();
+// Test-only hooks: absent unless a harness sets __RATIO_TEST__ before this script.
+if(window.__RATIO_TEST__)window.RatioTest={session:()=>session,load:s=>{session=s;renderQuestion(false);runTimer();},renderQuestion,renderResults,tableHTML,machineHTML,barHTML,reviewHTML,csv,summary,progressCSV,renderTeacher,renderAdaptive,save,openMethod,openWork,openBar,step,seed,startRound};
+})();
+</script>
+</body>
+</html>
