@@ -63,6 +63,7 @@ body[data-theme=dark]{--ink:#e4eef7;--muted:#b1c2d1;--paper:#1b2d3e;--bg:#12212f
     <form id="setupForm" novalidate>
      <div class="field"><label for="nameInput">Name <span class="muted">(optional)</span></label><input id="nameInput" autocomplete="off" maxlength="60" placeholder="Student"></div>
      <div class="field"><label for="componentSelect">Calculation style</label><select id="componentSelect"><option value="noncalc">Non-calculator practice</option><option value="calc">Calculator-allowed practice</option></select><p class="help">Non-calculator: whole-number answers. Calculator: exact 1 or 2 decimal places, not rounded recurring values.</p></div>
+     <div class="field"><label for="vocationSelect">Vocational area</label><select id="vocationSelect"><option value="general">General / original scenarios</option></select><p class="help">The same ratio questions and progression, in your chosen vocational setting.</p></div>
      <details class="teacher-settings"><summary>Teacher settings</summary><div class="form-grid">
       <div id="focusField" class="field"><label for="focusSelect">Question selection</label><select id="focusSelect"><option value="all">All ratio skills</option><option value="original">Original three sharing skills</option></select></div>
       <div class="field"><label for="difficultySelect">Question route</label><select id="difficultySelect"><option value="adaptive" selected>Respond to answers</option><option value="build">Fixed practice · smaller numbers</option><option value="mixed">Fixed practice · Foundation mix</option><option value="stretch">Fixed practice · stretch</option></select></div>
@@ -96,7 +97,7 @@ body[data-theme=dark]{--ink:#e4eef7;--muted:#b1c2d1;--paper:#1b2d3e;--bg:#12212f
    </article>
    <aside class="answer-panel panel" aria-labelledby="answerHeading">
     <div class="answer-top"><h2 id="answerHeading">Your answer</h2><span class="pill">±1.00</span></div>
-    <p class="help" id="answerInstructions">Enter up to 2 decimal places. Whole numbers are also accepted.</p>
+    <p class="help" id="answerInstructions">17, 17.0 and 17.00 mean the same. In money boxes, £ is optional.</p>
     <form id="answerForm" novalidate><div id="answerFields"></div><div id="checkMessage" class="notice" role="status" aria-live="polite" hidden></div><button id="checkBtn" class="primary check-button" type="submit">Check answer</button></form>
     <button id="nextBtn" class="secondary next-button" hidden>Next question →</button>
     <div class="answer-actions"><button id="revealBtn" class="text-button">Reveal solution</button><button id="skipBtn" class="text-button">Skip question</button></div>
@@ -134,11 +135,12 @@ body[data-theme=dark]{--ink:#e4eef7;--muted:#b1c2d1;--paper:#1b2d3e;--bg:#12212f
 <dialog id="sourceDialog" class="source-dialog" aria-labelledby="sourceHeading"><div class="dialog-heading"><div><p class="eyebrow">TEACHER NOTES</p><h2 id="sourceHeading">About this question bank</h2></div><button class="close-button" data-close="sourceDialog" aria-label="Close about and sources">✕</button></div><div class="dialog-body">
  <h3>Scope and scoring</h3><p>This is an independent ratio trainer for Foundation GCSE Mathematics, not a complete examination paper or an official Eduqas product. All questions are newly written. Internal demand estimates guide selection; they are not examination grades or a validated psychometric scale.</p>
  <p>The original total-given, share-given and difference-given money questions remain. Added practice covers three-way sharing, mixtures, triangle sides, part:whole, maps, recipes, costs, an extra spending condition, and ratio reasoning. Reasoning includes simplifying ratios, common units, fractions of a whole and related quantities.</p>
- <p><strong>Answer generation:</strong> every numeric model answer in non-calculator practice is a whole number. Every numeric model answer in calculator practice is an exact non-integer decimal terminating after 1 or 2 decimal places. These are your chosen practice restrictions; real examinations can use other answer forms. Reasoning questions use exact choices, which can include whole-number ratios or fractions.</p>
+ <p><strong>Answer generation:</strong> every numeric model answer in non-calculator practice is a whole number. Calculator practice uses exact amounts with at most 2 decimal places. Counts of items and people are always whole numbers, including when they are intermediate quantities. These are your chosen practice restrictions; real examinations can use other answer forms. Reasoning questions use exact choices, which can include whole-number ratios or fractions.</p>
  <p><strong>Numeric marking:</strong> every entered hundredth from model − 1.00 to model + 1.00 is accepted, including both boundaries. Input steps are 0.01. Entries with non-zero digits beyond two decimal places must be rounded before checking. Whole numbers, one decimal place and trailing zeros are accepted. Tolerance is applied independently to each requested amount, in its displayed unit.</p>
  <p><strong>This is intentionally generous.</strong> Small answers can accept zero or a negative value within the band, and near answers need not reproduce the ratio or the total exactly. The true model answer is shown after acceptance. Exact and tolerance-only results are recorded separately. Choices require the correct option: numerical tolerance cannot turn a wrong ratio or fraction into the correct statement.</p>
  <p>One practice point is awarded when all parts of a question have been accepted. In fixed practice, a retry is permitted and accepted parts stay locked. In responsive practice, an incorrect attempt closes and the next question uses the same structure with fresh numbers. Invalid input uses no attempt. Revealed and skipped questions earn no question point. Written working is saved for review but is not automatically marked.</p>
- <h3>How questions are selected</h3><p>A new responsive session starts with simplifying. A correct answer selects an explicitly linked, more demanding variation: simplifying → sharing a total → one share given → a difference given → an extra condition. There is no requirement to repeat a mastered template with bigger numbers before moving on. Further branches add different reasoning demands. Topic names, route bars, levels and selection reasons stay off the learner screen.</p>
+   <h3>Vocational scenarios and quantities</h3><p>Choose General to keep the original situations, or a vocational area to change the workplace, resources and wording. The same seed gives the same quantities, answers and adaptive sequence in every area. Whole items are never split by the generators. The bar-model tool also requires a whole number of items when its unit is a count.</p><p>Money entries such as 17, 17.0, 17.00, £17 and £17.00 have the same value. All examples are fictional learning activities. Care scenarios concern resources and projects, not medication or clinical staffing. Technical examples are not safety, installation or material-mix specifications.</p>
+  <h3>How questions are selected</h3><p>A new responsive session starts with simplifying. A correct answer selects an explicitly linked, more demanding variation: simplifying → sharing a total → one share given → a difference given → an extra condition. There is no requirement to repeat a mastered template with bigger numbers before moving on. Further branches add different reasoning demands. Topic names, route bars, levels and selection reasons stay off the learner screen.</p>
  <p>In responsive practice, a valid wrong submission closes that attempt. Next gives the exact same variation with fresh values; no unrelated question interrupts it. Correct parts remain in the record. Success on the fresh question advances to a harder related task, whether or not help was used; support is labelled separately. Repeated mistakes may reduce arithmetic within that same structure, never reset the whole route. Blank or invalid submissions do not change the route. At the Foundation ceiling, untested applications and coverage checks replace unlimited escalation. A short check of an earlier variation is followed by a substantial application, rather than a long tail of easy work. Advanced templates may recur with fresh numbers, separated by other tasks; successful basic templates are not repeatedly recycled. These authored rules do not predict GCSE grades.</p>
  <p>All 36 original named variations remain available, alongside 24 additional Foundation variations (60 in total). In full practice, each must have an accepted answer to finish automatically; this is coverage, not proof of mastery. Short, timed and target sessions may finish with gaps. Teacher shows the learner on this device only and records those gaps, independent answers, retries, help and tolerance use. It is not a networked class dashboard or password-protected area.</p>
  <p>All numeric acceptances within ±1.00 count as correct, including for selection. Near and exact acceptances are reported separately. Methods or help used before acceptance are recorded as support; opening them afterwards does not change the evidence already earned. Working space is not counted as help.</p>
@@ -168,6 +170,521 @@ const TYPES={
  cost:'Ratio and total cost', changed:'Sharing with an extra condition', reasoning:'Ratio notation and reasoning'
 };
 const ORIGINAL=['total','known','difference'];
+/* Vocational wording is deliberately independent of mathematical generation.
+   The same seed and variation have the same data, answers and adaptive successors
+   in every vocational area. No prices, quantities or units are changed here. */
+const VOCATIONS = [
+  {
+    "id": "health",
+    "label": "Health & social care",
+    "place": "a community care centre",
+    "stock": "activity wallets",
+    "length": "display tape",
+    "triangle": "a triangular activity-board template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "orange craft paint",
+      "white craft paint"
+    ],
+    "border": "a care-centre display area"
+  },
+  {
+    "id": "childcare",
+    "label": "Childcare & education",
+    "place": "an early-years activity room",
+    "stock": "craft kits",
+    "length": "craft ribbon",
+    "triangle": "a play-display template",
+    "dry": [
+      "modelling powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue craft paint",
+      "white craft paint"
+    ],
+    "border": "an activity display area"
+  },
+  {
+    "id": "construction",
+    "label": "Construction & bricklaying",
+    "place": "a construction training workshop",
+    "stock": "paving slabs",
+    "length": "marking cord",
+    "triangle": "a triangular panel",
+    "dry": [
+      "fine sand",
+      "dry aggregate",
+      "training powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a demonstration pond"
+  },
+  {
+    "id": "carpentry",
+    "label": "Carpentry & joinery",
+    "place": "a joinery workshop",
+    "stock": "wooden panels",
+    "length": "wooden edging",
+    "triangle": "a timber-template triangle",
+    "dry": [
+      "wood flour",
+      "fine sawdust",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue water-based paint",
+      "white water-based paint"
+    ],
+    "border": "a workshop display area"
+  },
+  {
+    "id": "plumbing",
+    "label": "Plumbing & heating",
+    "place": "a plumbing training workshop",
+    "stock": "pipe fittings",
+    "length": "flexible tubing",
+    "triangle": "a triangular support template",
+    "dry": [
+      "fine sand",
+      "dry modelling powder",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a pipework display area"
+  },
+  {
+    "id": "electrical",
+    "label": "Electrical installation",
+    "place": "an electrical training workshop",
+    "stock": "cable boxes",
+    "length": "cable sleeving",
+    "triangle": "a triangular mounting template",
+    "dry": [
+      "fine sand",
+      "dry modelling powder",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a wiring display area"
+  },
+  {
+    "id": "engineering",
+    "label": "Engineering & manufacturing",
+    "place": "an engineering training workshop",
+    "stock": "component trays",
+    "length": "marking strip",
+    "triangle": "a triangular plate template",
+    "dry": [
+      "fine sand",
+      "dry moulding powder",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "an engineering display area"
+  },
+  {
+    "id": "motor",
+    "label": "Motor vehicle",
+    "place": "a vehicle maintenance training workshop",
+    "stock": "workshop trays",
+    "length": "trim strip",
+    "triangle": "a triangular trim template",
+    "dry": [
+      "fine sand",
+      "dry modelling powder",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a vehicle display area"
+  },
+  {
+    "id": "public",
+    "label": "Uniformed public services",
+    "place": "a public-services training centre",
+    "stock": "equipment bags",
+    "length": "marking tape",
+    "triangle": "a triangular route marker",
+    "dry": [
+      "oats",
+      "raisins",
+      "seeds"
+    ],
+    "liquids": [
+      "orange juice",
+      "lemonade"
+    ],
+    "border": "a training display area"
+  },
+  {
+    "id": "sport",
+    "label": "Sport & fitness",
+    "place": "a sports activity centre",
+    "stock": "training cones",
+    "length": "court-marking tape",
+    "triangle": "a triangular training marker",
+    "dry": [
+      "oats",
+      "raisins",
+      "seeds"
+    ],
+    "liquids": [
+      "orange juice",
+      "lemonade"
+    ],
+    "border": "an equipment display area"
+  },
+  {
+    "id": "hair",
+    "label": "Hairdressing & barbering",
+    "place": "a hairdressing training salon",
+    "stock": "salon capes",
+    "length": "display ribbon",
+    "triangle": "a triangular salon-display template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a salon display area"
+  },
+  {
+    "id": "beauty",
+    "label": "Beauty therapy",
+    "place": "a beauty training salon",
+    "stock": "storage trays",
+    "length": "display ribbon",
+    "triangle": "a triangular display template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a salon display area"
+  },
+  {
+    "id": "business",
+    "label": "Business, retail & finance",
+    "place": "a retail training project",
+    "stock": "display folders",
+    "length": "packing ribbon",
+    "triangle": "a triangular shop-sign template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue display liquid",
+      "clear display liquid"
+    ],
+    "border": "a retail display area"
+  },
+  {
+    "id": "digital",
+    "label": "Computing & digital",
+    "place": "a computing workshop",
+    "stock": "cable organisers",
+    "length": "cable sleeve",
+    "triangle": "a triangular desk-sign template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a computing display area"
+  },
+  {
+    "id": "games",
+    "label": "Games & animation",
+    "place": "a games-design project room",
+    "stock": "model kits",
+    "length": "model-making strip",
+    "triangle": "a triangular scenery template",
+    "dry": [
+      "modelling powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue model paint",
+      "white model paint"
+    ],
+    "border": "a model-scene display area"
+  },
+  {
+    "id": "creative",
+    "label": "Art, design & photography",
+    "place": "an art and photography studio",
+    "stock": "display mounts",
+    "length": "mounting tape",
+    "triangle": "a triangular art template",
+    "dry": [
+      "modelling powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue craft paint",
+      "white craft paint"
+    ],
+    "border": "an art display area"
+  },
+  {
+    "id": "fashion",
+    "label": "Fashion & interior design",
+    "place": "a fashion and interiors studio",
+    "stock": "fabric sample books",
+    "length": "fabric trim",
+    "triangle": "a triangular fabric template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue craft paint",
+      "white craft paint"
+    ],
+    "border": "an interiors display area"
+  },
+  {
+    "id": "media",
+    "label": "Media, film & special effects",
+    "place": "a film and media workshop",
+    "stock": "prop boxes",
+    "length": "prop-making strip",
+    "triangle": "a triangular scenery template",
+    "dry": [
+      "modelling powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue prop paint",
+      "white prop paint"
+    ],
+    "border": "a scenery display area"
+  },
+  {
+    "id": "music",
+    "label": "Music & sound production",
+    "place": "a music production workshop",
+    "stock": "cable cases",
+    "length": "cable sleeve",
+    "triangle": "a triangular stage-sign template",
+    "dry": [
+      "craft powder",
+      "fine sand",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue prop paint",
+      "white prop paint"
+    ],
+    "border": "a stage display area"
+  },
+  {
+    "id": "science",
+    "label": "Applied science",
+    "place": "a science teaching laboratory",
+    "stock": "sample trays",
+    "length": "label tape",
+    "triangle": "a triangular demonstration template",
+    "dry": [
+      "fine sand",
+      "dry coloured sand",
+      "dry modelling powder"
+    ],
+    "liquids": [
+      "blue demonstration liquid",
+      "clear demonstration liquid"
+    ],
+    "border": "a science display area"
+  },
+  {
+    "id": "animal",
+    "label": "Animal care",
+    "place": "an animal-care training centre",
+    "stock": "enrichment trays",
+    "length": "display cord",
+    "triangle": "a triangular information-sign template",
+    "dry": [
+      "fine sand",
+      "dry modelling powder",
+      "dry colour powder"
+    ],
+    "liquids": [
+      "blue craft paint",
+      "white craft paint"
+    ],
+    "border": "an animal-care display area"
+  },
+  {
+    "id": "catering",
+    "label": "Hospitality & catering",
+    "place": "a catering training kitchen",
+    "stock": "serving trays",
+    "length": "display ribbon",
+    "triangle": "a triangular serving-display template",
+    "dry": [
+      "oats",
+      "raisins",
+      "seeds"
+    ],
+    "liquids": [
+      "orange juice",
+      "lemonade"
+    ],
+    "border": "a catering display area"
+  }
+];
+const VPROFILES=Object.fromEntries(VOCATIONS.map(v=>[v.id,v]));
+const VALID_VOCATIONS=new Set(['general',...VOCATIONS.map(v=>v.id)]);
+function isCountUnit(unit){return !!unit&&!['£','%','g','kg','m','cm','mm','km','ml','litres','l','hours','minutes','seconds'].includes(unit);}
+function countInteger(value,what){if(!Number.isSafeInteger(value)||value<0)throw Error('Invalid whole-item quantity: '+what);return value;}
+function validateQuantities(q){
+ if(!q.parts.length)throw Error('Missing answer');
+ q.parts.forEach(p=>{if(p.kind==='numeric'){
+  if(!Number.isSafeInteger(p.answer)||p.answer<=0)throw Error('Invalid numeric model');
+  if(q.component==='noncalc'&&p.answer%100!==0)throw Error('Non-calculator answer must be a whole number');
+  if(isCountUnit(p.unit)&&p.answer%100!==0)throw Error('An item-count answer must be whole');
+ }});
+ const d=q.data,counts=[];
+ const add=(label,value)=>{counts.push({label,value:countInteger(value,label)});};
+ if(q.type==='cost'&&Array.isArray(d.prices)&&Number.isFinite(d.total)){
+  const sum=d.ratio.reduce((a,b)=>a+b,0);add('Total items',d.total);
+  d.ratio.forEach((n,i)=>add('Item group '+(i+1),d.total*n/sum));
+  d.prices.forEach(p=>{if(!Number.isSafeInteger(p)||p<0||(q.component==='noncalc'&&p%100!==0))throw Error('Invalid item price');});
+ }
+ if(d.model==='x-paving'){
+  const [m,n]=d.pondCm.map(x=>x/d.slabCm);countInteger(m,'length in tile widths');countInteger(n,'width in tile widths');
+  const total=(m+2)*(n+2)-m*n,parts=d.ratio.reduce((a,b)=>a+b,0);add('Border tiles',total);
+  d.ratio.forEach((r,i)=>add('Tile group '+(i+1),total*r/parts));
+  if(q.component==='noncalc'&&d.prices.some(x=>x%100))throw Error('Non-calculator tile prices must be whole pounds');
+ }
+ if(['d-coins-count','d-coins-value'].includes(d.model)){
+  const rs=d.model==='d-coins-value'?[2*d.ratio[0],d.ratio[1]]:d.ratio,sum=rs.reduce((a,b)=>a+b,0);
+  add('Total coins',d.total);rs.forEach((r,i)=>add('Coin group '+(i+1),d.total*r/sum));
+ }
+ if(d.model==='simplify')d.given.forEach((x,i)=>add('Counted stock '+(i+1),x));
+ if(Array.isArray(d.counts))d.counts.forEach((x,i)=>add('Count '+(i+1),x));
+ if(Number.isFinite(d.count))add('Total objects',d.count);
+ for(const name of ['oldServings','newServings'])if(d[name]!==undefined)add(name,d[name]);
+ if(d.model==='recipe')for(const name of ['oldServings','newServings'])if(d[name]!==undefined)countInteger(d[name],name);
+ if(d.model==='d-recipe-shortage'){add('Original batches',d.old);add('Required batches',d.needed);}
+ q.itemCounts=counts;
+ if(q.bar)q.bar.discrete=isCountUnit(q.bar.unit);
+ return q;
+}
+const textPatterns=new WeakMap();
+function textMap(value,pairs){
+ const keys=Object.keys(pairs).sort((a,b)=>b.length-a.length);
+ if(!keys.length)return value;
+ const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+ let re=textPatterns.get(pairs);if(!re){re=new RegExp('\\b(?:'+keys.map(escape).join('|')+')\\b','gi');textPatterns.set(pairs,re);}
+ return String(value).replace(re,found=>{
+  let next=pairs[found.toLowerCase()];
+  if(next===undefined)return found;
+  if(found[0]===found[0].toUpperCase())next=next[0].toUpperCase()+next.slice(1);
+  return next;
+ });
+}
+function contextualise(q,vocation='general'){
+ if(!VALID_VOCATIONS.has(vocation))throw Error('Choose a recognised vocational area.');
+ q.vocation=vocation;
+ if(vocation==='general')return q;
+ const p=VPROFILES[vocation],id=q.variantId||q.data.model||'',isBorder=id==='x-paving',food=['public','sport','catering'].includes(vocation);
+ const map={
+  'paving slabs':p.stock,'grey slabs':'standard '+p.stock,'white slabs':'premium '+p.stock,'slab colour':'Item type','slabs':p.stock,
+  'standard tickets':'standard admission passes','premium tickets':'premium admission passes','ticket type':'Pass type','ticket income':'pass income','tickets':'admission passes',
+  'total prize money':'total project fund','prize money':'project money','total prize':'total project fund','prize':'project fund',
+  'in tips':'as a team bonus','tips are divided':'the team bonus is divided','the tips are shared':'the team bonus is shared','share tips':'share a team bonus','total tips shared':'total bonus shared','tips per hour':'bonus per hour','tips':'bonus money','full jar':'full bonus fund',
+  'from a relative':'from a project fundraiser','food bank':'materials team','animal shelter':'display team','printing':'project printing',
+  'copper beads':'metal sample pieces','wooden beads':'wooden sample pieces','beads':'sample pieces','copper':'metal',
+  'a red ribbon':'a red length of '+p.length,'a blue ribbon':'a blue length of '+p.length,'a ribbon':'a length of '+p.length,'original whole ribbon':'original whole length of '+p.length,'ribbon':p.length,'triangle':p.triangle.replace(/^(?:a|an) /,''),
+  'a library':'the training centre','a swimming pool':'the supply store','a campsite':'the project base','a lake':'the materials store','a railway station':'the transport depot','a museum':'the exhibition venue',
+  'red counters':'red-labelled '+p.stock,'blue counters':'blue-labelled '+p.stock,'green counters':'green-labelled '+p.stock,'counters':p.stock,
+  'red,':'red-labelled,','blue and':'blue-labelled and','green counters':'green-labelled '+p.stock,
+  'gold badges':'gold-labelled stock','silver badges':'silver-labelled stock','badges':'stock labels',
+  'yellow buttons':'yellow stock labels','green buttons':'green stock labels','buttons':'stock labels',
+  'rectangular pond':p.border
+ };
+ // Geometry retains square tiles, never turns a 40 cm tile into a person or a kit.
+ if(isBorder)Object.assign(map,{'rectangular pond':'rectangular '+p.border.replace(/^(?:a|an) /,''),'paving slabs':'floor tiles','square slabs':'square floor tiles','grey slabs':'grey floor tiles','white slabs':'white floor tiles','slabs':'floor tiles','slab':'tile','pond':'display area','grey':'grey','white':'white'});
+ if(!food)Object.assign(map,{
+  'snack mixture':'dry demonstration mixture','breakfast mixture':'dry demonstration mixture','oats':p.dry[0],'dried fruit':p.dry[1],'raisins':p.dry[1],'seeds':p.dry[2],
+  'fruit drinks':'sample liquid mixtures','fruit drink':'sample liquid mixture','apple juice':p.liquids[0],'orange juice':p.liquids[0],'lemonade':p.liquids[1],
+  'blue paint':p.liquids[0],'white paint':p.liquids[1],'paint mixture':'demonstration mixture','orange-juice':p.liquids[0],
+  'drink':'liquid mixture','drinks':'liquid mixtures','recipe':'mixing plan','portions':'batches','portion':'batch',
+  'sand':'fine sand','cement':'dry modelling powder'
+ });
+ if(food)Object.assign(map,{'breakfast mixture':'snack mixture'});
+ // Presentation only: NEVER transform the data object, signatures, model values,
+ // correct choice ids, arithmetic level or transition graph.
+ const replace=t=>textMap(t,map);
+ q.lines=q.lines.map(replace).map(line=>line.replace(/\bshare (£[\d,.]+)/,'share a project award of $1').replace(/^([A-Za-z]+), ([A-Za-z]+), ([A-Za-z]+) share/,'$1, $2 and $3 share'));q.method=q.method.map(replace);q.solution=q.solution.map(replace);
+ if(q.table)q.table={headers:q.table.headers.map(replace),rows:q.table.rows.map(row=>row.map(replace))};
+ q.parts=q.parts.map(part=>({...part,label:replace(part.label),...(part.options?{options:part.options.map(o=>({...o,text:replace(o.text)}))}:{})}));
+ if(q.bar)q.bar={...q.bar,labels:q.bar.labels.map(replace),description:replace(q.bar.description),unit:replace(q.bar.unit)};
+ const context=`A team is working on a project at ${p.place}.`;
+ // Give bare numerical tasks an actual application; do not introduce extra data.
+ if(id==='s-basic'){
+  const [a,b]=q.data.given;
+  q.lines=[`${p.place[0].toUpperCase()+p.place.slice(1)} has ${a} standard ${p.stock} and ${b} premium ${p.stock}.`,'Select the ratio standard : premium in its simplest form.'];
+ }else if(id==='s-three'){
+  const [a,b,c]=q.data.given;
+  q.lines=[`${p.place[0].toUpperCase()+p.place.slice(1)} has ${a} red-labelled, ${b} blue-labelled and ${c} green-labelled ${p.stock}.`,'Select the ratio red : blue : green in its simplest form.'];
+ }else if(id==='s-decimal'){
+  const [a,b]=q.data.givenTenths.map(x=>dec(x/10));
+  q.lines=[`Two lengths of ${p.length} measure ${a} m and ${b} m.`,`Select the first length : second length in its simplest whole-number form.`];q.lines.unshift(context);
+ }else if(id==='s-fraction'){
+  const d=q.data;q.lines=[`Two lengths of ${p.length} measure ${fraction(d.numerators[0],d.denominators[0])} m and ${fraction(d.numerators[1],d.denominators[1])} m.`,`Select the first length : second length in its simplest whole-number form.`];q.lines.unshift(context);
+ }else q.lines.unshift(context);
+ // The cohort and quantities stay fictional. No clinical/technical instructions
+ // or staffing requirements are implied by these classroom scenarios.
+ return q;
+}
+function prepareQuestion(q,vocation){return contextualise(validateQuantities(q),vocation);}
+function generate(type,seed,component='noncalc',level=2,forcedVariant=null,vocation='general'){
+ return prepareQuestion(generateBase(type,seed,component,level,forcedVariant),vocation);
+}
+function generateVariant(id,seed,component='noncalc',level=1,vocation='general'){
+ return prepareQuestion(generateVariantBase(id,seed,component,level),vocation);
+}
+
 const NAMES=['Amira','Ben','Chloe','Daniel','Ellie','Faisal','Grace','Hassan','Isla','Jasmine','Kai','Liam','Maya','Noah','Olivia','Priya','Ruby','Sam','Tariq','Zara','William','Sarah','Mohammed','Aisha','David','Fatima','Christian','Maryam','John','Ali','Emily','Jacob','Yusuf','Hannah','Ahmed','Adam','Zainab','James','Layla'];
 function rng(seed){let s=seed>>>0;return ()=>{s=(s+0x6D2B79F5)>>>0;let t=s;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;};}
 function hash(a,b){let t=(a^Math.imul(b+1,0x9e3779b9))>>>0;t=Math.imul(t^t>>>16,0x85ebca6b);t=Math.imul(t^t>>>13,0xc2b2ae35);return (t^t>>>16)>>>0;}
@@ -180,21 +697,26 @@ const pct=p=>dec(p/10)+'%';
 const money=c=>'£'+fmt(c);
 function show(c,u){return u==='£'?money(c):shortC(c)+(u?' '+u:'');}
 function parse(raw,unit=''){
- let s=String(raw??'').trim().replace(/−/g,'-').replace(/·/g,'.');
+ let s=String(raw??'').normalize('NFKC').trim().replace(/−/g,'-').replace(/·/g,'.');
  if(!s)return {ok:false,error:'Enter an answer first.'};
  if(s.length>48)return {ok:false,error:'That entry is too long.'};
- if(unit==='£')s=s.replace(/^£\s*/,'').replace(/\s*GBP$/i,'');
- else if(unit==='%')s=s.replace(/\s*%$/,'');
- else if(['g','kg','m','cm','km','ml','litres'].includes(unit))s=s.replace(new RegExp('\\s*'+unit+'$','i'),'');
- if(!/^[+-]?(?:(?:\d{1,3}(?:,\d{3})+)|\d+|\d*\.\d+)(?:\.\d*)?$/.test(s))return {ok:false,error:'Use a number, for example 24.50. Do not enter a calculation or a different unit.'};
+ if(unit==='£')s=s.replace(/^(?:£|GBP)\s*/i,'').replace(/\s*(?:GBP|pounds?|£)$/i,'').trim();
+ else if(unit==='%')s=s.replace(/\s*%$/,'').trim();
+ else if(unit){
+  const aliases={g:['g','gram','grams'],kg:['kg','kilogram','kilograms'],m:['m','metre','metres'],cm:['cm','centimetre','centimetres'],mm:['mm','millimetre','millimetres'],km:['km','kilometre','kilometres'],ml:['ml','millilitre','millilitres'],litres:['l','litre','litres']};
+  const terms=aliases[unit]||[unit];
+  const escape=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  s=s.replace(new RegExp('\\s*(?:'+terms.map(escape).sort((a,b)=>b.length-a.length).join('|')+')$','i'),'').trim();
+ }
+ if(!/^[+-]?(?:\d{1,3}(?:,\d{3})+|\d+|\d*\.\d+)(?:\.\d*)?$/.test(s))return {ok:false,error:'Enter a number, not a calculation. For £17 you may enter 17, 17.0, 17.00 or £17.'};
  s=s.replace(/,/g,'');
  if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(s))return {ok:false,error:'Check the decimal point.'};
- let sign=1;if(s[0]==='-'){sign=-1;s=s.slice(1);}else if(s[0]==='+')s=s.slice(1);
+ let sign=1n;if(s[0]==='-'){sign=-1n;s=s.slice(1);}else if(s[0]==='+')s=s.slice(1);
  const [whole='0',fraction='']=s.split('.');
  if(fraction.length>2&&/[1-9]/.test(fraction.slice(2)))return {ok:false,error:'Round your final answer to 2 decimal places, then enter it again.'};
- const c=sign*(Number(whole||0)*100+Number((fraction+'00').slice(0,2)));
- if(!Number.isSafeInteger(c)||Math.abs(c)>1e12)return {ok:false,error:'That number is outside this trainer’s input range.'};
- return {ok:true,cents:c===0?0:c};
+ const c=sign*(BigInt(whole||'0')*100n+BigInt((fraction+'00').slice(0,2)));
+ if(c>1000000000000n||c< -1000000000000n)return {ok:false,error:'That number is outside this trainer’s input range.'};
+ return {ok:true,cents:Number(c)};
 }
 function mark(raw,part){
  if(part.kind==='choice')return {valid:part.options.some(x=>x.id===String(raw)),accepted:String(raw)===part.correct,exact:String(raw)===part.correct,raw:String(raw??'')};
@@ -223,7 +745,7 @@ function unitValue(nc,coefficients,pick,int,level=2){
  const suffix=pick(suffixes.length?suffixes:[1,3,7,9,11,13]);
  return int(2,level===1?10:24)*100+suffix;
 }
-function generate(type,seed,component='noncalc',level=2,forcedVariant=null){
+function generateBase(type,seed,component='noncalc',level=2,forcedVariant=null){
  if(type==='simplify')return generateVariant(['s-basic','s-order','s-three'][((forcedVariant??0)%3)],seed,component,level);
  if(!TYPES[type]||!['noncalc','calc'].includes(component)||![1,2,3].includes(level))throw new Error('Invalid question settings');
  const r=rng(seed),pick=a=>{if(!a.length)throw new Error('Empty generator pool');return a[Math.floor(r()*a.length)];},int=(a,b)=>a+Math.floor(r()*(b-a+1));
@@ -522,7 +1044,7 @@ function generateExtension(id,seed,component='noncalc',level=1){
 }
 
 const VBYID=Object.fromEntries(VARIANTS.map(v=>[v.id,v]));
-function generateVariant(id,seed,component='noncalc',level=1){
+function generateVariantBase(id,seed,component='noncalc',level=1){
  if(EXTRA_IDS.has(id))return generateExtension(id,seed,component,level);
  const meta=VBYID[id];if(!meta)throw new Error('Unknown ratio variation');
  const r=rng(seed),pick=a=>{if(!a.length)throw new Error('Empty variation pool');return a[Math.floor(r()*a.length)];},int=(a,b)=>a+Math.floor(r()*(b-a+1)),nc=component==='noncalc';
@@ -721,15 +1243,15 @@ function glance(s){
 }
 
 function normalize(c){
- const o={name:String(c.name??'Student').trim().slice(0,60)||'Student',mode:c.mode??'practice',size:Number(c.size??12),seconds:Number(c.seconds??600),target:Number(c.target??10),component:c.component??'noncalc',focus:c.focus??'all',difficulty:c.difficulty??'adaptive'};
- if(!['practice','timed','target','journey'].includes(o.mode)||![10,12,20,30,60].includes(o.size)||![0,300,600,900,1200,1800].includes(o.seconds)||!Number.isInteger(o.target)||o.target<1||o.target>100||!['noncalc','calc'].includes(o.component)||!['all','original',...Object.keys(TYPES)].includes(o.focus)||!['adaptive','build','mixed','stretch'].includes(o.difficulty))throw new Error('Check the settings. The target must be a whole number from 1 to 100.');if(o.difficulty==='adaptive')o.focus='all';if(o.mode==='journey')o.difficulty='adaptive',o.focus='all';return o;
+ const o={name:String(c.name??'Student').trim().slice(0,60)||'Student',mode:c.mode??'practice',size:Number(c.size??12),seconds:Number(c.seconds??600),target:Number(c.target??10),component:c.component??'noncalc',focus:c.focus??'all',difficulty:c.difficulty??'adaptive',vocation:c.vocation??'general'};
+ if(!['practice','timed','target','journey'].includes(o.mode)||![10,12,20,30,60].includes(o.size)||![0,300,600,900,1200,1800].includes(o.seconds)||!Number.isInteger(o.target)||o.target<1||o.target>100||!['noncalc','calc'].includes(o.component)||!['all','original',...Object.keys(TYPES)].includes(o.focus)||!['adaptive','build','mixed','stretch'].includes(o.difficulty))throw new Error('Check the settings. The target must be a whole number from 1 to 100.');if(!VALID_VOCATIONS.has(o.vocation))throw new Error('Choose a vocational area.');if(o.difficulty==='adaptive')o.focus='all';if(o.mode==='journey')o.difficulty='adaptive',o.focus='all';return o;
 }
 function available(c,index){return c.focus==='all'?Object.keys(TYPES):c.focus==='original'?ORIGINAL:[c.focus];}
 function nextRecord(s){
  if(s.config.difficulty==='adaptive'){
   const i=s.records.length,plan=adaptivePlan(s),old=new Set([...s.avoid,...s.records.map(x=>x.q.signature)]);
   for(let j=0;j<2048;j++){
-   const q=generateVariant(plan.id,hash(s.seed,i*2053+j),s.config.component,plan.level);
+   const q=generateVariant(plan.id,hash(s.seed,i*2053+j),s.config.component,plan.level,s.config.vocation);
    if(!old.has(q.signature))return newRecord(q,Date.now(),plan);
    if(j>=128&&!new Set([...s.avoid.slice(-24),...s.records.slice(-24).map(x=>x.q.signature)]).has(q.signature))return newRecord(q,Date.now(),{...plan,reason:plan.reason+' Small-number pool: older questions may recur.'});
   }
@@ -742,7 +1264,7 @@ function nextRecord(s){
  const level=s.config.difficulty==='stretch'?3:s.config.difficulty==='build'?Math.min(3,1+Math.floor(i/span)):(r()<.25?1:2);
  const old=new Set([...s.avoid,...s.records.map(x=>x.q.signature)]);let q;
  for(let j=0;j<2048;j++){
-  q=generate(type,hash(s.seed,i*2053+j),s.config.component,j>=128?3:level);
+  q=generate(type,hash(s.seed,i*2053+j),s.config.component,j>=128?3:level,null,s.config.vocation);
   if(!old.has(q.signature))break;
   if(j===2047)throw new Error('The fresh-question pool is temporarily exhausted. Try a broader selection.');
  }
@@ -777,7 +1299,7 @@ function restore(text){
  s.avoid=Array.isArray(s.avoid)?s.avoid.slice(-120).filter(x=>typeof x==='string').map(x=>x.slice(0,1000)):[];
  s.reason=String(s.reason||'').slice(0,100);
  s.records=s.records.map((r,index)=>{
-  const key=r.q;if(!key||!Number.isInteger(key.seed))throw new Error('Saved question is invalid');const q=key.variantId?generateVariant(key.variantId,key.seed,key.component,key.level):generate(key.type,key.seed,key.component,key.level,key.variant??null);if(q.component!==s.config.component)throw new Error('Saved component mismatch');
+  const key=r.q;if(!key||!Number.isInteger(key.seed))throw new Error('Saved question is invalid');const q=key.variantId?generateVariant(key.variantId,key.seed,key.component,key.level,s.config.vocation):generate(key.type,key.seed,key.component,key.level,key.variant??null,s.config.vocation);if(q.component!==s.config.component)throw new Error('Saved component mismatch');
   if(!['open','accepted','revealed','skipped','retry'].includes(r.status)||!Array.isArray(r.parts)||r.parts.length!==q.parts.length||!Number.isInteger(r.wrongChecks)||r.wrongChecks<0)throw new Error('Saved answers are invalid');
   const parts=r.parts.map((p,i)=>{if(!['open','wrong','exact','near','revealed'].includes(p.status)||!Number.isInteger(p.attempts)||p.attempts<0||p.attempts>100000)throw new Error('Saved marking is invalid');const raw=String(p.raw??'').slice(0,48);if(['exact','near'].includes(p.status)){const m=mark(raw,q.parts[i]);if(!m.valid||!m.accepted||(p.status==='exact')!==m.exact)throw new Error('Saved accepted answer failed validation');}return {status:p.status,raw,attempts:p.attempts};});
   if(r.status==='retry'&&(!r.wrongChecks||parts.every(p=>['exact','near'].includes(p.status))))throw Error('Saved retry is invalid');
@@ -797,8 +1319,8 @@ function restore(text){
  return s;
 }
 
-function example(q){let e;for(let i=1;i<33;i++){e=q.variantId?generateVariant(q.variantId,hash(q.seed,333+i),q.component,q.level):generate(q.type,hash(q.seed,333+i),q.component,q.level,q.variant);if(JSON.stringify(e.data)!==JSON.stringify(q.data))return e;}throw new Error('No different example generated');}
-const api={EXTRA_IDS,SUCCESSORS,DEMAND,PREREQUISITE,taskDemand,STAGES,VARIANTS,VBYID,generateVariant,learning,adaptivePlan,glance,VERSION,TOLERANCE,TYPES,ORIGINAL,rng,hash,roundRatio,fmt,inputFmt,shortC,show,parse,mark,generate,normalize,create,current,stats,finish,expired,submit,reveal,skip,next,serialise,restore,example,available};
+function example(q){let e;for(let i=1;i<33;i++){e=q.variantId?generateVariant(q.variantId,hash(q.seed,333+i),q.component,q.level,q.vocation):generate(q.type,hash(q.seed,333+i),q.component,q.level,q.variant,q.vocation);if(JSON.stringify(e.data)!==JSON.stringify(q.data))return e;}throw new Error('No different example generated');}
+const api={VOCATIONS,VPROFILES,validateQuantities,isCountUnit,EXTRA_IDS,SUCCESSORS,DEMAND,PREREQUISITE,taskDemand,STAGES,VARIANTS,VBYID,generateVariant,learning,adaptivePlan,glance,VERSION,TOLERANCE,TYPES,ORIGINAL,rng,hash,roundRatio,fmt,inputFmt,shortC,show,parse,mark,generate,normalize,create,current,stats,finish,expired,submit,reveal,skip,next,serialise,restore,example,available};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;root.RatioStudio=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
 </script>
@@ -833,9 +1355,10 @@ function ask(title,text,button='Continue'){
 }
 $('confirmOK').onclick=()=>$('confirmDialog').close('ok');$('confirmCancel').onclick=()=>$('confirmDialog').close('cancel');
 for(const b of document.querySelectorAll('[data-close]'))b.onclick=()=>$(b.dataset.close).close();
-function config(){return {name:$('nameInput').value,mode:document.querySelector('input[name=mode]:checked').value,size:$('sizeSelect').value,seconds:$('timeSelect').value,target:$('targetInput').value,component:$('componentSelect').value,focus:$('focusSelect').value,difficulty:$('difficultySelect').value};}
+function config(){return {name:$('nameInput').value,mode:document.querySelector('input[name=mode]:checked').value,size:$('sizeSelect').value,seconds:$('timeSelect').value,target:$('targetInput').value,component:$('componentSelect').value,focus:$('focusSelect').value,difficulty:$('difficultySelect').value,vocation:$('vocationSelect').value};}
 function modeFields(){if(document.querySelector('input[name=mode]:checked').value==='journey')$('difficultySelect').value='adaptive';routeFields();}
-function fillConfig(c){$('nameInput').value=c.name==='Student'?'':c.name;document.querySelector(`input[name=mode][value=${c.mode}]`).checked=true;$('sizeSelect').value=c.size;$('timeSelect').value=c.seconds;$('targetInput').value=c.target;$('componentSelect').value=c.component;$('focusSelect').value=c.focus;$('difficultySelect').value=c.difficulty;modeFields();}
+function fillConfig(c){$('nameInput').value=c.name==='Student'?'':c.name;document.querySelector(`input[name=mode][value=${c.mode}]`).checked=true;$('sizeSelect').value=c.size;$('timeSelect').value=c.seconds;$('targetInput').value=c.target;$('componentSelect').value=c.component;$('focusSelect').value=c.focus;$('difficultySelect').value=c.difficulty;$('vocationSelect').value=c.vocation||'general';modeFields();}
+E.VOCATIONS.forEach(v=>{const option=document.createElement('option');option.value=v.id;option.textContent=v.label;$('vocationSelect').appendChild(option);});
 Object.entries(E.TYPES).forEach(([id,label])=>{const o=document.createElement('option');o.value=id;o.textContent=label;$('focusSelect').appendChild(o);});
 document.querySelectorAll('input[name=mode]').forEach(el=>el.onchange=modeFields);$('difficultySelect').onchange=routeFields;
 function routeFields(){
@@ -913,8 +1436,8 @@ function updateFeedback(){
 function renderQuestion(focus=true){
  if(session.phase==='finished'){renderResults();return;}changeView('sessionView');const r=E.current(session),q=r.q;
  $('paperStyle').textContent=q.component==='noncalc'?'NON-CALCULATOR PRACTICE':'CALCULATOR-ALLOWED PRACTICE';$('questionHeading').textContent='Question '+session.records.length;$('questionText').innerHTML=linesHTML(q);$('questionTable').innerHTML=tableHTML(q.table);$('barBtn').hidden=!q.bar;
- $('questionGuidance').textContent=q.parts.every(p=>p.kind==='choice')?'Choose one statement. Ratio and fraction choices are marked exactly.':q.component==='noncalc'?'The exact answers are whole numbers. Your ±1.00 practice tolerance still applies.':'The exact answers terminate after 1 or 2 decimal places. No rounding is needed.';
- $('answerHeading').textContent=q.parts.length>1?'Your answers':'Your answer';$('checkBtn').textContent=q.parts.length>1?'Check answers':'Check answer';$('answerInstructions').textContent=q.parts.every(p=>p.kind==='choice')?'Choose the correct option. The ±1.00 tolerance applies to numeric entry fields, not choices.':'Enter up to 2 decimal places. Whole numbers are also accepted.';
+ $('questionGuidance').textContent=q.parts.every(p=>p.kind==='choice')?'Choose one statement. Ratio and fraction choices are marked exactly.':q.component==='noncalc'?'The exact answers are whole numbers. Your ±1.00 practice tolerance still applies.':'Money and measurements use exact values with at most 2 decimal places. Counts are whole numbers; no rounding is needed.';
+ $('answerHeading').textContent=q.parts.length>1?'Your answers':'Your answer';$('checkBtn').textContent=q.parts.length>1?'Check answers':'Check answer';$('answerInstructions').textContent=q.parts.every(p=>p.kind==='choice')?'Choose the correct option. The ±1.00 tolerance applies to numeric entry fields, not choices.':'17, 17.0 and 17.00 mean the same. In money boxes, £ is optional.';
  document.querySelector('.answer-top .pill').textContent=q.parts.every(p=>p.kind==='choice')?'Exact choice':'±1.00';
  document.querySelector('.tolerance-help').textContent=q.parts.every(p=>p.kind==='choice')?'Ratio and fraction selections require the exact correct statement. Keep the requested order and simplify where asked.':'The limit includes exactly −1.00 and +1.00 from the model answer. Exact and tolerance-only answers are counted separately.';
  $('answerFields').innerHTML=answerFields(r);message('');updateFeedback();
@@ -942,7 +1465,7 @@ $('setupForm').onsubmit=async e=>{e.preventDefault();$('setupError').hidden=true
  if(saved&&!await ask('Replace the saved session?','Starting this session replaces the locally saved one. Its results will no longer be available here.','Start new session'))return;
  try{startRound(c);}catch(err){$('setupError').textContent='The session could not start: '+err.message;$('setupError').hidden=false;}
 };
-function updateResume(){if(!saved){$('resumeCard').hidden=true;return;}$('resumeCard').hidden=false;const st=E.stats(saved);$('resumeTitle').textContent=saved.phase==='finished'?'Your last review is saved':'Continue your saved session';$('resumeInfo').textContent=`${saved.config.name} · ${st.score} points · ${saved.records.length} question${saved.records.length===1?'':'s'} seen`;$('resumeBtn').textContent=saved.phase==='finished'?'View saved review':'Resume session';}
+function updateResume(){if(!saved){$('resumeCard').hidden=true;return;}$('resumeCard').hidden=false;const st=E.stats(saved);$('resumeTitle').textContent=saved.phase==='finished'?'Your last review is saved':'Continue your saved session';$('resumeInfo').textContent=`${saved.config.name}${saved.config.vocation!=='general'?' · '+(E.VPROFILES[saved.config.vocation]?.label||''):''} · ${st.score} points · ${saved.records.length} question${saved.records.length===1?'':'s'} seen`;$('resumeBtn').textContent=saved.phase==='finished'?'View saved review':'Resume session';}
 $('resumeBtn').onclick=()=>{if(!saved)return;session=saved;saved=null;E.expired(session);if(session.phase==='finished')renderResults();else{renderQuestion();runTimer();}save();};
 $('discardBtn').onclick=async()=>{if(!await ask('Discard saved session?','This deletes only this trainer’s locally saved session.','Discard'))return;try{localStorage.removeItem(KEY);}catch{}saved=null;session=null;updateResume();toast('Saved session discarded.');};
 function machineHTML(q){const m=q.machine;if(!m)return '';return `<div class="machine-block"><div class="machine-caption">${m.reverse?'Work backwards: start on the right, then divide.':'Work forwards: start on the left.'}</div><div class="number-machine${m.reverse?' reverse':''}"><div class="machine-end"><small>${esc(m.leftLabel)}</small><strong>${esc(m.left)}</strong></div><span class="machine-arrow" aria-hidden="true">${m.reverse?'←':'→'}</span><div class="machine-operation">${power(m.op)}</div><span class="machine-arrow" aria-hidden="true">${m.reverse?'←':'→'}</span><div class="machine-end"><small>${esc(m.rightLabel)}</small><strong>${esc(m.right)}</strong></div></div><button class="quiet animate-button" type="button" data-animate>Animate ${m.reverse?'backwards':'forwards'}</button></div>`;}
@@ -955,7 +1478,7 @@ function barHTML(q){
  }).join('')}<p class="bar-legend">Each box represents the same amount.${['difference','changed'].includes(b.relation)?' Hatched boxes show the extra parts.':''}</p></div>`;
 }
 function updateBar(){if(!session)return;const r=E.current(session),b=r.q.bar;if(!b)return;const raw=$('partValue').value;r.barDraft=raw;soon();
- const p=raw.trim()?E.parse(raw,b.unit):null;
+ const p=raw.trim()?E.parse(raw,b.unit):null;if(p?.ok&&b.discrete&&p.cents%100!==0){p.ok=false;p.error='Use a whole number of items for one part; individual items are not split.';}
  $('barNotice').textContent=!p?'Enter your estimate for one part to see the row totals.':!p.ok?p.error:p.cents<0?'Use a non-negative amount for this bar model.':'Your model totals are shown beside the bars. This is working, not an answer check.';
  document.querySelectorAll('#barContent [data-bar-total]').forEach(el=>el.textContent=p?.ok&&p.cents>=0?'= '+E.show(p.cents*b.parts[Number(el.dataset.barTotal)],b.unit):'');
 }
@@ -975,7 +1498,7 @@ function renderResults(){if(!session)return;$('teacherBtn').disabled=false;clear
  $('reviewList').innerHTML=session.records.map(reviewHTML).join('');$('resultsHeading').focus({preventScroll:true});save();}
 $('reviewList').onclick=e=>{const b=e.target.closest('[data-review-drawing]');if(b)openWork(session.records[Number(b.dataset.reviewDrawing)],true);};
 function csvCell(v){let s=String(v??'');if(/^[\s]*[=+\-@\t\r]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"';}
-function csv(){const rows=[['Resource','Learner','Question','Step','Variation','Path purpose','Support before acceptance','Independent first check','Skill','Calculation style','Question status','Part','Unit','Entered answer','Model answer','Part status','Attempts','Tolerance','Question text','Typed working']];session.records.forEach((r,i)=>r.q.parts.forEach((p,j)=>{const a=r.parts[j],raw=a.raw||r.draft[j];rows.push(['Ratio Studio',session.config.name,i+1,r.q.stage||'',r.q.variantId?E.VBYID[r.q.variantId].label:'',r.plan?.kind||'fixed',r.supportAtClose===null?'not closed':r.supportAtClose?'yes':'no',r.status==='accepted'&&!r.supportAtClose&&!r.wrongChecks?'yes':'no',E.TYPES[r.q.type],r.q.component,r.status,p.label,p.unit||'choice',p.kind==='choice'?(p.options.find(x=>x.id===raw)?.text||''):raw,model(p),a.status,a.attempts,p.kind==='numeric'?'±1.00':'exact selection',[...r.q.lines,...(r.q.table?[r.q.table.headers.join(' | '),...r.q.table.rows.map(x=>x.join(' | '))]:[])].join('\n'),r.working]);}));return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');}
+function csv(){const rows=[['Resource','Learner','Vocational area','Question','Step','Variation','Path purpose','Support before acceptance','Independent first check','Skill','Calculation style','Question status','Part','Unit','Entered answer','Model answer','Part status','Attempts','Tolerance','Question text','Typed working']];session.records.forEach((r,i)=>r.q.parts.forEach((p,j)=>{const a=r.parts[j],raw=a.raw||r.draft[j];rows.push(['Ratio Studio',session.config.name,E.VPROFILES[session.config.vocation]?.label||'General / original scenarios',i+1,r.q.stage||'',r.q.variantId?E.VBYID[r.q.variantId].label:'',r.plan?.kind||'fixed',r.supportAtClose===null?'not closed':r.supportAtClose?'yes':'no',r.status==='accepted'&&!r.supportAtClose&&!r.wrongChecks?'yes':'no',E.TYPES[r.q.type],r.q.component,r.status,p.label,p.unit||'choice',p.kind==='choice'?(p.options.find(x=>x.id===raw)?.text||''):raw,model(p),a.status,a.attempts,p.kind==='numeric'?'±1.00':'exact selection',[...r.q.lines,...(r.q.table?[r.q.table.headers.join(' | '),...r.q.table.rows.map(x=>x.join(' | '))]:[])].join('\n'),r.working]);}));return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n');}
 function download(name,text,type){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);}
 $('csvBtn').onclick=()=>{if(session)download('ratio-practice-results.csv',csv(),'text/csv;charset=utf-8');};
 function summary(){const st=E.stats(session),a=E.learning(session);const route=a?`Adaptive route: teaching step ${a.stage}/5; highest reached ${a.peak}/5\nVariations checked: ${a.tested}/${a.total}; accepted: ${a.accepted}/${a.total}\nVariations with independent evidence: ${a.demonstrated}/${a.total}\n`:'';return `Ratio Studio — Foundation GCSE Mathematics\nLearner: ${session.config.name}\n${route}${session.reason}\nComplete questions accepted: ${st.score} / ${st.seen} seen\nExact numeric answers: ${st.numericExact}\nNumeric answers accepted within tolerance: ${st.numericNear}\nCorrect choice selections: ${st.choiceCorrect}\nQuestions correct on first check: ${st.first}\nTime used: ${time(elapsed(session))}\nNumeric tolerance: ±1.00 inclusive; input increments 0.01.\nPractice points only. No GCSE grade or method-mark judgement.\n`;}
